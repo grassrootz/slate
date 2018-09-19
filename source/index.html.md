@@ -35,9 +35,9 @@ Base URLs:
 
 <h1 id="Core-API-AccessKey">AccessKey</h1>
 
-## ApiV2AccessKeyByIdGet
+## Get
 
-<a id="opIdApiV2AccessKeyByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -179,9 +179,7 @@ func main() {
 
 *Gets a key object by id*
 
-Get
-
-<h3 id="apiv2accesskeybyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -202,7 +200,7 @@ Get
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-09-19T06:46:26Z"
+    "createdAt": "2018-09-19T07:15:39Z"
   },
   "success": true,
   "error": [
@@ -214,7 +212,7 @@ Get
 }
 ```
 
-<h3 id="apiv2accesskeybyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -226,9 +224,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyByIdPut
+## Put
 
-<a id="opIdApiV2AccessKeyByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -379,8 +377,6 @@ func main() {
 
 *Updates a donation key by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -390,7 +386,7 @@ Put
 }
 ```
 
-<h3 id="apiv2accesskeybyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -412,7 +408,7 @@ Put
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-09-19T06:46:26Z"
+    "createdAt": "2018-09-19T07:15:39Z"
   },
   "success": true,
   "error": [
@@ -424,7 +420,7 @@ Put
 }
 ```
 
-<h3 id="apiv2accesskeybyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -436,9 +432,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyByIdDelete
+## Delete
 
-<a id="opIdApiV2AccessKeyByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -580,9 +576,7 @@ func main() {
 
 *Patches (partial update) a key object by id*
 
-Delete
-
-<h3 id="apiv2accesskeybyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -604,7 +598,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2accesskeybyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -616,9 +610,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyByIdPatch
+## Patch
 
-<a id="opIdApiV2AccessKeyByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -773,8 +767,6 @@ func main() {
 
 *Patches (partial update) a key object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -788,7 +780,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2accesskeybyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -816,8 +808,8 @@ Patch
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:26Z",
-    "donatedAt": "2018-09-19T06:46:26Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -844,8 +836,8 @@ Patch
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:26Z",
-      "refundedAtLocal": "2018-09-19T06:46:26Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -860,8 +852,8 @@ Patch
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:26Z",
-    "lastUpdatedAt": "2018-09-19T06:46:26Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -877,8 +869,8 @@ Patch
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:26Z",
-      "repliedAt": "2018-09-19T06:46:26Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -907,7 +899,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2accesskeybyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -919,9 +911,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyPost
+## Post
 
-<a id="opIdApiV2AccessKeyPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -1072,8 +1064,6 @@ func main() {
 
 *Creates a new access key*
 
-Post
-
 > Body parameter
 
 ```json
@@ -1083,7 +1073,7 @@ Post
 }
 ```
 
-<h3 id="apiv2accesskeypost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -1110,8 +1100,8 @@ Post
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:26Z",
-    "donatedAt": "2018-09-19T06:46:26Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -1138,8 +1128,8 @@ Post
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:26Z",
-      "refundedAtLocal": "2018-09-19T06:46:26Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -1154,8 +1144,8 @@ Post
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:26Z",
-    "lastUpdatedAt": "2018-09-19T06:46:26Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -1171,8 +1161,8 @@ Post
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:26Z",
-      "repliedAt": "2018-09-19T06:46:26Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -1201,7 +1191,7 @@ Post
 }
 ```
 
-<h3 id="apiv2accesskeypost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -1213,9 +1203,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeySearchPost
+## Post Search
 
-<a id="opIdApiV2AccessKeySearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -1380,8 +1370,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -1405,7 +1393,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accesskeysearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -1431,7 +1419,7 @@ Post Search
         },
         "clientKey": "string",
         "description": "string",
-        "createdAt": "2018-09-19T06:46:26Z"
+        "createdAt": "2018-09-19T07:15:39Z"
       }
     ]
   },
@@ -1445,7 +1433,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accesskeysearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -1457,9 +1445,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyExportPost
+## Post Export
 
-<a id="opIdApiV2AccessKeyExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -1624,8 +1612,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -1649,7 +1635,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accesskeyexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -1671,7 +1657,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accesskeyexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -1683,9 +1669,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccessKeyMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2AccessKeyMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -1827,8 +1813,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -1860,7 +1844,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2accesskeymetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -1874,9 +1858,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Account">Account</h1>
 
-## ApiV2AccountByIdGet
+## Get
 
-<a id="opIdApiV2AccountByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -2018,9 +2002,7 @@ func main() {
 
 *Gets an acccount object by id*
 
-Get
-
-<h3 id="apiv2accountbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2033,7 +2015,7 @@ Get
 ```json
 {
   "data": {
-    "createdAt": "2018-09-19T06:46:26Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "email": "string",
     "firstName": "string",
     "id": 0,
@@ -2041,11 +2023,11 @@ Get
     "isFundraiser": true,
     "isOrgAdmin": true,
     "isSysAdmin": true,
-    "lastLoggedInAt": "2018-09-19T06:46:26Z",
+    "lastLoggedInAt": "2018-09-19T07:15:39Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "onboardedDate": "2018-09-19T06:46:26Z",
+    "onboardedDate": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -2066,7 +2048,7 @@ Get
 }
 ```
 
-<h3 id="apiv2accountbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -2078,9 +2060,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdPut
+## Put
 
-<a id="opIdApiV2AccountByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -2238,8 +2220,6 @@ func main() {
 
 *Updates an account object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -2256,7 +2236,7 @@ Put
 }
 ```
 
-<h3 id="apiv2accountbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2270,7 +2250,7 @@ Put
 ```json
 {
   "data": {
-    "createdAt": "2018-09-19T06:46:26Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "email": "string",
     "firstName": "string",
     "id": 0,
@@ -2278,11 +2258,11 @@ Put
     "isFundraiser": true,
     "isOrgAdmin": true,
     "isSysAdmin": true,
-    "lastLoggedInAt": "2018-09-19T06:46:26Z",
+    "lastLoggedInAt": "2018-09-19T07:15:39Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "onboardedDate": "2018-09-19T06:46:26Z",
+    "onboardedDate": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -2303,7 +2283,7 @@ Put
 }
 ```
 
-<h3 id="apiv2accountbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -2315,9 +2295,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdDelete
+## Delete
 
-<a id="opIdApiV2AccountByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -2459,9 +2439,7 @@ func main() {
 
 *Patches (partial update) an account object by id*
 
-Delete
-
-<h3 id="apiv2accountbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2483,7 +2461,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2accountbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -2495,9 +2473,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdPatch
+## Patch
 
-<a id="opIdApiV2AccountByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -2652,8 +2630,6 @@ func main() {
 
 *Patches (partial update) an account object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -2667,7 +2643,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2accountbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2681,7 +2657,7 @@ Patch
 ```json
 {
   "data": {
-    "createdAt": "2018-09-19T06:46:26Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "email": "string",
     "firstName": "string",
     "id": 0,
@@ -2689,11 +2665,11 @@ Patch
     "isFundraiser": true,
     "isOrgAdmin": true,
     "isSysAdmin": true,
-    "lastLoggedInAt": "2018-09-19T06:46:26Z",
+    "lastLoggedInAt": "2018-09-19T07:15:39Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "onboardedDate": "2018-09-19T06:46:26Z",
+    "onboardedDate": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -2714,7 +2690,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2accountbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -2726,9 +2702,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdIntegrationGet
+## Get Integration
 
-<a id="opIdApiV2AccountByIdIntegrationGet"></a>
+<a id="opIdGet Integration"></a>
 
 > Code samples
 
@@ -2870,9 +2846,7 @@ func main() {
 
 *Gets an acccount integration object by id*
 
-Get Integration
-
-<h3 id="apiv2accountbyidintegrationget-parameters">Parameters</h3>
+<h3 id="get-integration-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -2901,7 +2875,7 @@ Get Integration
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationget-responses">Responses</h3>
+<h3 id="get-integration-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -2913,217 +2887,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdIntegrationPut
+## Post Or Put Integration
 
-<a id="opIdApiV2AccountByIdIntegrationPut"></a>
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X PUT //localhost:32769//api/v2/Account/{id}/integration \
-  -H 'Content-Type: application/json-patch+json' \
-  -H 'Accept: application/json' \
-  -H 'ApiKey: API_KEY'
-
-```
-
-```http
-PUT //localhost:32769//api/v2/Account/{id}/integration HTTP/1.1
-Host: null
-Content-Type: application/json-patch+json
-Accept: application/json
-
-```
-
-```javascript
-var headers = {
-  'Content-Type':'application/json-patch+json',
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-$.ajax({
-  url: '//localhost:32769//api/v2/Account/{id}/integration',
-  method: 'put',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-const inputBody = '{
-  "key": "elevio",
-  "value": "string",
-  "organizationId": 0
-}';
-const headers = {
-  'Content-Type':'application/json-patch+json',
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-fetch('//localhost:32769//api/v2/Account/{id}/integration',
-{
-  method: 'PUT',
-  body: inputBody,
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Content-Type' => 'application/json-patch+json',
-  'Accept' => 'application/json',
-  'ApiKey' => 'API_KEY'
-}
-
-result = RestClient.put '//localhost:32769//api/v2/Account/{id}/integration',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Content-Type': 'application/json-patch+json',
-  'Accept': 'application/json',
-  'ApiKey': 'API_KEY'
-}
-
-r = requests.put('//localhost:32769//api/v2/Account/{id}/integration', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-```java
-URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("PUT");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-
-```
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Content-Type": []string{"application/json-patch+json"},
-        "Accept": []string{"application/json"},
-        "ApiKey": []string{"API_KEY"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Account/{id}/integration", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-`PUT /api/v2/Account/{id}/integration`
-
-*Creates a new account integration*
-
-Post Or Put Integration
-
-> Body parameter
-
-```json
-{
-  "key": "elevio",
-  "value": "string",
-  "organizationId": 0
-}
-```
-
-<h3 id="apiv2accountbyidintegrationput-parameters">Parameters</h3>
-
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer(int32)|true|The id of the account object being modified|
-|body|body|[AccountIntegrationEditModel](#schemaaccountintegrationeditmodel)|false|The account model containing the details|
-
-> Example responses
-
-> 201 Response
-
-```json
-{
-  "data": [
-    {
-      "organizationId": 0,
-      "key": "elevio",
-      "value": "string"
-    }
-  ],
-  "success": true,
-  "error": [
-    {
-      "error": "string",
-      "param": "string"
-    }
-  ]
-}
-```
-
-<h3 id="apiv2accountbyidintegrationput-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader & None
-</aside>
-
-## ApiV2AccountByIdIntegrationPost
-
-<a id="opIdApiV2AccountByIdIntegrationPost"></a>
+<a id="opIdPost Or Put Integration"></a>
 
 > Code samples
 
@@ -3275,8 +3041,6 @@ func main() {
 
 *Creates a new account integration*
 
-Post Or Put Integration
-
 > Body parameter
 
 ```json
@@ -3287,7 +3051,7 @@ Post Or Put Integration
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationpost-parameters">Parameters</h3>
+<h3 id="post-or-put-integration-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -3317,7 +3081,7 @@ Post Or Put Integration
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationpost-responses">Responses</h3>
+<h3 id="post-or-put-integration-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -3329,9 +3093,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountPost
+## Post
 
-<a id="opIdApiV2AccountPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -3489,8 +3253,6 @@ func main() {
 
 *Creates a new account*
 
-Post
-
 > Body parameter
 
 ```json
@@ -3507,7 +3269,7 @@ Post
 }
 ```
 
-<h3 id="apiv2accountpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -3535,7 +3297,7 @@ Post
 }
 ```
 
-<h3 id="apiv2accountpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -3547,9 +3309,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2AccountByIdIntegrationOperationPost
+## Post Integration Operation
 
-<a id="opIdApiV2AccountByIdIntegrationOperationPost"></a>
+<a id="opIdPost Integration Operation"></a>
 
 > Code samples
 
@@ -3699,8 +3461,6 @@ func main() {
 
 *Creates a new account integration*
 
-Post Integration Operation
-
 > Body parameter
 
 ```json
@@ -3709,7 +3469,7 @@ Post Integration Operation
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationoperationpost-parameters">Parameters</h3>
+<h3 id="post-integration-operation-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -3739,7 +3499,7 @@ Post Integration Operation
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationoperationpost-responses">Responses</h3>
+<h3 id="post-integration-operation-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -3751,197 +3511,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountByIdIntegrationByKeyByOrganizationIdDelete
+## Delete Integration
 
-<a id="opIdApiV2AccountByIdIntegrationByKeyByOrganizationIdDelete"></a>
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X DELETE //localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId} \
-  -H 'Accept: application/json' \
-  -H 'ApiKey: API_KEY'
-
-```
-
-```http
-DELETE //localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId} HTTP/1.1
-Host: null
-
-Accept: application/json
-
-```
-
-```javascript
-var headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-$.ajax({
-  url: '//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
-  method: 'delete',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-
-const headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-fetch('//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
-{
-  method: 'DELETE',
-
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json',
-  'ApiKey' => 'API_KEY'
-}
-
-result = RestClient.delete '//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json',
-  'ApiKey': 'API_KEY'
-}
-
-r = requests.delete('//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-```java
-URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("DELETE");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-
-```
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        "ApiKey": []string{"API_KEY"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-`DELETE /api/v2/Account/{id}/integration/{key}/{organizationId}`
-
-*Patches (partial update) an account object by id*
-
-Delete Integration
-
-<h3 id="apiv2accountbyidintegrationbykeybyorganizationiddelete-parameters">Parameters</h3>
-
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|integer(int32)|true|The id of the account object being modified|
-|key|path|string|true|The type of integration being deleted|
-|organizationId|path|integer(int32)|true|The id of the organization that owns the value|
-
-#### Enumerated Values
-
-|Parameter|Value|
-|---|---|
-|key|elevio|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "success": true,
-  "error": [
-    {
-      "error": "string",
-      "param": "string"
-    }
-  ]
-}
-```
-
-<h3 id="apiv2accountbyidintegrationbykeybyorganizationiddelete-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ObjectActionResult](#schemaobjectactionresult)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ObjectActionResult](#schemaobjectactionresult)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader & None
-</aside>
-
-## ApiV2AccountByIdIntegrationByKeyDelete
-
-<a id="opIdApiV2AccountByIdIntegrationByKeyDelete"></a>
+<a id="opIdDelete Integration"></a>
 
 > Code samples
 
@@ -4083,9 +3655,7 @@ func main() {
 
 *Patches (partial update) an account object by id*
 
-Delete Integration
-
-<h3 id="apiv2accountbyidintegrationbykeydelete-parameters">Parameters</h3>
+<h3 id="delete-integration-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -4115,7 +3685,7 @@ Delete Integration
 }
 ```
 
-<h3 id="apiv2accountbyidintegrationbykeydelete-responses">Responses</h3>
+<h3 id="delete-integration-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -4127,9 +3697,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountPasswordResetPost
+## Post Password Reset Request
 
-<a id="opIdApiV2AccountPasswordResetPost"></a>
+<a id="opIdPost Password Reset Request"></a>
 
 > Code samples
 
@@ -4279,8 +3849,6 @@ func main() {
 
 *Starts a password reset process*
 
-Post Password Reset Request
-
 > Body parameter
 
 ```json
@@ -4289,7 +3857,7 @@ Post Password Reset Request
 }
 ```
 
-<h3 id="apiv2accountpasswordresetpost-parameters">Parameters</h3>
+<h3 id="post-password-reset-request-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -4312,7 +3880,7 @@ Post Password Reset Request
 }
 ```
 
-<h3 id="apiv2accountpasswordresetpost-responses">Responses</h3>
+<h3 id="post-password-reset-request-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -4324,9 +3892,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2AccountPasswordUpdatePost
+## Post Password Update
 
-<a id="opIdApiV2AccountPasswordUpdatePost"></a>
+<a id="opIdPost Password Update"></a>
 
 > Code samples
 
@@ -4477,8 +4045,6 @@ func main() {
 
 *Updates the password for a specific account based on an email and reset token*
 
-Post Password Update
-
 > Body parameter
 
 ```json
@@ -4488,7 +4054,7 @@ Post Password Update
 }
 ```
 
-<h3 id="apiv2accountpasswordupdatepost-parameters">Parameters</h3>
+<h3 id="post-password-update-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -4511,7 +4077,7 @@ Post Password Update
 }
 ```
 
-<h3 id="apiv2accountpasswordupdatepost-responses">Responses</h3>
+<h3 id="post-password-update-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -4523,9 +4089,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2AccountSearchPost
+## Post Search
 
-<a id="opIdApiV2AccountSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -4690,8 +4256,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -4715,7 +4279,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -4733,7 +4297,7 @@ Post Search
     "pageSize": 0,
     "list": [
       {
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "email": "string",
         "firstName": "string",
         "id": 0,
@@ -4741,11 +4305,11 @@ Post Search
         "isFundraiser": true,
         "isOrgAdmin": true,
         "isSysAdmin": true,
-        "lastLoggedInAt": "2018-09-19T06:46:27Z",
+        "lastLoggedInAt": "2018-09-19T07:15:39Z",
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "onboardedDate": "2018-09-19T06:46:27Z",
+        "onboardedDate": "2018-09-19T07:15:39Z",
         "organizationId": 0,
         "organization": {
           "id": 0,
@@ -4768,7 +4332,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -4780,9 +4344,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountExportPost
+## Post Export
 
-<a id="opIdApiV2AccountExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -4947,8 +4511,6 @@ func main() {
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -4972,7 +4534,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -4994,7 +4556,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -5006,9 +4568,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2AccountMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -5150,8 +4712,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -5183,7 +4743,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2accountmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -5195,9 +4755,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2AccountAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -5339,9 +4899,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2accountaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -5388,7 +4946,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2accountaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -5402,9 +4960,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-AccountDonor">AccountDonor</h1>
 
-## ApiV2AccountDonorByIdGet
+## Get
 
-<a id="opIdApiV2AccountDonorByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -5546,9 +5104,7 @@ func main() {
 
 *Gets an acccount donor object by id*
 
-Get
-
-<h3 id="apiv2accountdonorbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -5562,7 +5118,7 @@ Get
 {
   "data": {
     "averageDonationAmount": 0,
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "email": "string",
     "firstName": "string",
@@ -5584,7 +5140,7 @@ Get
 }
 ```
 
-<h3 id="apiv2accountdonorbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -5596,9 +5152,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountDonorSearchPost
+## Post Search
 
-<a id="opIdApiV2AccountDonorSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -5763,8 +5319,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -5788,7 +5342,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountdonorsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -5807,7 +5361,7 @@ Post Search
     "list": [
       {
         "averageDonationAmount": 0,
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "email": "string",
         "firstName": "string",
@@ -5831,7 +5385,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountdonorsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -5843,9 +5397,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountDonorExportPost
+## Post Export
 
-<a id="opIdApiV2AccountDonorExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -6010,8 +5564,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -6035,7 +5587,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountdonorexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -6057,7 +5609,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountdonorexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -6069,9 +5621,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountDonorMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2AccountDonorMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -6213,8 +5765,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -6246,7 +5796,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2accountdonormetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -6258,9 +5808,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountDonorAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2AccountDonorAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -6402,9 +5952,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2accountdonoraggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -6451,7 +5999,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2accountdonoraggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -6465,9 +6013,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-AccountFundraiser">AccountFundraiser</h1>
 
-## ApiV2AccountFundraiserByIdGet
+## Get
 
-<a id="opIdApiV2AccountFundraiserByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -6609,9 +6157,7 @@ func main() {
 
 *Gets an acccount fundraiser object by id*
 
-Get
-
-<h3 id="apiv2accountfundraiserbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -6626,7 +6172,7 @@ Get
   "data": {
     "activePagesCount": 0,
     "averageDonationAmount": 0,
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "email": "string",
     "firstName": "string",
@@ -6649,7 +6195,7 @@ Get
 }
 ```
 
-<h3 id="apiv2accountfundraiserbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -6661,9 +6207,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountFundraiserSearchPost
+## Post Search
 
-<a id="opIdApiV2AccountFundraiserSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -6828,8 +6374,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -6853,7 +6397,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountfundraisersearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -6873,7 +6417,7 @@ Post Search
       {
         "activePagesCount": 0,
         "averageDonationAmount": 0,
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "email": "string",
         "firstName": "string",
@@ -6898,7 +6442,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2accountfundraisersearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -6910,9 +6454,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountFundraiserExportPost
+## Post Export
 
-<a id="opIdApiV2AccountFundraiserExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -7077,8 +6621,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -7102,7 +6644,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountfundraiserexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -7124,7 +6666,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2accountfundraiserexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -7136,9 +6678,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountFundraiserMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2AccountFundraiserMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -7280,8 +6822,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -7313,7 +6853,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2accountfundraisermetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -7325,9 +6865,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountFundraiserAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2AccountFundraiserAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -7469,9 +7009,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2accountfundraiseraggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -7518,7 +7056,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2accountfundraiseraggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -7532,9 +7070,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Campaign">Campaign</h1>
 
-## ApiV2PageCampaignByIdGet
+## Get
 
-<a id="opIdApiV2PageCampaignByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -7676,9 +7214,7 @@ func main() {
 
 *Gets a campaign object by id*
 
-Get
-
-<h3 id="apiv2pagecampaignbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -7694,8 +7230,8 @@ Get
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -7730,8 +7266,8 @@ Get
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -7798,7 +7334,7 @@ Get
 }
 ```
 
-<h3 id="apiv2pagecampaignbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -7810,9 +7346,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignByIdPut
+## Put
 
-<a id="opIdApiV2PageCampaignByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -8038,8 +7574,6 @@ func main() {
 
 *Updates a campaign object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -8124,7 +7658,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pagecampaignbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -8141,8 +7675,8 @@ Put
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -8177,8 +7711,8 @@ Put
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -8245,7 +7779,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pagecampaignbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -8257,9 +7791,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignByIdDelete
+## Delete
 
-<a id="opIdApiV2PageCampaignByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -8401,9 +7935,7 @@ func main() {
 
 *Patches (partial update) a campaign object by id*
 
-Delete
-
-<h3 id="apiv2pagecampaignbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -8425,7 +7957,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2pagecampaignbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -8437,9 +7969,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignByIdPatch
+## Patch
 
-<a id="opIdApiV2PageCampaignByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -8594,8 +8126,6 @@ func main() {
 
 *Patches (partial update) a campaign object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -8609,7 +8139,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2pagecampaignbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -8626,8 +8156,8 @@ Patch
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -8662,8 +8192,8 @@ Patch
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -8730,7 +8260,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2pagecampaignbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -8742,9 +8272,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignPublicByPrimaryPathBySecondaryPathGet
+## Get By Path
 
-<a id="opIdApiV2PageCampaignPublicByPrimaryPathBySecondaryPathGet"></a>
+<a id="opIdGet By Path"></a>
 
 > Code samples
 
@@ -8886,9 +8416,7 @@ func main() {
 
 *Gets a campaign object by paths*
 
-Get By Path
-
-<h3 id="apiv2pagecampaignpublicbyprimarypathbysecondarypathget-parameters">Parameters</h3>
+<h3 id="get-by-path-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -8904,8 +8432,8 @@ Get By Path
   "data": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -8999,7 +8527,7 @@ Get By Path
 }
 ```
 
-<h3 id="apiv2pagecampaignpublicbyprimarypathbysecondarypathget-responses">Responses</h3>
+<h3 id="get-by-path-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -9011,9 +8539,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2PageCampaignPost
+## Post
 
-<a id="opIdApiV2PageCampaignPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -9239,8 +8767,6 @@ func main() {
 
 *Creates a new campaign*
 
-Post
-
 > Body parameter
 
 ```json
@@ -9325,7 +8851,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pagecampaignpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -9341,8 +8867,8 @@ Post
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -9377,8 +8903,8 @@ Post
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -9445,7 +8971,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pagecampaignpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -9457,9 +8983,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignSearchPost
+## Post Search
 
-<a id="opIdApiV2PageCampaignSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -9624,8 +9150,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -9649,7 +9173,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagecampaignsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -9670,8 +9194,8 @@ Post Search
         "activePagesCount": 0,
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "dataCapture": {
           "registration": {
             "phone": {
@@ -9706,8 +9230,8 @@ Post Search
           "allowSelfSignUp": true
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
@@ -9776,7 +9300,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagecampaignsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -9788,9 +9312,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignExportPost
+## Post Export
 
-<a id="opIdApiV2PageCampaignExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -9955,8 +9479,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -9980,7 +9502,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pagecampaignexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -10002,7 +9524,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pagecampaignexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -10014,9 +9536,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2PageCampaignMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -10158,8 +9680,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -10191,7 +9711,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2pagecampaignmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -10203,9 +9723,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageCampaignAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2PageCampaignAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -10347,9 +9867,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2pagecampaignaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -10396,7 +9914,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2pagecampaignaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -10410,22 +9928,22 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Donation">Donation</h1>
 
-## ApiV2DonationByIdGet
+## Get
 
-<a id="opIdApiV2DonationByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
 ```shell
 # You can also use wget
-curl -X GET //localhost:32769//api/v2/Donation/{id} \
+curl -X GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //localhost:32769//api/v2/Donation/{id} HTTP/1.1
+GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -10440,7 +9958,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//localhost:32769//api/v2/Donation/{id}',
+  url: '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
   method: 'get',
 
   headers: headers,
@@ -10460,7 +9978,7 @@ const headers = {
 
 };
 
-fetch('//localhost:32769//api/v2/Donation/{id}',
+fetch('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
 {
   method: 'GET',
 
@@ -10483,7 +10001,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//localhost:32769//api/v2/Donation/{id}',
+result = RestClient.get '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
   params: {
   }, headers: headers
 
@@ -10498,7 +10016,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//localhost:32769//api/v2/Donation/{id}', params={
+r = requests.get('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}', params={
 
 }, headers = headers)
 
@@ -10507,7 +10025,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//localhost:32769//api/v2/Donation/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -10540,7 +10058,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -10550,17 +10068,18 @@ func main() {
 
 ```
 
-`GET /api/v2/Donation/{id}`
+`GET /api/v2/Donation/fee/{primaryPath}/{secondaryPath}`
 
 *Gets a donation object by id*
 
-Get
-
-<h3 id="apiv2donationbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
-|id|path|integer(int32)|true|Donation id|
+|amount|query|number(double)|false|The amount to be donated|
+|coverFee|query|boolean|false|Whether the person will cover the platform fee|
+|primaryPath|path|string|true|Organization/Event Url Path|
+|secondaryPath|path|string|true|Campaign/Org Url Path|
 
 > Example responses
 
@@ -10569,100 +10088,11 @@ Get
 ```json
 {
   "data": {
-    "accountId": 0,
     "amount": 0,
-    "campaignId": 0,
-    "campaign": {
-      "id": 0,
-      "name": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string",
-      "template": {
-        "key": "string",
-        "value": {}
-      }
-    },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
-    "donor": {
-      "address": {
-        "street": "string",
-        "city": "string",
-        "state": "string",
-        "postcode": "string",
-        "country": "string"
-      },
-      "anonymous": true,
-      "businessName": "string",
-      "donorId": 0,
-      "email": "string",
-      "firstName": "string",
-      "lastName": "string",
-      "newsletter": true,
-      "phoneNumber": "string"
-    },
-    "financials": {
-      "cardBrand": "string",
-      "cardCountry": "string",
-      "cardLast4Digits": "string",
-      "currency": "string",
-      "fee": 0,
-      "feeCovered": true,
-      "platform": "stripe",
-      "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
-      "subscription": true,
-      "tax": 0,
-      "totalFees": 0,
-      "timezone": "string"
-    },
-    "fundraiserId": 0,
-    "fundraiser": {
-      "id": 0,
-      "name": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
-    "message": "string",
-    "organizationId": 0,
-    "organization": {
-      "id": 0,
-      "name": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "pageType": "campaign",
-    "receiptNumber": "string",
-    "reply": {
-      "displayFirstName": "string",
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
-      "reply": "string"
-    },
-    "status": "collectedFromCustomer",
-    "teamId": 0,
-    "team": {
-      "id": 0,
-      "name": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "template": {
-      "key": "string",
-      "value": {}
-    },
-    "timezone": "string",
-    "type": "online"
+    "fee": 0,
+    "tax": 0,
+    "totalFees": 0,
+    "totalWithFees": 0
   },
   "success": true,
   "error": [
@@ -10674,21 +10104,21 @@ Get
 }
 ```
 
-<h3 id="apiv2donationbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_DonationElementModel_](#schemascalaractionresult_donationelementmodel_)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_DonationElementModel_](#schemascalaractionresult_donationelementmodel_)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_DonationFeeCalculationElementModel_](#schemascalaractionresult_donationfeecalculationelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_DonationFeeCalculationElementModel_](#schemascalaractionresult_donationfeecalculationelementmodel_)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader & None
+ApiKeyHeader
 </aside>
 
-## ApiV2DonationByIdPut
+## Put
 
-<a id="opIdApiV2DonationByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -10881,8 +10311,6 @@ func main() {
 
 *Updates a donation object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -10934,7 +10362,7 @@ Put
 }
 ```
 
-<h3 id="apiv2donationbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -10962,8 +10390,8 @@ Put
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -10990,8 +10418,8 @@ Put
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -11006,8 +10434,8 @@ Put
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -11023,8 +10451,8 @@ Put
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -11053,7 +10481,7 @@ Put
 }
 ```
 
-<h3 id="apiv2donationbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -11065,9 +10493,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationByIdDelete
+## Delete
 
-<a id="opIdApiV2DonationByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -11209,9 +10637,7 @@ func main() {
 
 *Patches (partial update) a donation object by id*
 
-Delete
-
-<h3 id="apiv2donationbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -11233,7 +10659,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2donationbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -11245,9 +10671,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationByIdPatch
+## Patch
 
-<a id="opIdApiV2DonationByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -11402,8 +10828,6 @@ func main() {
 
 *Patches (partial update) a donation object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -11417,7 +10841,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2donationbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -11445,8 +10869,8 @@ Patch
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -11473,8 +10897,8 @@ Patch
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -11489,8 +10913,8 @@ Patch
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -11506,8 +10930,8 @@ Patch
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -11536,7 +10960,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2donationbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -11548,199 +10972,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeByPrimaryPathBySecondaryPathGet
+## Post
 
-<a id="opIdApiV2DonationFeeByPrimaryPathBySecondaryPathGet"></a>
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} \
-  -H 'Accept: application/json' \
-  -H 'ApiKey: API_KEY'
-
-```
-
-```http
-GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} HTTP/1.1
-Host: null
-
-Accept: application/json
-
-```
-
-```javascript
-var headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-$.ajax({
-  url: '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
-  method: 'get',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-
-const headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-fetch('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
-{
-  method: 'GET',
-
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json',
-  'ApiKey' => 'API_KEY'
-}
-
-result = RestClient.get '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json',
-  'ApiKey': 'API_KEY'
-}
-
-r = requests.get('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-```java
-URL obj = new URL("//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("GET");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-
-```
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        "ApiKey": []string{"API_KEY"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-`GET /api/v2/Donation/fee/{primaryPath}/{secondaryPath}`
-
-*Gets a donation object by id*
-
-Get
-
-<h3 id="apiv2donationfeebyprimarypathbysecondarypathget-parameters">Parameters</h3>
-
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-|amount|query|number(double)|false|The amount to be donated|
-|coverFee|query|boolean|false|Whether the person will cover the platform fee|
-|primaryPath|path|string|true|Organization/Event Url Path|
-|secondaryPath|path|string|true|Campaign/Org Url Path|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "data": {
-    "amount": 0,
-    "fee": 0,
-    "tax": 0,
-    "totalFees": 0,
-    "totalWithFees": 0
-  },
-  "success": true,
-  "error": [
-    {
-      "error": "string",
-      "param": "string"
-    }
-  ]
-}
-```
-
-<h3 id="apiv2donationfeebyprimarypathbysecondarypathget-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_DonationFeeCalculationElementModel_](#schemascalaractionresult_donationfeecalculationelementmodel_)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_DonationFeeCalculationElementModel_](#schemascalaractionresult_donationfeecalculationelementmodel_)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader
-</aside>
-
-## ApiV2DonationPost
-
-<a id="opIdApiV2DonationPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -11933,8 +11167,6 @@ func main() {
 
 *Creates a new donation*
 
-Post
-
 > Body parameter
 
 ```json
@@ -11986,7 +11218,7 @@ Post
 }
 ```
 
-<h3 id="apiv2donationpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -12013,8 +11245,8 @@ Post
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -12041,8 +11273,8 @@ Post
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -12057,8 +11289,8 @@ Post
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -12074,8 +11306,8 @@ Post
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -12104,7 +11336,7 @@ Post
 }
 ```
 
-<h3 id="apiv2donationpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -12116,9 +11348,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2DonationByIdReplyPost
+## Post Reply
 
-<a id="opIdApiV2DonationByIdReplyPost"></a>
+<a id="opIdPost Reply"></a>
 
 > Code samples
 
@@ -12268,8 +11500,6 @@ func main() {
 
 *Creates a new donation message reply*
 
-Post Reply
-
 > Body parameter
 
 ```json
@@ -12278,7 +11508,7 @@ Post Reply
 }
 ```
 
-<h3 id="apiv2donationbyidreplypost-parameters">Parameters</h3>
+<h3 id="post-reply-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -12301,7 +11531,7 @@ Post Reply
 }
 ```
 
-<h3 id="apiv2donationbyidreplypost-responses">Responses</h3>
+<h3 id="post-reply-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -12313,9 +11543,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationSearchPost
+## Post Search
 
-<a id="opIdApiV2DonationSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -12480,8 +11710,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -12505,7 +11733,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2donationsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -12537,8 +11765,8 @@ Post Search
             "value": {}
           }
         },
-        "donatedAtLocal": "2018-09-19T06:46:27Z",
-        "donatedAt": "2018-09-19T06:46:27Z",
+        "donatedAtLocal": "2018-09-19T07:15:39Z",
+        "donatedAt": "2018-09-19T07:15:39Z",
         "donor": {
           "address": {
             "street": "string",
@@ -12565,8 +11793,8 @@ Post Search
           "feeCovered": true,
           "platform": "stripe",
           "refunded": true,
-          "refundedAt": "2018-09-19T06:46:27Z",
-          "refundedAtLocal": "2018-09-19T06:46:27Z",
+          "refundedAt": "2018-09-19T07:15:39Z",
+          "refundedAtLocal": "2018-09-19T07:15:39Z",
           "subscription": true,
           "tax": 0,
           "totalFees": 0,
@@ -12581,8 +11809,8 @@ Post Search
           "urlPath": "string"
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "message": "string",
         "organizationId": 0,
         "organization": {
@@ -12598,8 +11826,8 @@ Post Search
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-09-19T06:46:27Z",
-          "repliedAt": "2018-09-19T06:46:27Z",
+          "repliedAtLocal": "2018-09-19T07:15:39Z",
+          "repliedAt": "2018-09-19T07:15:39Z",
           "reply": "string"
         },
         "status": "collectedFromCustomer",
@@ -12630,7 +11858,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2donationsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -12642,9 +11870,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationSearchPublicPost
+## Post Search Public
 
-<a id="opIdApiV2DonationSearchPublicPost"></a>
+<a id="opIdPost Search Public"></a>
 
 > Code samples
 
@@ -12798,8 +12026,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search Public
-
 > Body parameter
 
 ```json
@@ -12812,7 +12038,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2donationsearchpublicpost-parameters">Parameters</h3>
+<h3 id="post-search-public-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -12832,8 +12058,8 @@ Post Search Public
       {
         "amount": 0,
         "anonymous": true,
-        "donatedAtLocal": "2018-09-19T06:46:27Z",
-        "donatedAt": "2018-09-19T06:46:27Z",
+        "donatedAtLocal": "2018-09-19T07:15:39Z",
+        "donatedAt": "2018-09-19T07:15:39Z",
         "donorDisplayName": "string",
         "id": 0,
         "message": "string",
@@ -12842,8 +12068,8 @@ Post Search Public
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-09-19T06:46:27Z",
-          "repliedAt": "2018-09-19T06:46:27Z",
+          "repliedAtLocal": "2018-09-19T07:15:39Z",
+          "repliedAt": "2018-09-19T07:15:39Z",
           "reply": "string"
         },
         "type": "online"
@@ -12860,7 +12086,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2donationsearchpublicpost-responses">Responses</h3>
+<h3 id="post-search-public-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -12872,9 +12098,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2DonationExportPost
+## Post Export
 
-<a id="opIdApiV2DonationExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -13039,8 +12265,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -13064,7 +12288,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2donationexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -13086,7 +12310,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2donationexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -13098,9 +12322,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2DonationMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -13242,8 +12466,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -13275,7 +12497,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2donationmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -13287,9 +12509,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2DonationAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -13431,9 +12653,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2donationaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -13480,7 +12700,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2donationaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -13492,9 +12712,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationByIdRefundPost
+## Post Refund
 
-<a id="opIdApiV2DonationByIdRefundPost"></a>
+<a id="opIdPost Refund"></a>
 
 > Code samples
 
@@ -13636,9 +12856,7 @@ func main() {
 
 *Perform a refund on an online donation*
 
-Post Refund
-
-<h3 id="apiv2donationbyidrefundpost-parameters">Parameters</h3>
+<h3 id="post-refund-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -13660,7 +12878,7 @@ Post Refund
 }
 ```
 
-<h3 id="apiv2donationbyidrefundpost-responses">Responses</h3>
+<h3 id="post-refund-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -13672,9 +12890,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationByIdReceiptPost
+## Post Receipt
 
-<a id="opIdApiV2DonationByIdReceiptPost"></a>
+<a id="opIdPost Receipt"></a>
 
 > Code samples
 
@@ -13816,9 +13034,7 @@ func main() {
 
 *Perform a refund on an online donation*
 
-Post Receipt
-
-<h3 id="apiv2donationbyidreceiptpost-parameters">Parameters</h3>
+<h3 id="post-receipt-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -13840,7 +13056,7 @@ Post Receipt
 }
 ```
 
-<h3 id="apiv2donationbyidreceiptpost-responses">Responses</h3>
+<h3 id="post-receipt-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -13854,9 +13070,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-DonationFee">DonationFee</h1>
 
-## ApiV2DonationFeeByIdGet
+## Get
 
-<a id="opIdApiV2DonationFeeByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -13998,9 +13214,7 @@ func main() {
 
 *Gets a donation fee object by id*
 
-Get
-
-<h3 id="apiv2donationfeebyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -14041,7 +13255,7 @@ Get
 }
 ```
 
-<h3 id="apiv2donationfeebyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -14053,9 +13267,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeByIdPut
+## Put
 
-<a id="opIdApiV2DonationFeeByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -14208,8 +13422,6 @@ func main() {
 
 *Updates a donation fee object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -14221,7 +13433,7 @@ Put
 }
 ```
 
-<h3 id="apiv2donationfeebyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -14263,7 +13475,7 @@ Put
 }
 ```
 
-<h3 id="apiv2donationfeebyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -14275,9 +13487,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeByIdDelete
+## Delete
 
-<a id="opIdApiV2DonationFeeByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -14419,9 +13631,7 @@ func main() {
 
 *Patches (partial update) a donation fee object by id*
 
-Delete
-
-<h3 id="apiv2donationfeebyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -14443,7 +13653,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2donationfeebyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -14455,9 +13665,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeByIdPatch
+## Patch
 
-<a id="opIdApiV2DonationFeeByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -14612,8 +13822,6 @@ func main() {
 
 *Patches (partial update) a donation fee object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -14627,7 +13835,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2donationfeebyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -14655,8 +13863,8 @@ Patch
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -14683,8 +13891,8 @@ Patch
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -14699,8 +13907,8 @@ Patch
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -14716,8 +13924,8 @@ Patch
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -14746,7 +13954,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2donationfeebyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -14758,9 +13966,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeePost
+## Post
 
-<a id="opIdApiV2DonationFeePost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -14913,8 +14121,6 @@ func main() {
 
 *Creates a new donation fee*
 
-Post
-
 > Body parameter
 
 ```json
@@ -14926,7 +14132,7 @@ Post
 }
 ```
 
-<h3 id="apiv2donationfeepost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -14953,8 +14159,8 @@ Post
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -14981,8 +14187,8 @@ Post
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -14997,8 +14203,8 @@ Post
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -15014,8 +14220,8 @@ Post
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -15044,7 +14250,7 @@ Post
 }
 ```
 
-<h3 id="apiv2donationfeepost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -15056,9 +14262,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeSearchPost
+## Post Search
 
-<a id="opIdApiV2DonationFeeSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -15223,8 +14429,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -15248,7 +14452,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2donationfeesearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -15296,7 +14500,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2donationfeesearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -15308,9 +14512,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeExportGet
+## Get Export
 
-<a id="opIdApiV2DonationFeeExportGet"></a>
+<a id="opIdGet Export"></a>
 
 > Code samples
 
@@ -15452,9 +14656,7 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Get Export
-
-<h3 id="apiv2donationfeeexportget-parameters">Parameters</h3>
+<h3 id="get-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -15493,7 +14695,7 @@ Get Export
 }
 ```
 
-<h3 id="apiv2donationfeeexportget-responses">Responses</h3>
+<h3 id="get-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -15505,9 +14707,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeExportPost
+## Post Export
 
-<a id="opIdApiV2DonationFeeExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -15672,8 +14874,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -15697,7 +14897,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2donationfeeexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -15719,7 +14919,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2donationfeeexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -15731,9 +14931,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2DonationFeeMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2DonationFeeMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -15875,8 +15075,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -15908,7 +15106,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2donationfeemetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -15922,9 +15120,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Event">Event</h1>
 
-## ApiV2PageEventByIdGet
+## Get
 
-<a id="opIdApiV2PageEventByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -16066,9 +15264,7 @@ func main() {
 
 *Gets a event object by id*
 
-Get
-
-<h3 id="apiv2pageeventbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -16085,7 +15281,7 @@ Get
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "status": "live",
@@ -16157,7 +15353,7 @@ Get
 }
 ```
 
-<h3 id="apiv2pageeventbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -16169,9 +15365,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventByIdPut
+## Put
 
-<a id="opIdApiV2PageEventByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -16381,8 +15577,6 @@ func main() {
 
 *Updates a event object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -16451,7 +15645,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pageeventbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -16469,7 +15663,7 @@ Put
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "status": "live",
@@ -16541,7 +15735,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pageeventbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -16553,9 +15747,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventByIdDelete
+## Delete
 
-<a id="opIdApiV2PageEventByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -16697,9 +15891,7 @@ func main() {
 
 *Patches (partial update) a event object by id*
 
-Delete
-
-<h3 id="apiv2pageeventbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -16721,7 +15913,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2pageeventbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -16733,9 +15925,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventByIdPatch
+## Patch
 
-<a id="opIdApiV2PageEventByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -16890,8 +16082,6 @@ func main() {
 
 *Patches (partial update) a event object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -16905,7 +16095,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2pageeventbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -16923,7 +16113,7 @@ Patch
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "status": "live",
@@ -16995,7 +16185,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2pageeventbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -17007,9 +16197,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventPost
+## Post
 
-<a id="opIdApiV2PageEventPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -17219,8 +16409,6 @@ func main() {
 
 *Creates a new event*
 
-Post
-
 > Body parameter
 
 ```json
@@ -17289,7 +16477,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pageeventpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -17306,7 +16494,7 @@ Post
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "status": "live",
@@ -17378,7 +16566,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pageeventpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -17390,9 +16578,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventSearchPost
+## Post Search
 
-<a id="opIdApiV2PageEventSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -17557,8 +16745,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -17582,7 +16768,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pageeventsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -17604,7 +16790,7 @@ Post Search
         "organizationId": 0,
         "organizationFee": 0,
         "name": "string",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "status": "live",
@@ -17678,7 +16864,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pageeventsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -17690,9 +16876,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventExportPost
+## Post Export
 
-<a id="opIdApiV2PageEventExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -17857,8 +17043,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -17882,7 +17066,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageeventexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -17904,7 +17088,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageeventexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -17916,9 +17100,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2PageEventMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -18060,8 +17244,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -18093,7 +17275,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2pageeventmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -18105,9 +17287,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageEventAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2PageEventAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -18249,9 +17431,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2pageeventaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -18298,7 +17478,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2pageeventaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -18312,9 +17492,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Fundraiser">Fundraiser</h1>
 
-## ApiV2PageFundraiserByIdGet
+## Get
 
-<a id="opIdApiV2PageFundraiserByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -18456,9 +17636,7 @@ func main() {
 
 *Gets a fundraiser object by id*
 
-Get
-
-<h3 id="apiv2pagefundraiserbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -18501,13 +17679,13 @@ Get
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -18572,7 +17750,7 @@ Get
 }
 ```
 
-<h3 id="apiv2pagefundraiserbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -18584,9 +17762,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserByIdPut
+## Put
 
-<a id="opIdApiV2PageFundraiserByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -18767,8 +17945,6 @@ func main() {
 
 *Updates a fundraiser object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -18808,7 +17984,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pagefundraiserbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -18852,13 +18028,13 @@ Put
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -18923,7 +18099,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pagefundraiserbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -18935,9 +18111,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserByIdDelete
+## Delete
 
-<a id="opIdApiV2PageFundraiserByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -19079,9 +18255,7 @@ func main() {
 
 *Patches (partial update) a fundraiser object by id*
 
-Delete
-
-<h3 id="apiv2pagefundraiserbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -19103,7 +18277,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2pagefundraiserbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -19115,9 +18289,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserByIdPatch
+## Patch
 
-<a id="opIdApiV2PageFundraiserByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -19272,8 +18446,6 @@ func main() {
 
 *Patches (partial update) a fundraiser object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -19287,7 +18459,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2pagefundraiserbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -19331,13 +18503,13 @@ Patch
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -19402,7 +18574,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2pagefundraiserbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -19414,9 +18586,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserOwnerByIdHead
+## Head
 
-<a id="opIdApiV2PageFundraiserOwnerByIdHead"></a>
+<a id="opIdHead"></a>
 
 > Code samples
 
@@ -19558,9 +18730,7 @@ func main() {
 
 *Checks a fundraiser owner via id*
 
-Head
-
-<h3 id="apiv2pagefundraiserownerbyidhead-parameters">Parameters</h3>
+<h3 id="head-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -19574,7 +18744,7 @@ Head
 "string"
 ```
 
-<h3 id="apiv2pagefundraiserownerbyidhead-responses">Responses</h3>
+<h3 id="head-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -19586,9 +18756,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserPublicByPrimaryPathBySecondaryPathByUrlPathGet
+## Get By Path
 
-<a id="opIdApiV2PageFundraiserPublicByPrimaryPathBySecondaryPathByUrlPathGet"></a>
+<a id="opIdGet By Path"></a>
 
 > Code samples
 
@@ -19730,9 +18900,7 @@ func main() {
 
 *Gets a fundraiser object by paths*
 
-Get By Path
-
-<h3 id="apiv2pagefundraiserpublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
+<h3 id="get-by-path-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -19765,8 +18933,8 @@ Get By Path
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -19819,7 +18987,7 @@ Get By Path
 }
 ```
 
-<h3 id="apiv2pagefundraiserpublicbyprimarypathbysecondarypathbyurlpathget-responses">Responses</h3>
+<h3 id="get-by-path-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -19831,9 +18999,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2PageFundraiserPost
+## Post
 
-<a id="opIdApiV2PageFundraiserPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -20014,8 +19182,6 @@ func main() {
 
 *Creates a new fundraiser*
 
-Post
-
 > Body parameter
 
 ```json
@@ -20055,7 +19221,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pagefundraiserpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -20098,13 +19264,13 @@ Post
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -20169,7 +19335,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pagefundraiserpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -20181,9 +19347,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserSearchPost
+## Post Search
 
-<a id="opIdApiV2PageFundraiserSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -20348,8 +19514,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -20373,7 +19537,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagefundraisersearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -20421,13 +19585,13 @@ Post Search
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -20494,7 +19658,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagefundraisersearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -20506,9 +19670,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserExportPost
+## Post Export
 
-<a id="opIdApiV2PageFundraiserExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -20673,8 +19837,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -20698,7 +19860,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pagefundraiserexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -20720,7 +19882,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pagefundraiserexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -20732,9 +19894,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2PageFundraiserMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -20876,8 +20038,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -20909,7 +20069,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2pagefundraisermetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -20921,9 +20081,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageFundraiserAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2PageFundraiserAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -21065,9 +20225,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2pagefundraiseraggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -21114,7 +20272,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2pagefundraiseraggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -21128,9 +20286,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Microblog">Microblog</h1>
 
-## ApiV2MicroblogByIdGet
+## Get
 
-<a id="opIdApiV2MicroblogByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -21272,9 +20430,7 @@ func main() {
 
 *Gets a microblog object by id*
 
-Get
-
-<h3 id="apiv2microblogbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -21297,8 +20453,8 @@ Get
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAt": "2018-09-19T06:46:27Z",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
     "items": [
       {
         "key": "text",
@@ -21328,8 +20484,8 @@ Get
       "urlFull": "string",
       "urlPath": "string"
     },
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -21364,7 +20520,7 @@ Get
 }
 ```
 
-<h3 id="apiv2microblogbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -21376,9 +20532,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogByIdPut
+## Put
 
-<a id="opIdApiV2MicroblogByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -21544,8 +20700,6 @@ func main() {
 
 *Updates a microblog object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -21570,7 +20724,7 @@ Put
 }
 ```
 
-<h3 id="apiv2microblogbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -21594,8 +20748,8 @@ Put
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAt": "2018-09-19T06:46:27Z",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
     "items": [
       {
         "key": "text",
@@ -21625,8 +20779,8 @@ Put
       "urlFull": "string",
       "urlPath": "string"
     },
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -21661,7 +20815,7 @@ Put
 }
 ```
 
-<h3 id="apiv2microblogbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -21673,9 +20827,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogByIdDelete
+## Delete
 
-<a id="opIdApiV2MicroblogByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -21817,9 +20971,7 @@ func main() {
 
 *Patches (partial update) a microblog object by id*
 
-Delete
-
-<h3 id="apiv2microblogbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -21841,7 +20993,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2microblogbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -21853,9 +21005,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogByIdPatch
+## Patch
 
-<a id="opIdApiV2MicroblogByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -22010,8 +21162,6 @@ func main() {
 
 *Patches (partial update) a microblog object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -22025,7 +21175,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2microblogbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -22049,8 +21199,8 @@ Patch
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAt": "2018-09-19T06:46:27Z",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
     "items": [
       {
         "key": "text",
@@ -22080,8 +21230,8 @@ Patch
       "urlFull": "string",
       "urlPath": "string"
     },
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -22116,7 +21266,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2microblogbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -22128,9 +21278,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogPost
+## Post
 
-<a id="opIdApiV2MicroblogPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -22296,8 +21446,6 @@ func main() {
 
 *Creates a new microblog*
 
-Post
-
 > Body parameter
 
 ```json
@@ -22322,7 +21470,7 @@ Post
 }
 ```
 
-<h3 id="apiv2microblogpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -22345,8 +21493,8 @@ Post
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAt": "2018-09-19T06:46:27Z",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
     "items": [
       {
         "key": "text",
@@ -22376,8 +21524,8 @@ Post
       "urlFull": "string",
       "urlPath": "string"
     },
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -22412,7 +21560,7 @@ Post
 }
 ```
 
-<h3 id="apiv2microblogpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -22424,9 +21572,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogSearchPost
+## Post Search
 
-<a id="opIdApiV2MicroblogSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -22591,8 +21739,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -22616,7 +21762,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2microblogsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -22644,8 +21790,8 @@ Post Search
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAt": "2018-09-19T06:46:27Z",
-        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
         "items": [
           {
             "key": "text",
@@ -22675,8 +21821,8 @@ Post Search
           "urlFull": "string",
           "urlPath": "string"
         },
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "organizationId": 0,
         "organization": {
           "id": 0,
@@ -22713,7 +21859,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2microblogsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -22725,9 +21871,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogSearchPublicPost
+## Post Search Public
 
-<a id="opIdApiV2MicroblogSearchPublicPost"></a>
+<a id="opIdPost Search Public"></a>
 
 > Code samples
 
@@ -22881,8 +22027,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search Public
-
 > Body parameter
 
 ```json
@@ -22895,7 +22039,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2microblogsearchpublicpost-parameters">Parameters</h3>
+<h3 id="post-search-public-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -22923,8 +22067,8 @@ Post Search Public
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAt": "2018-09-19T06:46:27Z",
-        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
         "items": [
           {
             "key": "text",
@@ -22954,8 +22098,8 @@ Post Search Public
           "urlFull": "string",
           "urlPath": "string"
         },
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "organizationId": 0,
         "organization": {
           "id": 0,
@@ -22992,7 +22136,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2microblogsearchpublicpost-responses">Responses</h3>
+<h3 id="post-search-public-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -23004,9 +22148,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2MicroblogExportPost
+## Post Export
 
-<a id="opIdApiV2MicroblogExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -23171,8 +22315,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -23196,7 +22338,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2microblogexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -23218,7 +22360,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2microblogexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -23230,9 +22372,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2MicroblogMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -23374,8 +22516,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -23407,7 +22547,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2microblogmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -23419,9 +22559,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2MicroblogAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2MicroblogAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -23563,9 +22703,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2microblogaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -23612,7 +22750,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2microblogaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -23626,9 +22764,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Organization">Organization</h1>
 
-## ApiV2OrganizationByIdGet
+## Get
 
-<a id="opIdApiV2OrganizationByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -23770,9 +22908,7 @@ func main() {
 
 *Gets an organization object by id*
 
-Get
-
-<h3 id="apiv2organizationbyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -23796,8 +22932,8 @@ Get
     "campaignCount": 0,
     "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
@@ -23837,7 +22973,7 @@ Get
 }
 ```
 
-<h3 id="apiv2organizationbyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -23849,9 +22985,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationByIdPut
+## Put
 
-<a id="opIdApiV2OrganizationByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -24021,8 +23157,6 @@ func main() {
 
 *Updates an organization object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -24051,7 +23185,7 @@ Put
 }
 ```
 
-<h3 id="apiv2organizationbyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -24076,8 +23210,8 @@ Put
     "campaignCount": 0,
     "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
@@ -24117,7 +23251,7 @@ Put
 }
 ```
 
-<h3 id="apiv2organizationbyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -24129,9 +23263,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationByIdDelete
+## Delete
 
-<a id="opIdApiV2OrganizationByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -24273,9 +23407,7 @@ func main() {
 
 *Patches (partial update) an organization object by id*
 
-Delete
-
-<h3 id="apiv2organizationbyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -24297,7 +23429,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2organizationbyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -24309,9 +23441,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationByIdPatch
+## Patch
 
-<a id="opIdApiV2OrganizationByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -24466,8 +23598,6 @@ func main() {
 
 *Patches (partial update) an organization object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -24481,7 +23611,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2organizationbyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -24506,8 +23636,8 @@ Patch
     "campaignCount": 0,
     "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
@@ -24547,7 +23677,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2organizationbyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -24559,9 +23689,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationPublicByUrlPathGet
+## Get By Path
 
-<a id="opIdApiV2OrganizationPublicByUrlPathGet"></a>
+<a id="opIdGet By Path"></a>
 
 > Code samples
 
@@ -24703,9 +23833,7 @@ func main() {
 
 *Gets a Organization object by paths*
 
-Get By Path
-
-<h3 id="apiv2organizationpublicbyurlpathget-parameters">Parameters</h3>
+<h3 id="get-by-path-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -24720,8 +23848,8 @@ Get By Path
   "data": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -24746,7 +23874,7 @@ Get By Path
 }
 ```
 
-<h3 id="apiv2organizationpublicbyurlpathget-responses">Responses</h3>
+<h3 id="get-by-path-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -24758,9 +23886,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2OrganizationPost
+## Post
 
-<a id="opIdApiV2OrganizationPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -24930,8 +24058,6 @@ func main() {
 
 *Creates a new organization*
 
-Post
-
 > Body parameter
 
 ```json
@@ -24960,7 +24086,7 @@ Post
 }
 ```
 
-<h3 id="apiv2organizationpost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -24984,8 +24110,8 @@ Post
     "campaignCount": 0,
     "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
@@ -25025,7 +24151,7 @@ Post
 }
 ```
 
-<h3 id="apiv2organizationpost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -25037,9 +24163,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationSearchPost
+## Post Search
 
-<a id="opIdApiV2OrganizationSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -25204,8 +24330,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -25229,7 +24353,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2organizationsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -25258,8 +24382,8 @@ Post Search
         "campaignCount": 0,
         "campaignLiveCount": 0,
         "currency": "string",
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "fundraisingPageCreatedEmail": "string",
         "id": 0,
@@ -25301,7 +24425,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2organizationsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -25313,9 +24437,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationExportPost
+## Post Export
 
-<a id="opIdApiV2OrganizationExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -25480,8 +24604,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -25505,7 +24627,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2organizationexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -25527,7 +24649,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2organizationexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -25539,9 +24661,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2OrganizationMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -25683,8 +24805,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -25716,7 +24836,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2organizationmetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -25728,9 +24848,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2OrganizationAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -25872,9 +24992,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2organizationaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -25921,7 +25039,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2organizationaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -25933,9 +25051,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationPaymentPlatformSetupGet
+## Payment Setup
 
-<a id="opIdApiV2OrganizationPaymentPlatformSetupGet"></a>
+<a id="opIdPayment Setup"></a>
 
 > Code samples
 
@@ -26077,9 +25195,7 @@ func main() {
 
 *Get a setup link for a payment platform*
 
-Payment Setup
-
-<h3 id="apiv2organizationpaymentplatformsetupget-parameters">Parameters</h3>
+<h3 id="payment-setup-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -26111,7 +25227,7 @@ Payment Setup
 }
 ```
 
-<h3 id="apiv2organizationpaymentplatformsetupget-responses">Responses</h3>
+<h3 id="payment-setup-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -26123,9 +25239,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationPaymentPlatformPost
+## Post Payment Platform
 
-<a id="opIdApiV2OrganizationPaymentPlatformPost"></a>
+<a id="opIdPost Payment Platform"></a>
 
 > Code samples
 
@@ -26271,8 +25387,6 @@ func main() {
 
 *Complete payment platform setup*
 
-Post Payment Platform
-
 > Body parameter
 
 ```json
@@ -26284,13 +25398,13 @@ Post Payment Platform
 }
 ```
 
-<h3 id="apiv2organizationpaymentplatformpost-parameters">Parameters</h3>
+<h3 id="post-payment-platform-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|[OrganizationPaymentPlatformEditModel](#schemaorganizationpaymentplatformeditmodel)|false|The model required to complete the setup|
 
-<h3 id="apiv2organizationpaymentplatformpost-responses">Responses</h3>
+<h3 id="post-payment-platform-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -26301,9 +25415,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationWebhookEndpointPost
+## Post Webhook Endpoint
 
-<a id="opIdApiV2OrganizationWebhookEndpointPost"></a>
+<a id="opIdPost Webhook Endpoint"></a>
 
 > Code samples
 
@@ -26447,8 +25561,6 @@ func main() {
 
 *Setup webhook endpoint*
 
-Post Webhook Endpoint
-
 > Body parameter
 
 ```json
@@ -26458,13 +25570,13 @@ Post Webhook Endpoint
 }
 ```
 
-<h3 id="apiv2organizationwebhookendpointpost-parameters">Parameters</h3>
+<h3 id="post-webhook-endpoint-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|[OrganizationWebhookEndpointEditModel](#schemaorganizationwebhookendpointeditmodel)|false|The model required to add the endpoint|
 
-<h3 id="apiv2organizationwebhookendpointpost-responses">Responses</h3>
+<h3 id="post-webhook-endpoint-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -26475,9 +25587,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2OrganizationWebhookEndpointDelete
+## Delete Webhook Endpoint
 
-<a id="opIdApiV2OrganizationWebhookEndpointDelete"></a>
+<a id="opIdDelete Webhook Endpoint"></a>
 
 > Code samples
 
@@ -26618,21 +25730,19 @@ func main() {
 
 *Setup webhook endpoint*
 
-Delete Webhook Endpoint
-
 > Body parameter
 
 ```json
 0
 ```
 
-<h3 id="apiv2organizationwebhookendpointdelete-parameters">Parameters</h3>
+<h3 id="delete-webhook-endpoint-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|integer(int32)|false|id of the endpoint|
 
-<h3 id="apiv2organizationwebhookendpointdelete-responses">Responses</h3>
+<h3 id="delete-webhook-endpoint-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -26645,823 +25755,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Page">Page</h1>
 
-## ApiV2PagePublicByPrimaryPathBySecondaryPathByUrlPathGet
+## Get Public
 
-<a id="opIdApiV2PagePublicByPrimaryPathBySecondaryPathByUrlPathGet"></a>
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} \
-  -H 'Accept: application/json' \
-  -H 'ApiKey: API_KEY'
-
-```
-
-```http
-GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
-Host: null
-
-Accept: application/json
-
-```
-
-```javascript
-var headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-$.ajax({
-  url: '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
-  method: 'get',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-
-const headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-fetch('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
-{
-  method: 'GET',
-
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json',
-  'ApiKey' => 'API_KEY'
-}
-
-result = RestClient.get '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json',
-  'ApiKey': 'API_KEY'
-}
-
-r = requests.get('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-```java
-URL obj = new URL("//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("GET");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-
-```
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        "ApiKey": []string{"API_KEY"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-`GET /api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}`
-
-*Gets a fundraiser object by paths*
-
-Get Public
-
-<h3 id="apiv2pagepublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
-
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-|primaryPath|path|string|true|Primary (Event or Organization) Url Path|
-|secondaryPath|path|string|true|Secondary (Campaign or Organization) Url Path|
-|urlPath|path|string|true|Fundraiser Url Path|
-
-> Example responses
-
-> 201 Response
-
-```json
-{
-  "data": {
-    "type": "organization",
-    "campaign": {
-      "additionalDonationsNeededForTarget": 0,
-      "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "dataCapture": {
-        "registration": {
-          "phone": {
-            "capture": true,
-            "mandatory": true
-          },
-          "address": {
-            "capture": true,
-            "mandatory": true
-          }
-        },
-        "donation": {
-          "phone": {
-            "capture": true,
-            "mandatory": true
-          },
-          "address": {
-            "capture": true,
-            "mandatory": true
-          }
-        }
-      },
-      "donationCount": 0,
-      "donationSetup": {
-        "allowRecurringGiving": true
-      },
-      "fundraisersCount": 0,
-      "fundraisers": {
-        "enabled": true,
-        "defaultTargetAmount": 0,
-        "allowSelfSignUp": true
-      },
-      "id": 0,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organizationId": 0,
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "pagesCount": 0,
-      "paymentPlatforms": {
-        "main": {
-          "id": 0,
-          "platform": "stripe",
-          "platformType": "creditCardForm",
-          "publicKey": "string"
-        },
-        "alternative": [
-          {
-            "id": 0,
-            "platform": "stripe",
-            "platformType": "creditCardForm",
-            "publicKey": "string"
-          }
-        ]
-      },
-      "raisedAmount": 0,
-      "targetAmount": 0,
-      "type": "default",
-      "status": "live",
-      "teamsCount": 0,
-      "teams": {
-        "enabled": true,
-        "defaultTargetAmount": 0,
-        "allowSelfSignUp": true
-      },
-      "template": {
-        "key": "string",
-        "value": {}
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "fundraiser": {
-      "averageDonationAmount": 0,
-      "campaign": {
-        "allowsFundraisers": true,
-        "allowsFundraiserSelfSignUp": true,
-        "allowsTeams": true,
-        "allowsTeamSelfSignUp": true,
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "status": "live",
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "donationCount": 0,
-      "id": 0,
-      "isPublic": true,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "raisedAmount": 0,
-      "status": "live",
-      "targetAmount": 0,
-      "team": {
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "template": {
-        "value": {
-          "property1": {},
-          "property2": {}
-        }
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "organization": {
-      "country": "string",
-      "currency": "string",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "id": 0,
-      "name": "string",
-      "legalName": "string",
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "template": {
-        "key": "string",
-        "value": {}
-      },
-      "timezone": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "team": {
-      "averageDonationAmount": 0,
-      "campaign": {
-        "allowsFundraisers": true,
-        "allowsFundraiserSelfSignUp": true,
-        "allowsTeams": true,
-        "allowsTeamSelfSignUp": true,
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "status": "live",
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "donationCount": 0,
-      "id": 0,
-      "isPublic": true,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "raisedAmount": 0,
-      "status": "live",
-      "fundraisersCount": 0,
-      "targetAmount": 0,
-      "template": {
-        "value": {
-          "property1": {},
-          "property2": {}
-        }
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    }
-  },
-  "success": true,
-  "error": [
-    {
-      "error": "string",
-      "param": "string"
-    }
-  ]
-}
-```
-
-<h3 id="apiv2pagepublicbyprimarypathbysecondarypathbyurlpathget-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_PagePublicGeneralModel_](#schemascalaractionresult_pagepublicgeneralmodel_)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_PagePublicGeneralModel_](#schemascalaractionresult_pagepublicgeneralmodel_)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader
-</aside>
-
-## ApiV2PagePublicByPrimaryPathBySecondaryPathGet
-
-<a id="opIdApiV2PagePublicByPrimaryPathBySecondaryPathGet"></a>
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath} \
-  -H 'Accept: application/json' \
-  -H 'ApiKey: API_KEY'
-
-```
-
-```http
-GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath} HTTP/1.1
-Host: null
-
-Accept: application/json
-
-```
-
-```javascript
-var headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-$.ajax({
-  url: '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
-  method: 'get',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-
-const headers = {
-  'Accept':'application/json',
-  'ApiKey':'API_KEY'
-
-};
-
-fetch('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
-{
-  method: 'GET',
-
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'application/json',
-  'ApiKey' => 'API_KEY'
-}
-
-result = RestClient.get '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'application/json',
-  'ApiKey': 'API_KEY'
-}
-
-r = requests.get('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}', params={
-
-}, headers = headers)
-
-print r.json()
-
-```
-
-```java
-URL obj = new URL("//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("GET");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-
-```
-
-```go
-package main
-
-import (
-       "bytes"
-       "net/http"
-)
-
-func main() {
-
-    headers := map[string][]string{
-        "Accept": []string{"application/json"},
-        "ApiKey": []string{"API_KEY"},
-        
-    }
-
-    data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}", data)
-    req.Header = headers
-
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    // ...
-}
-
-```
-
-`GET /api/v2/Page/public/{primaryPath}/{secondaryPath}`
-
-*Gets a fundraiser object by paths*
-
-Get Public
-
-<h3 id="apiv2pagepublicbyprimarypathbysecondarypathget-parameters">Parameters</h3>
-
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-|primaryPath|path|string|true|Primary (Event or Organization) Url Path|
-|secondaryPath|path|string|true|Secondary (Campaign or Organization) Url Path|
-|urlPath|query|string|false|Fundraiser Url Path|
-
-> Example responses
-
-> 201 Response
-
-```json
-{
-  "data": {
-    "type": "organization",
-    "campaign": {
-      "additionalDonationsNeededForTarget": 0,
-      "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "dataCapture": {
-        "registration": {
-          "phone": {
-            "capture": true,
-            "mandatory": true
-          },
-          "address": {
-            "capture": true,
-            "mandatory": true
-          }
-        },
-        "donation": {
-          "phone": {
-            "capture": true,
-            "mandatory": true
-          },
-          "address": {
-            "capture": true,
-            "mandatory": true
-          }
-        }
-      },
-      "donationCount": 0,
-      "donationSetup": {
-        "allowRecurringGiving": true
-      },
-      "fundraisersCount": 0,
-      "fundraisers": {
-        "enabled": true,
-        "defaultTargetAmount": 0,
-        "allowSelfSignUp": true
-      },
-      "id": 0,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organizationId": 0,
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "pagesCount": 0,
-      "paymentPlatforms": {
-        "main": {
-          "id": 0,
-          "platform": "stripe",
-          "platformType": "creditCardForm",
-          "publicKey": "string"
-        },
-        "alternative": [
-          {
-            "id": 0,
-            "platform": "stripe",
-            "platformType": "creditCardForm",
-            "publicKey": "string"
-          }
-        ]
-      },
-      "raisedAmount": 0,
-      "targetAmount": 0,
-      "type": "default",
-      "status": "live",
-      "teamsCount": 0,
-      "teams": {
-        "enabled": true,
-        "defaultTargetAmount": 0,
-        "allowSelfSignUp": true
-      },
-      "template": {
-        "key": "string",
-        "value": {}
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "fundraiser": {
-      "averageDonationAmount": 0,
-      "campaign": {
-        "allowsFundraisers": true,
-        "allowsFundraiserSelfSignUp": true,
-        "allowsTeams": true,
-        "allowsTeamSelfSignUp": true,
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "status": "live",
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "donationCount": 0,
-      "id": 0,
-      "isPublic": true,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "raisedAmount": 0,
-      "status": "live",
-      "targetAmount": 0,
-      "team": {
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "template": {
-        "value": {
-          "property1": {},
-          "property2": {}
-        }
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "organization": {
-      "country": "string",
-      "currency": "string",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "id": 0,
-      "name": "string",
-      "legalName": "string",
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "template": {
-        "key": "string",
-        "value": {}
-      },
-      "timezone": "string",
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    },
-    "team": {
-      "averageDonationAmount": 0,
-      "campaign": {
-        "allowsFundraisers": true,
-        "allowsFundraiserSelfSignUp": true,
-        "allowsTeams": true,
-        "allowsTeamSelfSignUp": true,
-        "donationCount": 0,
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "raisedAmount": 0,
-        "status": "live",
-        "targetAmount": 0,
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
-      "donationCount": 0,
-      "id": 0,
-      "isPublic": true,
-      "mainImagePath": "string",
-      "mainImageUrl": "string",
-      "name": "string",
-      "organization": {
-        "country": "string",
-        "currency": "string",
-        "id": 0,
-        "mainImagePath": "string",
-        "mainImageUrl": "string",
-        "name": "string",
-        "url": "string",
-        "urlFull": "string",
-        "urlPath": "string"
-      },
-      "raisedAmount": 0,
-      "status": "live",
-      "fundraisersCount": 0,
-      "targetAmount": 0,
-      "template": {
-        "value": {
-          "property1": {},
-          "property2": {}
-        }
-      },
-      "url": "string",
-      "urlFull": "string",
-      "urlPath": "string"
-    }
-  },
-  "success": true,
-  "error": [
-    {
-      "error": "string",
-      "param": "string"
-    }
-  ]
-}
-```
-
-<h3 id="apiv2pagepublicbyprimarypathbysecondarypathget-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_PagePublicGeneralModel_](#schemascalaractionresult_pagepublicgeneralmodel_)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_PagePublicGeneralModel_](#schemascalaractionresult_pagepublicgeneralmodel_)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-ApiKeyHeader
-</aside>
-
-## ApiV2PagePublicByPrimaryPathGet
-
-<a id="opIdApiV2PagePublicByPrimaryPathGet"></a>
+<a id="opIdGet Public"></a>
 
 > Code samples
 
@@ -27603,9 +25899,7 @@ func main() {
 
 *Gets a fundraiser object by paths*
 
-Get Public
-
-<h3 id="apiv2pagepublicbyprimarypathget-parameters">Parameters</h3>
+<h3 id="get-public-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -27624,8 +25918,8 @@ Get Public
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -27728,8 +26022,8 @@ Get Public
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -27775,8 +26069,8 @@ Get Public
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -27810,8 +26104,8 @@ Get Public
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -27854,7 +26148,7 @@ Get Public
 }
 ```
 
-<h3 id="apiv2pagepublicbyprimarypathget-responses">Responses</h3>
+<h3 id="get-public-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -27866,9 +26160,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2PageSearchPost
+## Post Search
 
-<a id="opIdApiV2PageSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -28033,8 +26327,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -28058,7 +26350,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagesearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -28100,8 +26392,8 @@ Post Search
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "eventId": 0,
         "event": {
@@ -28128,8 +26420,8 @@ Post Search
         "isFundraiserOrTeam": true,
         "isActive": true,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "name": "string",
         "newsletterOptIn": true,
         "organizationId": 0,
@@ -28174,7 +26466,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pagesearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -28186,9 +26478,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageSearchPublicPost
+## Post Search Public
 
-<a id="opIdApiV2PageSearchPublicPost"></a>
+<a id="opIdPost Search Public"></a>
 
 > Code samples
 
@@ -28348,8 +26640,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search Public
-
 > Body parameter
 
 ```json
@@ -28368,7 +26658,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2pagesearchpublicpost-parameters">Parameters</h3>
+<h3 id="post-search-public-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -28388,8 +26678,8 @@ Post Search Public
       {
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "campaignId": 0,
         "campaign": {
           "name": "string",
@@ -28465,7 +26755,7 @@ Post Search Public
 }
 ```
 
-<h3 id="apiv2pagesearchpublicpost-responses">Responses</h3>
+<h3 id="post-search-public-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -28477,9 +26767,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2PageExportPost
+## Post Export
 
-<a id="opIdApiV2PageExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -28644,8 +26934,6 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -28669,7 +26957,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -28691,7 +26979,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -28703,9 +26991,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2PageMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -28847,8 +27135,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -28880,7 +27166,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2pagemetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -28892,9 +27178,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2PageAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -29036,9 +27322,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2pageaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -29085,7 +27369,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2pageaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -29099,9 +27383,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Session">Session</h1>
 
-## ApiV2SessionGet
+## Get
 
-<a id="opIdApiV2SessionGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -29243,8 +27527,6 @@ func main() {
 
 *Returns the currently linked session object*
 
-Get
-
 > Example responses
 
 > 200 Response
@@ -29263,7 +27545,7 @@ Get
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-09-19T06:46:27Z",
+    "expiry": "2018-09-19T07:15:39Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -29286,7 +27568,7 @@ Get
 }
 ```
 
-<h3 id="apiv2sessionget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -29298,9 +27580,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2SessionLoginPost
+## Post Login
 
-<a id="opIdApiV2SessionLoginPost"></a>
+<a id="opIdPost Login"></a>
 
 > Code samples
 
@@ -29452,8 +27734,6 @@ func main() {
 
 *Creates a session through a login procedure, requiring an email and a password*
 
-Post Login
-
 > Body parameter
 
 ```json
@@ -29464,7 +27744,7 @@ Post Login
 }
 ```
 
-<h3 id="apiv2sessionloginpost-parameters">Parameters</h3>
+<h3 id="post-login-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -29488,7 +27768,7 @@ Post Login
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-09-19T06:46:27Z",
+    "expiry": "2018-09-19T07:15:39Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -29511,7 +27791,7 @@ Post Login
 }
 ```
 
-<h3 id="apiv2sessionloginpost-responses">Responses</h3>
+<h3 id="post-login-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -29523,9 +27803,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2SessionFacebookPost
+## Post Facebook
 
-<a id="opIdApiV2SessionFacebookPost"></a>
+<a id="opIdPost Facebook"></a>
 
 > Code samples
 
@@ -29675,8 +27955,6 @@ func main() {
 
 *Initiates a login procedure via a facebook*
 
-Post Facebook
-
 > Body parameter
 
 ```json
@@ -29685,7 +27963,7 @@ Post Facebook
 }
 ```
 
-<h3 id="apiv2sessionfacebookpost-parameters">Parameters</h3>
+<h3 id="post-facebook-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -29707,7 +27985,7 @@ Post Facebook
 }
 ```
 
-<h3 id="apiv2sessionfacebookpost-responses">Responses</h3>
+<h3 id="post-facebook-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -29719,9 +27997,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2SessionPasswordlessPost
+## Post Password Less
 
-<a id="opIdApiV2SessionPasswordlessPost"></a>
+<a id="opIdPost Password Less"></a>
 
 > Code samples
 
@@ -29872,8 +28150,6 @@ func main() {
 
 *Initiates a login procedure via a email-magic-link request*
 
-Post Password Less
-
 > Body parameter
 
 ```json
@@ -29883,7 +28159,7 @@ Post Password Less
 }
 ```
 
-<h3 id="apiv2sessionpasswordlesspost-parameters">Parameters</h3>
+<h3 id="post-password-less-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -29905,7 +28181,7 @@ Post Password Less
 }
 ```
 
-<h3 id="apiv2sessionpasswordlesspost-responses">Responses</h3>
+<h3 id="post-password-less-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -29917,9 +28193,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2SessionActivatePost
+## Post Activate
 
-<a id="opIdApiV2SessionActivatePost"></a>
+<a id="opIdPost Activate"></a>
 
 > Code samples
 
@@ -30069,8 +28345,6 @@ func main() {
 
 *Creates a session through an activate procedure, requiring an activation code*
 
-Post Activate
-
 > Body parameter
 
 ```json
@@ -30079,7 +28353,7 @@ Post Activate
 }
 ```
 
-<h3 id="apiv2sessionactivatepost-parameters">Parameters</h3>
+<h3 id="post-activate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -30103,7 +28377,7 @@ Post Activate
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-09-19T06:46:27Z",
+    "expiry": "2018-09-19T07:15:39Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -30126,7 +28400,7 @@ Post Activate
 }
 ```
 
-<h3 id="apiv2sessionactivatepost-responses">Responses</h3>
+<h3 id="post-activate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -30138,9 +28412,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2SessionRefreshPost
+## Post Refresh
 
-<a id="opIdApiV2SessionRefreshPost"></a>
+<a id="opIdPost Refresh"></a>
 
 > Code samples
 
@@ -30291,8 +28565,6 @@ func main() {
 
 *Creates a session through a login procedure, requiring an email and a password*
 
-Post Refresh
-
 > Body parameter
 
 ```json
@@ -30302,7 +28574,7 @@ Post Refresh
 }
 ```
 
-<h3 id="apiv2sessionrefreshpost-parameters">Parameters</h3>
+<h3 id="post-refresh-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -30326,7 +28598,7 @@ Post Refresh
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-09-19T06:46:27Z",
+    "expiry": "2018-09-19T07:15:39Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -30349,7 +28621,7 @@ Post Refresh
 }
 ```
 
-<h3 id="apiv2sessionrefreshpost-responses">Responses</h3>
+<h3 id="post-refresh-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -30361,9 +28633,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2SessionLogoutPost
+## Post Logout
 
-<a id="opIdApiV2SessionLogoutPost"></a>
+<a id="opIdPost Logout"></a>
 
 > Code samples
 
@@ -30505,8 +28777,6 @@ func main() {
 
 *Terminates a session through a logout call*
 
-Post Logout
-
 > Example responses
 
 > 201 Response
@@ -30523,7 +28793,7 @@ Post Logout
 }
 ```
 
-<h3 id="apiv2sessionlogoutpost-responses">Responses</h3>
+<h3 id="post-logout-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -30535,9 +28805,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2SessionImpersonatePost
+## Post Impersonate
 
-<a id="opIdApiV2SessionImpersonatePost"></a>
+<a id="opIdPost Impersonate"></a>
 
 > Code samples
 
@@ -30687,8 +28957,6 @@ func main() {
 
 *Impersonates the given account using the current admin credential*
 
-Post Impersonate
-
 > Body parameter
 
 ```json
@@ -30697,7 +28965,7 @@ Post Impersonate
 }
 ```
 
-<h3 id="apiv2sessionimpersonatepost-parameters">Parameters</h3>
+<h3 id="post-impersonate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -30719,7 +28987,7 @@ Post Impersonate
 }
 ```
 
-<h3 id="apiv2sessionimpersonatepost-responses">Responses</h3>
+<h3 id="post-impersonate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -30731,9 +28999,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2SessionImpersonateDelete
+## Delete Impersonate
 
-<a id="opIdApiV2SessionImpersonateDelete"></a>
+<a id="opIdDelete Impersonate"></a>
 
 > Code samples
 
@@ -30875,8 +29143,6 @@ func main() {
 
 *Terminates the impersonation using the current admin credential*
 
-Delete Impersonate
-
 > Example responses
 
 > 201 Response
@@ -30893,7 +29159,7 @@ Delete Impersonate
 }
 ```
 
-<h3 id="apiv2sessionimpersonatedelete-responses">Responses</h3>
+<h3 id="delete-impersonate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -30907,9 +29173,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Team">Team</h1>
 
-## ApiV2PageTeamByIdGet
+## Get
 
-<a id="opIdApiV2PageTeamByIdGet"></a>
+<a id="opIdGet"></a>
 
 > Code samples
 
@@ -31051,9 +29317,7 @@ func main() {
 
 *Gets a team object by id*
 
-Get
-
-<h3 id="apiv2pageteambyidget-parameters">Parameters</h3>
+<h3 id="get-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -31096,13 +29360,13 @@ Get
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -31152,7 +29416,7 @@ Get
 }
 ```
 
-<h3 id="apiv2pageteambyidget-responses">Responses</h3>
+<h3 id="get-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -31164,9 +29428,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamByIdPut
+## Put
 
-<a id="opIdApiV2PageTeamByIdPut"></a>
+<a id="opIdPut"></a>
 
 > Code samples
 
@@ -31347,8 +29611,6 @@ func main() {
 
 *Updates a Team object by id*
 
-Put
-
 > Body parameter
 
 ```json
@@ -31388,7 +29650,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pageteambyidput-parameters">Parameters</h3>
+<h3 id="put-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -31432,13 +29694,13 @@ Put
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -31488,7 +29750,7 @@ Put
 }
 ```
 
-<h3 id="apiv2pageteambyidput-responses">Responses</h3>
+<h3 id="put-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -31500,9 +29762,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamByIdDelete
+## Delete
 
-<a id="opIdApiV2PageTeamByIdDelete"></a>
+<a id="opIdDelete"></a>
 
 > Code samples
 
@@ -31644,9 +29906,7 @@ func main() {
 
 *Patches (partial update) a team object by id*
 
-Delete
-
-<h3 id="apiv2pageteambyiddelete-parameters">Parameters</h3>
+<h3 id="delete-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -31668,7 +29928,7 @@ Delete
 }
 ```
 
-<h3 id="apiv2pageteambyiddelete-responses">Responses</h3>
+<h3 id="delete-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -31680,9 +29940,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamByIdPatch
+## Patch
 
-<a id="opIdApiV2PageTeamByIdPatch"></a>
+<a id="opIdPatch"></a>
 
 > Code samples
 
@@ -31837,8 +30097,6 @@ func main() {
 
 *Patches (partial update) a team object by id*
 
-Patch
-
 > Body parameter
 
 ```json
@@ -31852,7 +30110,7 @@ Patch
 ]
 ```
 
-<h3 id="apiv2pageteambyidpatch-parameters">Parameters</h3>
+<h3 id="patch-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -31896,13 +30154,13 @@ Patch
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -31952,7 +30210,7 @@ Patch
 }
 ```
 
-<h3 id="apiv2pageteambyidpatch-responses">Responses</h3>
+<h3 id="patch-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -31964,9 +30222,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamOwnerByIdHead
+## Head
 
-<a id="opIdApiV2PageTeamOwnerByIdHead"></a>
+<a id="opIdHead"></a>
 
 > Code samples
 
@@ -32108,9 +30366,7 @@ func main() {
 
 *Checks a team owner via id*
 
-Head
-
-<h3 id="apiv2pageteamownerbyidhead-parameters">Parameters</h3>
+<h3 id="head-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -32124,7 +30380,7 @@ Head
 "string"
 ```
 
-<h3 id="apiv2pageteamownerbyidhead-responses">Responses</h3>
+<h3 id="head-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -32136,9 +30392,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamPublicByPrimaryPathBySecondaryPathByUrlPathGet
+## Get By Path
 
-<a id="opIdApiV2PageTeamPublicByPrimaryPathBySecondaryPathByUrlPathGet"></a>
+<a id="opIdGet By Path"></a>
 
 > Code samples
 
@@ -32280,9 +30536,7 @@ func main() {
 
 *Gets a team object by paths*
 
-Get By Path
-
-<h3 id="apiv2pageteampublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
+<h3 id="get-by-path-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -32315,8 +30569,8 @@ Get By Path
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -32358,7 +30612,7 @@ Get By Path
 }
 ```
 
-<h3 id="apiv2pageteampublicbyprimarypathbysecondarypathbyurlpathget-responses">Responses</h3>
+<h3 id="get-by-path-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -32370,9 +30624,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2PageTeamPost
+## Post
 
-<a id="opIdApiV2PageTeamPost"></a>
+<a id="opIdPost"></a>
 
 > Code samples
 
@@ -32553,8 +30807,6 @@ func main() {
 
 *Creates a new team*
 
-Post
-
 > Body parameter
 
 ```json
@@ -32594,7 +30846,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pageteampost-parameters">Parameters</h3>
+<h3 id="post-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -32637,13 +30889,13 @@ Post
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -32693,7 +30945,7 @@ Post
 }
 ```
 
-<h3 id="apiv2pageteampost-responses">Responses</h3>
+<h3 id="post-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -32705,9 +30957,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamSearchPost
+## Post Search
 
-<a id="opIdApiV2PageTeamSearchPost"></a>
+<a id="opIdPost Search"></a>
 
 > Code samples
 
@@ -32872,8 +31124,6 @@ func main() {
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Search
-
 > Body parameter
 
 ```json
@@ -32897,7 +31147,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pageteamsearchpost-parameters">Parameters</h3>
+<h3 id="post-search-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -32945,13 +31195,13 @@ Post Search
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -33003,7 +31253,7 @@ Post Search
 }
 ```
 
-<h3 id="apiv2pageteamsearchpost-responses">Responses</h3>
+<h3 id="post-search-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -33015,9 +31265,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamExportPost
+## Post Export
 
-<a id="opIdApiV2PageTeamExportPost"></a>
+<a id="opIdPost Export"></a>
 
 > Code samples
 
@@ -33182,8 +31432,6 @@ func main() {
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
-Post Export
-
 > Body parameter
 
 ```json
@@ -33207,7 +31455,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageteamexportpost-parameters">Parameters</h3>
+<h3 id="post-export-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -33229,7 +31477,7 @@ Post Export
 }
 ```
 
-<h3 id="apiv2pageteamexportpost-responses">Responses</h3>
+<h3 id="post-export-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -33241,9 +31489,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamMetadataGet
+## Get Metadata
 
-<a id="opIdApiV2PageTeamMetadataGet"></a>
+<a id="opIdGet Metadata"></a>
 
 > Code samples
 
@@ -33385,8 +31633,6 @@ func main() {
 
 *Returns a list of filters that can be implemented and work nicely with /search*
 
-Get Metadata
-
 > Example responses
 
 > 200 Response
@@ -33418,7 +31664,7 @@ Get Metadata
 }
 ```
 
-<h3 id="apiv2pageteammetadataget-responses">Responses</h3>
+<h3 id="get-metadata-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -33430,9 +31676,9 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2PageTeamAggregateGet
+## Get Aggregate
 
-<a id="opIdApiV2PageTeamAggregateGet"></a>
+<a id="opIdGet Aggregate"></a>
 
 > Code samples
 
@@ -33574,9 +31820,7 @@ func main() {
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
 
-Get Aggregate
-
-<h3 id="apiv2pageteamaggregateget-parameters">Parameters</h3>
+<h3 id="get-aggregate-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -33623,7 +31867,7 @@ Get Aggregate
 }
 ```
 
-<h3 id="apiv2pageteamaggregateget-responses">Responses</h3>
+<h3 id="get-aggregate-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -33637,9 +31881,9 @@ ApiKeyHeader & None
 
 <h1 id="Core-API-Upload">Upload</h1>
 
-## ApiV2ByEntityByTypeUploadPost
+## Upload
 
-<a id="opIdApiV2ByEntityByTypeUploadPost"></a>
+<a id="opIdUpload"></a>
 
 > Code samples
 
@@ -33781,9 +32025,7 @@ func main() {
 
 *Uploads a file to online storage and returns the new key for the uploaded file*
 
-Upload
-
-<h3 id="apiv2byentitybytypeuploadpost-parameters">Parameters</h3>
+<h3 id="upload-parameters">Parameters</h3>
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -33827,7 +32069,7 @@ Upload
 }
 ```
 
-<h3 id="apiv2byentitybytypeuploadpost-responses">Responses</h3>
+<h3 id="upload-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -33855,7 +32097,7 @@ ApiKeyHeader & None
   },
   "clientKey": "string",
   "description": "string",
-  "createdAt": "2018-09-19T06:46:27Z"
+  "createdAt": "2018-09-19T07:15:39Z"
 }
 
 ```
@@ -33972,8 +32214,8 @@ ApiKeyHeader & None
       "value": {}
     }
   },
-  "donatedAtLocal": "2018-09-19T06:46:27Z",
-  "donatedAt": "2018-09-19T06:46:27Z",
+  "donatedAtLocal": "2018-09-19T07:15:39Z",
+  "donatedAt": "2018-09-19T07:15:39Z",
   "donor": {
     "address": {
       "street": "string",
@@ -34000,8 +32242,8 @@ ApiKeyHeader & None
     "feeCovered": true,
     "platform": "stripe",
     "refunded": true,
-    "refundedAt": "2018-09-19T06:46:27Z",
-    "refundedAtLocal": "2018-09-19T06:46:27Z",
+    "refundedAt": "2018-09-19T07:15:39Z",
+    "refundedAtLocal": "2018-09-19T07:15:39Z",
     "subscription": true,
     "tax": 0,
     "totalFees": 0,
@@ -34016,8 +32258,8 @@ ApiKeyHeader & None
     "urlPath": "string"
   },
   "id": 0,
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "message": "string",
   "organizationId": 0,
   "organization": {
@@ -34033,8 +32275,8 @@ ApiKeyHeader & None
     "displayFirstName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "repliedAtLocal": "2018-09-19T06:46:27Z",
-    "repliedAt": "2018-09-19T06:46:27Z",
+    "repliedAtLocal": "2018-09-19T07:15:39Z",
+    "repliedAt": "2018-09-19T07:15:39Z",
     "reply": "string"
   },
   "status": "collectedFromCustomer",
@@ -34184,8 +32426,8 @@ ApiKeyHeader & None
   "feeCovered": true,
   "platform": "stripe",
   "refunded": true,
-  "refundedAt": "2018-09-19T06:46:27Z",
-  "refundedAtLocal": "2018-09-19T06:46:27Z",
+  "refundedAt": "2018-09-19T07:15:39Z",
+  "refundedAtLocal": "2018-09-19T07:15:39Z",
   "subscription": true,
   "tax": 0,
   "totalFees": 0,
@@ -34278,8 +32520,8 @@ ApiKeyHeader & None
   "displayFirstName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "repliedAtLocal": "2018-09-19T06:46:27Z",
-  "repliedAt": "2018-09-19T06:46:27Z",
+  "repliedAtLocal": "2018-09-19T07:15:39Z",
+  "repliedAt": "2018-09-19T07:15:39Z",
   "reply": "string"
 }
 
@@ -34550,7 +32792,7 @@ ApiKeyHeader & None
 
 ```json
 {
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "email": "string",
   "firstName": "string",
   "id": 0,
@@ -34558,11 +32800,11 @@ ApiKeyHeader & None
   "isFundraiser": true,
   "isOrgAdmin": true,
   "isSysAdmin": true,
-  "lastLoggedInAt": "2018-09-19T06:46:27Z",
+  "lastLoggedInAt": "2018-09-19T07:15:39Z",
   "lastName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "onboardedDate": "2018-09-19T06:46:27Z",
+  "onboardedDate": "2018-09-19T07:15:39Z",
   "organizationId": 0,
   "organization": {
     "id": 0,
@@ -34867,7 +33109,7 @@ ApiKeyHeader & None
 ```json
 {
   "averageDonationAmount": 0,
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "email": "string",
   "firstName": "string",
@@ -34965,7 +33207,7 @@ ApiKeyHeader & None
 {
   "activePagesCount": 0,
   "averageDonationAmount": 0,
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "email": "string",
   "firstName": "string",
@@ -35067,8 +33309,8 @@ ApiKeyHeader & None
   "activePagesCount": 0,
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "dataCapture": {
     "registration": {
       "phone": {
@@ -35103,8 +33345,8 @@ ApiKeyHeader & None
     "allowSelfSignUp": true
   },
   "id": 0,
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
@@ -35736,8 +33978,8 @@ ApiKeyHeader & None
 {
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "dataCapture": {
     "registration": {
       "phone": {
@@ -36268,8 +34510,8 @@ ApiKeyHeader & None
 {
   "amount": 0,
   "anonymous": true,
-  "donatedAtLocal": "2018-09-19T06:46:27Z",
-  "donatedAt": "2018-09-19T06:46:27Z",
+  "donatedAtLocal": "2018-09-19T07:15:39Z",
+  "donatedAt": "2018-09-19T07:15:39Z",
   "donorDisplayName": "string",
   "id": 0,
   "message": "string",
@@ -36278,8 +34520,8 @@ ApiKeyHeader & None
     "displayFirstName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "repliedAtLocal": "2018-09-19T06:46:27Z",
-    "repliedAt": "2018-09-19T06:46:27Z",
+    "repliedAtLocal": "2018-09-19T07:15:39Z",
+    "repliedAt": "2018-09-19T07:15:39Z",
     "reply": "string"
   },
   "type": "online"
@@ -36495,7 +34737,7 @@ ApiKeyHeader & None
   "organizationId": 0,
   "organizationFee": 0,
   "name": "string",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "status": "live",
@@ -36940,13 +35182,13 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "manager": {
@@ -37376,8 +35618,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
@@ -37659,8 +35901,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAt": "2018-09-19T06:46:27Z",
-  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T07:15:39Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
   "items": [
     {
       "key": "text",
@@ -37690,8 +35932,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "organizationId": 0,
   "organization": {
     "id": 0,
@@ -38115,8 +36357,8 @@ ApiKeyHeader & None
   "campaignCount": 0,
   "campaignLiveCount": 0,
   "currency": "string",
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "fundraisingPageCreatedEmail": "string",
   "id": 0,
@@ -38315,8 +36557,8 @@ ApiKeyHeader & None
 {
   "country": "string",
   "currency": "string",
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "id": 0,
   "name": "string",
   "legalName": "string",
@@ -38457,8 +36699,8 @@ ApiKeyHeader & None
   "campaign": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -38561,8 +36803,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -38608,8 +36850,8 @@ ApiKeyHeader & None
   "organization": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -38643,8 +36885,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -38724,8 +36966,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
@@ -38954,8 +37196,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "eventId": 0,
   "event": {
@@ -38982,8 +37224,8 @@ ApiKeyHeader & None
   "isFundraiserOrTeam": true,
   "isActive": true,
   "isPublic": true,
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "name": "string",
   "newsletterOptIn": true,
   "organizationId": 0,
@@ -39332,8 +37574,8 @@ ApiKeyHeader & None
 {
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "campaignId": 0,
   "campaign": {
     "name": "string",
@@ -39491,7 +37733,7 @@ ApiKeyHeader & None
     "id": 0,
     "name": "string"
   },
-  "expiry": "2018-09-19T06:46:27Z",
+  "expiry": "2018-09-19T07:15:39Z",
   "impersonated": true,
   "impersonator": {
     "id": 0,
@@ -39718,13 +37960,13 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-09-19T06:46:27Z",
-  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T07:15:39Z",
+  "createdAt": "2018-09-19T07:15:39Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
-  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+  "lastUpdatedAt": "2018-09-19T07:15:39Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "manager": {
@@ -40136,7 +38378,7 @@ ApiKeyHeader & None
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-09-19T06:46:27Z"
+    "createdAt": "2018-09-19T07:15:39Z"
   },
   "success": true,
   "error": [
@@ -40178,8 +38420,8 @@ ApiKeyHeader & None
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-09-19T06:46:27Z",
-    "donatedAt": "2018-09-19T06:46:27Z",
+    "donatedAtLocal": "2018-09-19T07:15:39Z",
+    "donatedAt": "2018-09-19T07:15:39Z",
     "donor": {
       "address": {
         "street": "string",
@@ -40206,8 +38448,8 @@ ApiKeyHeader & None
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-09-19T06:46:27Z",
-      "refundedAtLocal": "2018-09-19T06:46:27Z",
+      "refundedAt": "2018-09-19T07:15:39Z",
+      "refundedAtLocal": "2018-09-19T07:15:39Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -40222,8 +38464,8 @@ ApiKeyHeader & None
       "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
@@ -40239,8 +38481,8 @@ ApiKeyHeader & None
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-09-19T06:46:27Z",
-      "repliedAt": "2018-09-19T06:46:27Z",
+      "repliedAtLocal": "2018-09-19T07:15:39Z",
+      "repliedAt": "2018-09-19T07:15:39Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -40298,7 +38540,7 @@ ApiKeyHeader & None
         },
         "clientKey": "string",
         "description": "string",
-        "createdAt": "2018-09-19T06:46:27Z"
+        "createdAt": "2018-09-19T07:15:39Z"
       }
     ]
   },
@@ -40340,7 +38582,7 @@ ApiKeyHeader & None
       },
       "clientKey": "string",
       "description": "string",
-      "createdAt": "2018-09-19T06:46:27Z"
+      "createdAt": "2018-09-19T07:15:39Z"
     }
   ]
 }
@@ -40403,7 +38645,7 @@ ApiKeyHeader & None
 ```json
 {
   "data": {
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "email": "string",
     "firstName": "string",
     "id": 0,
@@ -40411,11 +38653,11 @@ ApiKeyHeader & None
     "isFundraiser": true,
     "isOrgAdmin": true,
     "isSysAdmin": true,
-    "lastLoggedInAt": "2018-09-19T06:46:27Z",
+    "lastLoggedInAt": "2018-09-19T07:15:39Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "onboardedDate": "2018-09-19T06:46:27Z",
+    "onboardedDate": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -40546,7 +38788,7 @@ ApiKeyHeader & None
     "pageSize": 0,
     "list": [
       {
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "email": "string",
         "firstName": "string",
         "id": 0,
@@ -40554,11 +38796,11 @@ ApiKeyHeader & None
         "isFundraiser": true,
         "isOrgAdmin": true,
         "isSysAdmin": true,
-        "lastLoggedInAt": "2018-09-19T06:46:27Z",
+        "lastLoggedInAt": "2018-09-19T07:15:39Z",
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "onboardedDate": "2018-09-19T06:46:27Z",
+        "onboardedDate": "2018-09-19T07:15:39Z",
         "organizationId": 0,
         "organization": {
           "id": 0,
@@ -40601,7 +38843,7 @@ ApiKeyHeader & None
   "pageSize": 0,
   "list": [
     {
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "email": "string",
       "firstName": "string",
       "id": 0,
@@ -40609,11 +38851,11 @@ ApiKeyHeader & None
       "isFundraiser": true,
       "isOrgAdmin": true,
       "isSysAdmin": true,
-      "lastLoggedInAt": "2018-09-19T06:46:27Z",
+      "lastLoggedInAt": "2018-09-19T07:15:39Z",
       "lastName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "onboardedDate": "2018-09-19T06:46:27Z",
+      "onboardedDate": "2018-09-19T07:15:39Z",
       "organizationId": 0,
       "organization": {
         "id": 0,
@@ -40672,7 +38914,7 @@ ApiKeyHeader & None
 {
   "data": {
     "averageDonationAmount": 0,
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "email": "string",
     "firstName": "string",
@@ -40716,7 +38958,7 @@ ApiKeyHeader & None
     "list": [
       {
         "averageDonationAmount": 0,
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "email": "string",
         "firstName": "string",
@@ -40761,7 +39003,7 @@ ApiKeyHeader & None
   "list": [
     {
       "averageDonationAmount": 0,
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "email": "string",
       "firstName": "string",
@@ -40796,7 +39038,7 @@ ApiKeyHeader & None
   "data": {
     "activePagesCount": 0,
     "averageDonationAmount": 0,
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "email": "string",
     "firstName": "string",
@@ -40842,7 +39084,7 @@ ApiKeyHeader & None
       {
         "activePagesCount": 0,
         "averageDonationAmount": 0,
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "email": "string",
         "firstName": "string",
@@ -40889,7 +39131,7 @@ ApiKeyHeader & None
     {
       "activePagesCount": 0,
       "averageDonationAmount": 0,
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "email": "string",
       "firstName": "string",
@@ -40926,8 +39168,8 @@ ApiKeyHeader & None
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -40962,8 +39204,8 @@ ApiKeyHeader & None
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -41079,8 +39321,8 @@ ApiKeyHeader & None
   "data": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -41198,8 +39440,8 @@ ApiKeyHeader & None
         "activePagesCount": 0,
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "dataCapture": {
           "registration": {
             "phone": {
@@ -41234,8 +39476,8 @@ ApiKeyHeader & None
           "allowSelfSignUp": true
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
@@ -41327,8 +39569,8 @@ ApiKeyHeader & None
       "activePagesCount": 0,
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -41363,8 +39605,8 @@ ApiKeyHeader & None
         "allowSelfSignUp": true
       },
       "id": 0,
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "name": "string",
@@ -41493,8 +39735,8 @@ ApiKeyHeader & None
             "value": {}
           }
         },
-        "donatedAtLocal": "2018-09-19T06:46:27Z",
-        "donatedAt": "2018-09-19T06:46:27Z",
+        "donatedAtLocal": "2018-09-19T07:15:39Z",
+        "donatedAt": "2018-09-19T07:15:39Z",
         "donor": {
           "address": {
             "street": "string",
@@ -41521,8 +39763,8 @@ ApiKeyHeader & None
           "feeCovered": true,
           "platform": "stripe",
           "refunded": true,
-          "refundedAt": "2018-09-19T06:46:27Z",
-          "refundedAtLocal": "2018-09-19T06:46:27Z",
+          "refundedAt": "2018-09-19T07:15:39Z",
+          "refundedAtLocal": "2018-09-19T07:15:39Z",
           "subscription": true,
           "tax": 0,
           "totalFees": 0,
@@ -41537,8 +39779,8 @@ ApiKeyHeader & None
           "urlPath": "string"
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "message": "string",
         "organizationId": 0,
         "organization": {
@@ -41554,8 +39796,8 @@ ApiKeyHeader & None
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-09-19T06:46:27Z",
-          "repliedAt": "2018-09-19T06:46:27Z",
+          "repliedAtLocal": "2018-09-19T07:15:39Z",
+          "repliedAt": "2018-09-19T07:15:39Z",
           "reply": "string"
         },
         "status": "collectedFromCustomer",
@@ -41620,8 +39862,8 @@ ApiKeyHeader & None
           "value": {}
         }
       },
-      "donatedAtLocal": "2018-09-19T06:46:27Z",
-      "donatedAt": "2018-09-19T06:46:27Z",
+      "donatedAtLocal": "2018-09-19T07:15:39Z",
+      "donatedAt": "2018-09-19T07:15:39Z",
       "donor": {
         "address": {
           "street": "string",
@@ -41648,8 +39890,8 @@ ApiKeyHeader & None
         "feeCovered": true,
         "platform": "stripe",
         "refunded": true,
-        "refundedAt": "2018-09-19T06:46:27Z",
-        "refundedAtLocal": "2018-09-19T06:46:27Z",
+        "refundedAt": "2018-09-19T07:15:39Z",
+        "refundedAtLocal": "2018-09-19T07:15:39Z",
         "subscription": true,
         "tax": 0,
         "totalFees": 0,
@@ -41664,8 +39906,8 @@ ApiKeyHeader & None
         "urlPath": "string"
       },
       "id": 0,
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "message": "string",
       "organizationId": 0,
       "organization": {
@@ -41681,8 +39923,8 @@ ApiKeyHeader & None
         "displayFirstName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "repliedAtLocal": "2018-09-19T06:46:27Z",
-        "repliedAt": "2018-09-19T06:46:27Z",
+        "repliedAtLocal": "2018-09-19T07:15:39Z",
+        "repliedAt": "2018-09-19T07:15:39Z",
         "reply": "string"
       },
       "status": "collectedFromCustomer",
@@ -41729,8 +39971,8 @@ ApiKeyHeader & None
       {
         "amount": 0,
         "anonymous": true,
-        "donatedAtLocal": "2018-09-19T06:46:27Z",
-        "donatedAt": "2018-09-19T06:46:27Z",
+        "donatedAtLocal": "2018-09-19T07:15:39Z",
+        "donatedAt": "2018-09-19T07:15:39Z",
         "donorDisplayName": "string",
         "id": 0,
         "message": "string",
@@ -41739,8 +39981,8 @@ ApiKeyHeader & None
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-09-19T06:46:27Z",
-          "repliedAt": "2018-09-19T06:46:27Z",
+          "repliedAtLocal": "2018-09-19T07:15:39Z",
+          "repliedAt": "2018-09-19T07:15:39Z",
           "reply": "string"
         },
         "type": "online"
@@ -41779,8 +40021,8 @@ ApiKeyHeader & None
     {
       "amount": 0,
       "anonymous": true,
-      "donatedAtLocal": "2018-09-19T06:46:27Z",
-      "donatedAt": "2018-09-19T06:46:27Z",
+      "donatedAtLocal": "2018-09-19T07:15:39Z",
+      "donatedAt": "2018-09-19T07:15:39Z",
       "donorDisplayName": "string",
       "id": 0,
       "message": "string",
@@ -41789,8 +40031,8 @@ ApiKeyHeader & None
         "displayFirstName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "repliedAtLocal": "2018-09-19T06:46:27Z",
-        "repliedAt": "2018-09-19T06:46:27Z",
+        "repliedAtLocal": "2018-09-19T07:15:39Z",
+        "repliedAt": "2018-09-19T07:15:39Z",
         "reply": "string"
       },
       "type": "online"
@@ -41958,7 +40200,7 @@ ApiKeyHeader & None
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "status": "live",
@@ -42055,7 +40297,7 @@ ApiKeyHeader & None
         "organizationId": 0,
         "organizationFee": 0,
         "name": "string",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "status": "live",
@@ -42153,7 +40395,7 @@ ApiKeyHeader & None
       "organizationId": 0,
       "organizationFee": 0,
       "name": "string",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "status": "live",
@@ -42266,13 +40508,13 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -42371,8 +40613,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -42476,13 +40718,13 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -42599,13 +40841,13 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "manager": {
@@ -42691,8 +40933,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAt": "2018-09-19T06:46:27Z",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T07:15:39Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
     "items": [
       {
         "key": "text",
@@ -42722,8 +40964,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "organizationId": 0,
     "organization": {
       "id": 0,
@@ -42789,8 +41031,8 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAt": "2018-09-19T06:46:27Z",
-        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T07:15:39Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
         "items": [
           {
             "key": "text",
@@ -42820,8 +41062,8 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "organizationId": 0,
         "organization": {
           "id": 0,
@@ -42888,8 +41130,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAt": "2018-09-19T06:46:27Z",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T07:15:39Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
       "items": [
         {
           "key": "text",
@@ -42919,8 +41161,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "organizationId": 0,
       "organization": {
         "id": 0,
@@ -42977,8 +41219,8 @@ ApiKeyHeader & None
     "campaignCount": 0,
     "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
@@ -43036,8 +41278,8 @@ ApiKeyHeader & None
   "data": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -43094,8 +41336,8 @@ ApiKeyHeader & None
         "campaignCount": 0,
         "campaignLiveCount": 0,
         "currency": "string",
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "fundraisingPageCreatedEmail": "string",
         "id": 0,
@@ -43168,8 +41410,8 @@ ApiKeyHeader & None
       "campaignCount": 0,
       "campaignLiveCount": 0,
       "currency": "string",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "fundraisingPageCreatedEmail": "string",
       "id": 0,
@@ -43224,8 +41466,8 @@ ApiKeyHeader & None
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -43328,8 +41570,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -43375,8 +41617,8 @@ ApiKeyHeader & None
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -43410,8 +41652,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -43499,8 +41741,8 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "eventId": 0,
         "event": {
@@ -43527,8 +41769,8 @@ ApiKeyHeader & None
         "isFundraiserOrTeam": true,
         "isActive": true,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "name": "string",
         "newsletterOptIn": true,
         "organizationId": 0,
@@ -43617,8 +41859,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "eventId": 0,
       "event": {
@@ -43645,8 +41887,8 @@ ApiKeyHeader & None
       "isFundraiserOrTeam": true,
       "isActive": true,
       "isPublic": true,
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "name": "string",
       "newsletterOptIn": true,
       "organizationId": 0,
@@ -43707,8 +41949,8 @@ ApiKeyHeader & None
       {
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "campaignId": 0,
         "campaign": {
           "name": "string",
@@ -43806,8 +42048,8 @@ ApiKeyHeader & None
     {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "campaignId": 0,
       "campaign": {
         "name": "string",
@@ -43903,7 +42145,7 @@ ApiKeyHeader & None
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-09-19T06:46:27Z",
+    "expiry": "2018-09-19T07:15:39Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -43972,13 +42214,13 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
-    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+    "lastUpdatedAt": "2018-09-19T07:15:39Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -44062,8 +42304,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-09-19T06:46:27Z",
-    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T07:15:39Z",
+    "createdAt": "2018-09-19T07:15:39Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -44156,13 +42398,13 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-09-19T06:46:27Z",
-        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T07:15:39Z",
+        "createdAt": "2018-09-19T07:15:39Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+        "lastUpdatedAt": "2018-09-19T07:15:39Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -44264,13 +42506,13 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-09-19T06:46:27Z",
-      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T07:15:39Z",
+      "createdAt": "2018-09-19T07:15:39Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
-      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
-      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "lastUpdatedAtLocal": "2018-09-19T07:15:39Z",
+      "lastUpdatedAt": "2018-09-19T07:15:39Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "manager": {
