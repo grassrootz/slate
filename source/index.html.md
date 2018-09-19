@@ -1,5 +1,5 @@
 ---
-title: Grassrootz API
+title: Core API
 language_tabs:
   - shell: Shell
   - http: HTTP
@@ -17,13 +17,13 @@ headingLevel: 2
 
 ---
 
-<h1 id="Grassrootz-API">Grassrootz API v1</h1>
+<h1 id="Core-API">Core API v2</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
 Base URLs:
 
-* <a href="//api.dev.grassrootz.com/">//api.dev.grassrootz.com/</a>
+* <a href="//localhost:32769/">//localhost:32769/</a>
 
 # Authentication
 
@@ -33,7 +33,7 @@ Base URLs:
 * API Key (SessionKeyQuery)
     - Parameter Name: **Authorization**, in: header. Authorization Token
 
-<h1 id="Grassrootz-API-AccessKey">AccessKey</h1>
+<h1 id="Core-API-AccessKey">AccessKey</h1>
 
 ## ApiV2AccessKeyByIdGet
 
@@ -43,14 +43,14 @@ Base URLs:
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
+curl -X GET //localhost:32769//api/v2/AccessKey/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/AccessKey/{id} HTTP/1.1
+GET //localhost:32769//api/v2/AccessKey/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -65,7 +65,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+  url: '//localhost:32769//api/v2/AccessKey/{id}',
   method: 'get',
 
   headers: headers,
@@ -85,7 +85,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+fetch('//localhost:32769//api/v2/AccessKey/{id}',
 {
   method: 'GET',
 
@@ -108,7 +108,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+result = RestClient.get '//localhost:32769//api/v2/AccessKey/{id}',
   params: {
   }, headers: headers
 
@@ -123,7 +123,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/AccessKey/{id}', params={
+r = requests.get('//localhost:32769//api/v2/AccessKey/{id}', params={
 
 }, headers = headers)
 
@@ -132,7 +132,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/{id}");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -165,7 +165,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/AccessKey/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/AccessKey/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -178,6 +178,8 @@ func main() {
 `GET /api/v2/AccessKey/{id}`
 
 *Gets a key object by id*
+
+Get
 
 <h3 id="apiv2accesskeybyidget-parameters">Parameters</h3>
 
@@ -200,7 +202,7 @@ func main() {
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-08-20T06:00:18Z"
+    "createdAt": "2018-09-19T06:46:26Z"
   },
   "success": true,
   "error": [
@@ -232,7 +234,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
+curl -X PUT //localhost:32769//api/v2/AccessKey/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -240,7 +242,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/AccessKey/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/AccessKey/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -256,7 +258,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+  url: '//localhost:32769//api/v2/AccessKey/{id}',
   method: 'put',
 
   headers: headers,
@@ -280,7 +282,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+fetch('//localhost:32769//api/v2/AccessKey/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -304,7 +306,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+result = RestClient.put '//localhost:32769//api/v2/AccessKey/{id}',
   params: {
   }, headers: headers
 
@@ -320,7 +322,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/AccessKey/{id}', params={
+r = requests.put('//localhost:32769//api/v2/AccessKey/{id}', params={
 
 }, headers = headers)
 
@@ -329,7 +331,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/{id}");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -363,7 +365,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/AccessKey/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/AccessKey/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -376,6 +378,8 @@ func main() {
 `PUT /api/v2/AccessKey/{id}`
 
 *Updates a donation key by id*
+
+Put
 
 > Body parameter
 
@@ -408,7 +412,7 @@ func main() {
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-08-20T06:00:18Z"
+    "createdAt": "2018-09-19T06:46:26Z"
   },
   "success": true,
   "error": [
@@ -440,14 +444,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
+curl -X DELETE //localhost:32769//api/v2/AccessKey/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/AccessKey/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/AccessKey/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -462,7 +466,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+  url: '//localhost:32769//api/v2/AccessKey/{id}',
   method: 'delete',
 
   headers: headers,
@@ -482,7 +486,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+fetch('//localhost:32769//api/v2/AccessKey/{id}',
 {
   method: 'DELETE',
 
@@ -505,7 +509,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/AccessKey/{id}',
   params: {
   }, headers: headers
 
@@ -520,7 +524,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/AccessKey/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/AccessKey/{id}', params={
 
 }, headers = headers)
 
@@ -529,7 +533,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/{id}");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -562,7 +566,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/AccessKey/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/AccessKey/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -575,6 +579,8 @@ func main() {
 `DELETE /api/v2/AccessKey/{id}`
 
 *Patches (partial update) a key object by id*
+
+Delete
 
 <h3 id="apiv2accesskeybyiddelete-parameters">Parameters</h3>
 
@@ -618,7 +624,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
+curl -X PATCH //localhost:32769//api/v2/AccessKey/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -626,7 +632,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/AccessKey/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/AccessKey/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/AccessKey/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -642,7 +648,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+  url: '//localhost:32769//api/v2/AccessKey/{id}',
   method: 'patch',
 
   headers: headers,
@@ -670,7 +676,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+fetch('//localhost:32769//api/v2/AccessKey/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -694,7 +700,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/AccessKey/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/AccessKey/{id}',
   params: {
   }, headers: headers
 
@@ -710,7 +716,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/AccessKey/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/AccessKey/{id}', params={
 
 }, headers = headers)
 
@@ -719,7 +725,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/{id}");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -753,7 +759,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/AccessKey/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/AccessKey/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -766,6 +772,8 @@ func main() {
 `PATCH /api/v2/AccessKey/{id}`
 
 *Patches (partial update) a key object by id*
+
+Patch
 
 > Body parameter
 
@@ -800,15 +808,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:26Z",
+    "donatedAt": "2018-09-19T06:46:26Z",
     "donor": {
       "address": {
         "street": "string",
@@ -835,8 +844,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:26Z",
+      "refundedAtLocal": "2018-09-19T06:46:26Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -846,17 +855,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:26Z",
+    "lastUpdatedAt": "2018-09-19T06:46:26Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -865,8 +877,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:26Z",
+      "repliedAt": "2018-09-19T06:46:26Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -874,8 +886,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -914,7 +927,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey \
+curl -X POST //localhost:32769//api/v2/AccessKey \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -922,7 +935,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/AccessKey HTTP/1.1
+POST //localhost:32769//api/v2/AccessKey HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -938,7 +951,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey',
+  url: '//localhost:32769//api/v2/AccessKey',
   method: 'post',
 
   headers: headers,
@@ -962,7 +975,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey',
+fetch('//localhost:32769//api/v2/AccessKey',
 {
   method: 'POST',
   body: inputBody,
@@ -986,7 +999,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/AccessKey',
+result = RestClient.post '//localhost:32769//api/v2/AccessKey',
   params: {
   }, headers: headers
 
@@ -1002,7 +1015,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/AccessKey', params={
+r = requests.post('//localhost:32769//api/v2/AccessKey', params={
 
 }, headers = headers)
 
@@ -1011,7 +1024,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -1045,7 +1058,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/AccessKey", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/AccessKey", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1058,6 +1071,8 @@ func main() {
 `POST /api/v2/AccessKey`
 
 *Creates a new access key*
+
+Post
 
 > Body parameter
 
@@ -1087,15 +1102,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:26Z",
+    "donatedAt": "2018-09-19T06:46:26Z",
     "donor": {
       "address": {
         "street": "string",
@@ -1122,8 +1138,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:26Z",
+      "refundedAtLocal": "2018-09-19T06:46:26Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -1133,17 +1149,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:26Z",
+    "lastUpdatedAt": "2018-09-19T06:46:26Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -1152,8 +1171,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:26Z",
+      "repliedAt": "2018-09-19T06:46:26Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -1161,8 +1180,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -1201,7 +1221,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey/search \
+curl -X POST //localhost:32769//api/v2/AccessKey/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -1209,7 +1229,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/AccessKey/search HTTP/1.1
+POST //localhost:32769//api/v2/AccessKey/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -1225,7 +1245,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/search',
+  url: '//localhost:32769//api/v2/AccessKey/search',
   method: 'post',
 
   headers: headers,
@@ -1263,7 +1283,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/search',
+fetch('//localhost:32769//api/v2/AccessKey/search',
 {
   method: 'POST',
   body: inputBody,
@@ -1287,7 +1307,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/AccessKey/search',
+result = RestClient.post '//localhost:32769//api/v2/AccessKey/search',
   params: {
   }, headers: headers
 
@@ -1303,7 +1323,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/AccessKey/search', params={
+r = requests.post('//localhost:32769//api/v2/AccessKey/search', params={
 
 }, headers = headers)
 
@@ -1312,7 +1332,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/search");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -1346,7 +1366,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/AccessKey/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/AccessKey/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1359,6 +1379,8 @@ func main() {
 `POST /api/v2/AccessKey/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -1409,7 +1431,7 @@ func main() {
         },
         "clientKey": "string",
         "description": "string",
-        "createdAt": "2018-08-20T06:00:18Z"
+        "createdAt": "2018-09-19T06:46:26Z"
       }
     ]
   },
@@ -1443,7 +1465,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey/export \
+curl -X POST //localhost:32769//api/v2/AccessKey/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -1451,7 +1473,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/AccessKey/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/AccessKey/export HTTP/1.1
+POST //localhost:32769//api/v2/AccessKey/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -1467,7 +1489,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/export',
+  url: '//localhost:32769//api/v2/AccessKey/export',
   method: 'post',
 
   headers: headers,
@@ -1505,7 +1527,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/export',
+fetch('//localhost:32769//api/v2/AccessKey/export',
 {
   method: 'POST',
   body: inputBody,
@@ -1529,7 +1551,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/AccessKey/export',
+result = RestClient.post '//localhost:32769//api/v2/AccessKey/export',
   params: {
   }, headers: headers
 
@@ -1545,7 +1567,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/AccessKey/export', params={
+r = requests.post('//localhost:32769//api/v2/AccessKey/export', params={
 
 }, headers = headers)
 
@@ -1554,7 +1576,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/export");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -1588,7 +1610,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/AccessKey/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/AccessKey/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1601,6 +1623,8 @@ func main() {
 `POST /api/v2/AccessKey/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -1667,14 +1691,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/AccessKey/metadata \
+curl -X GET //localhost:32769//api/v2/AccessKey/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/AccessKey/metadata HTTP/1.1
+GET //localhost:32769//api/v2/AccessKey/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -1689,7 +1713,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/AccessKey/metadata',
+  url: '//localhost:32769//api/v2/AccessKey/metadata',
   method: 'get',
 
   headers: headers,
@@ -1709,7 +1733,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/AccessKey/metadata',
+fetch('//localhost:32769//api/v2/AccessKey/metadata',
 {
   method: 'GET',
 
@@ -1732,7 +1756,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/AccessKey/metadata',
+result = RestClient.get '//localhost:32769//api/v2/AccessKey/metadata',
   params: {
   }, headers: headers
 
@@ -1747,7 +1771,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/AccessKey/metadata', params={
+r = requests.get('//localhost:32769//api/v2/AccessKey/metadata', params={
 
 }, headers = headers)
 
@@ -1756,7 +1780,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/AccessKey/metadata");
+URL obj = new URL("//localhost:32769//api/v2/AccessKey/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1789,7 +1813,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/AccessKey/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/AccessKey/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1802,6 +1826,8 @@ func main() {
 `GET /api/v2/AccessKey/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -1846,7 +1872,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Account">Account</h1>
+<h1 id="Core-API-Account">Account</h1>
 
 ## ApiV2AccountByIdGet
 
@@ -1856,14 +1882,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Account/{id} \
+curl -X GET //localhost:32769//api/v2/Account/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Account/{id} HTTP/1.1
+GET //localhost:32769//api/v2/Account/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -1878,7 +1904,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/{id}',
+  url: '//localhost:32769//api/v2/Account/{id}',
   method: 'get',
 
   headers: headers,
@@ -1898,7 +1924,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/{id}',
+fetch('//localhost:32769//api/v2/Account/{id}',
 {
   method: 'GET',
 
@@ -1921,7 +1947,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Account/{id}',
+result = RestClient.get '//localhost:32769//api/v2/Account/{id}',
   params: {
   }, headers: headers
 
@@ -1936,7 +1962,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Account/{id}', params={
+r = requests.get('//localhost:32769//api/v2/Account/{id}', params={
 
 }, headers = headers)
 
@@ -1945,7 +1971,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1978,7 +2004,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Account/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Account/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1991,6 +2017,8 @@ func main() {
 `GET /api/v2/Account/{id}`
 
 *Gets an acccount object by id*
+
+Get
 
 <h3 id="apiv2accountbyidget-parameters">Parameters</h3>
 
@@ -2005,27 +2033,28 @@ func main() {
 ```json
 {
   "data": {
-    "id": 0,
+    "createdAt": "2018-09-19T06:46:26Z",
     "email": "string",
     "firstName": "string",
+    "id": 0,
+    "isAdmin": true,
+    "isFundraiser": true,
+    "isOrgAdmin": true,
+    "isSysAdmin": true,
+    "lastLoggedInAt": "2018-09-19T06:46:26Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
-    "lastLoggedInAt": "2018-08-20T06:00:18Z",
-    "status": "active",
-    "roles": "notDefined",
-    "isOrgAdmin": true,
-    "isSysAdmin": true,
-    "isFundraiser": true,
-    "isAdmin": true,
+    "onboardedDate": "2018-09-19T06:46:26Z",
     "organizationId": 0,
-    "source": "default",
     "organization": {
       "id": 0,
       "name": "string",
       "urlPath": "string"
-    }
+    },
+    "roles": "notDefined",
+    "source": "default",
+    "status": "active"
   },
   "success": true,
   "error": [
@@ -2057,7 +2086,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/Account/{id} \
+curl -X PUT //localhost:32769//api/v2/Account/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -2065,7 +2094,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/Account/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/Account/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/Account/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -2081,7 +2110,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/{id}',
+  url: '//localhost:32769//api/v2/Account/{id}',
   method: 'put',
 
   headers: headers,
@@ -2112,7 +2141,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/{id}',
+fetch('//localhost:32769//api/v2/Account/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -2136,7 +2165,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/Account/{id}',
+result = RestClient.put '//localhost:32769//api/v2/Account/{id}',
   params: {
   }, headers: headers
 
@@ -2152,7 +2181,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/Account/{id}', params={
+r = requests.put('//localhost:32769//api/v2/Account/{id}', params={
 
 }, headers = headers)
 
@@ -2161,7 +2190,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -2195,7 +2224,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/Account/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Account/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2208,6 +2237,8 @@ func main() {
 `PUT /api/v2/Account/{id}`
 
 *Updates an account object by id*
+
+Put
 
 > Body parameter
 
@@ -2239,27 +2270,28 @@ func main() {
 ```json
 {
   "data": {
-    "id": 0,
+    "createdAt": "2018-09-19T06:46:26Z",
     "email": "string",
     "firstName": "string",
+    "id": 0,
+    "isAdmin": true,
+    "isFundraiser": true,
+    "isOrgAdmin": true,
+    "isSysAdmin": true,
+    "lastLoggedInAt": "2018-09-19T06:46:26Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
-    "lastLoggedInAt": "2018-08-20T06:00:18Z",
-    "status": "active",
-    "roles": "notDefined",
-    "isOrgAdmin": true,
-    "isSysAdmin": true,
-    "isFundraiser": true,
-    "isAdmin": true,
+    "onboardedDate": "2018-09-19T06:46:26Z",
     "organizationId": 0,
-    "source": "default",
     "organization": {
       "id": 0,
       "name": "string",
       "urlPath": "string"
-    }
+    },
+    "roles": "notDefined",
+    "source": "default",
+    "status": "active"
   },
   "success": true,
   "error": [
@@ -2291,14 +2323,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/Account/{id} \
+curl -X DELETE //localhost:32769//api/v2/Account/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/Account/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/Account/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -2313,7 +2345,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/{id}',
+  url: '//localhost:32769//api/v2/Account/{id}',
   method: 'delete',
 
   headers: headers,
@@ -2333,7 +2365,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/{id}',
+fetch('//localhost:32769//api/v2/Account/{id}',
 {
   method: 'DELETE',
 
@@ -2356,7 +2388,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/Account/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/Account/{id}',
   params: {
   }, headers: headers
 
@@ -2371,7 +2403,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/Account/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/Account/{id}', params={
 
 }, headers = headers)
 
@@ -2380,7 +2412,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -2413,7 +2445,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/Account/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Account/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2426,6 +2458,8 @@ func main() {
 `DELETE /api/v2/Account/{id}`
 
 *Patches (partial update) an account object by id*
+
+Delete
 
 <h3 id="apiv2accountbyiddelete-parameters">Parameters</h3>
 
@@ -2469,7 +2503,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/Account/{id} \
+curl -X PATCH //localhost:32769//api/v2/Account/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -2477,7 +2511,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/Account/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/Account/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/Account/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -2493,7 +2527,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/{id}',
+  url: '//localhost:32769//api/v2/Account/{id}',
   method: 'patch',
 
   headers: headers,
@@ -2521,7 +2555,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/{id}',
+fetch('//localhost:32769//api/v2/Account/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -2545,7 +2579,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/Account/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/Account/{id}',
   params: {
   }, headers: headers
 
@@ -2561,7 +2595,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/Account/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/Account/{id}', params={
 
 }, headers = headers)
 
@@ -2570,7 +2604,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -2604,7 +2638,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/Account/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/Account/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2617,6 +2651,8 @@ func main() {
 `PATCH /api/v2/Account/{id}`
 
 *Patches (partial update) an account object by id*
+
+Patch
 
 > Body parameter
 
@@ -2645,27 +2681,28 @@ func main() {
 ```json
 {
   "data": {
-    "id": 0,
+    "createdAt": "2018-09-19T06:46:26Z",
     "email": "string",
     "firstName": "string",
+    "id": 0,
+    "isAdmin": true,
+    "isFundraiser": true,
+    "isOrgAdmin": true,
+    "isSysAdmin": true,
+    "lastLoggedInAt": "2018-09-19T06:46:26Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
-    "lastLoggedInAt": "2018-08-20T06:00:18Z",
-    "status": "active",
-    "roles": "notDefined",
-    "isOrgAdmin": true,
-    "isSysAdmin": true,
-    "isFundraiser": true,
-    "isAdmin": true,
+    "onboardedDate": "2018-09-19T06:46:26Z",
     "organizationId": 0,
-    "source": "default",
     "organization": {
       "id": 0,
       "name": "string",
       "urlPath": "string"
-    }
+    },
+    "roles": "notDefined",
+    "source": "default",
+    "status": "active"
   },
   "success": true,
   "error": [
@@ -2689,15 +2726,202 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-## ApiV2AccountPost
+## ApiV2AccountByIdIntegrationGet
 
-<a id="opIdApiV2AccountPost"></a>
+<a id="opIdApiV2AccountByIdIntegrationGet"></a>
 
 > Code samples
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Account \
+curl -X GET //localhost:32769//api/v2/Account/{id}/integration \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/Account/{id}/integration HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account/{id}/integration',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account/{id}/integration',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/Account/{id}/integration',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/Account/{id}/integration', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Account/{id}/integration", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/Account/{id}/integration`
+
+*Gets an acccount integration object by id*
+
+Get Integration
+
+<h3 id="apiv2accountbyidintegrationget-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|Account id|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": [
+    {
+      "organizationId": 0,
+      "key": "elevio",
+      "value": "string"
+    }
+  ],
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountByIdIntegrationPut
+
+<a id="opIdApiV2AccountByIdIntegrationPut"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X PUT //localhost:32769//api/v2/Account/{id}/integration \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -2705,7 +2929,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Account \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Account HTTP/1.1
+PUT //localhost:32769//api/v2/Account/{id}/integration HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -2721,7 +2945,215 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account',
+  url: '//localhost:32769//api/v2/Account/{id}/integration',
+  method: 'put',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "key": "elevio",
+  "value": "string",
+  "organizationId": 0
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account/{id}/integration',
+{
+  method: 'PUT',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.put '//localhost:32769//api/v2/Account/{id}/integration',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.put('//localhost:32769//api/v2/Account/{id}/integration', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("PUT");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Account/{id}/integration", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`PUT /api/v2/Account/{id}/integration`
+
+*Creates a new account integration*
+
+Post Or Put Integration
+
+> Body parameter
+
+```json
+{
+  "key": "elevio",
+  "value": "string",
+  "organizationId": 0
+}
+```
+
+<h3 id="apiv2accountbyidintegrationput-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the account object being modified|
+|body|body|[AccountIntegrationEditModel](#schemaaccountintegrationeditmodel)|false|The account model containing the details|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": [
+    {
+      "organizationId": 0,
+      "key": "elevio",
+      "value": "string"
+    }
+  ],
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationput-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountByIdIntegrationPost
+
+<a id="opIdApiV2AccountByIdIntegrationPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Account/{id}/integration \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Account/{id}/integration HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account/{id}/integration',
   method: 'post',
 
   headers: headers,
@@ -2735,15 +3167,9 @@ $.ajax({
 ```javascript--nodejs
 const request = require('node-fetch');
 const inputBody = '{
-  "email": "string",
-  "firstName": "string",
-  "lastName": "string",
-  "password": "string",
-  "mainImagePath": "string",
-  "organizationId": 0,
-  "roles": "notDefined",
-  "asInvite": true,
-  "asPublicJoin": true
+  "key": "elevio",
+  "value": "string",
+  "organizationId": 0
 }';
 const headers = {
   'Content-Type':'application/json-patch+json',
@@ -2752,7 +3178,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account',
+fetch('//localhost:32769//api/v2/Account/{id}/integration',
 {
   method: 'POST',
   body: inputBody,
@@ -2776,7 +3202,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Account',
+result = RestClient.post '//localhost:32769//api/v2/Account/{id}/integration',
   params: {
   }, headers: headers
 
@@ -2792,7 +3218,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Account', params={
+r = requests.post('//localhost:32769//api/v2/Account/{id}/integration', params={
 
 }, headers = headers)
 
@@ -2801,7 +3227,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -2835,7 +3261,221 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Account", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/{id}/integration", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Account/{id}/integration`
+
+*Creates a new account integration*
+
+Post Or Put Integration
+
+> Body parameter
+
+```json
+{
+  "key": "elevio",
+  "value": "string",
+  "organizationId": 0
+}
+```
+
+<h3 id="apiv2accountbyidintegrationpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the account object being modified|
+|body|body|[AccountIntegrationEditModel](#schemaaccountintegrationeditmodel)|false|The account model containing the details|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": [
+    {
+      "organizationId": 0,
+      "key": "elevio",
+      "value": "string"
+    }
+  ],
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountPost
+
+<a id="opIdApiV2AccountPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Account \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Account HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "email": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "password": "string",
+  "mainImagePath": "string",
+  "organizationId": 0,
+  "roles": "notDefined",
+  "asInvite": true,
+  "asPublicJoin": true
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Account',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Account', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -2848,6 +3488,8 @@ func main() {
 `POST /api/v2/Account`
 
 *Creates a new account*
+
+Post
 
 > Body parameter
 
@@ -2905,15 +3547,15 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader
 </aside>
 
-## ApiV2AccountPasswordResetPost
+## ApiV2AccountByIdIntegrationOperationPost
 
-<a id="opIdApiV2AccountPasswordResetPost"></a>
+<a id="opIdApiV2AccountByIdIntegrationOperationPost"></a>
 
 > Code samples
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Account/password/reset \
+curl -X POST //localhost:32769//api/v2/Account/{id}/integration/operation \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -2921,7 +3563,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Account/password/reset \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Account/password/reset HTTP/1.1
+POST //localhost:32769//api/v2/Account/{id}/integration/operation HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -2937,7 +3579,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/password/reset',
+  url: '//localhost:32769//api/v2/Account/{id}/integration/operation',
   method: 'post',
 
   headers: headers,
@@ -2951,7 +3593,7 @@ $.ajax({
 ```javascript--nodejs
 const request = require('node-fetch');
 const inputBody = '{
-  "email": "string"
+  "operation": "elevioUserHash"
 }';
 const headers = {
   'Content-Type':'application/json-patch+json',
@@ -2960,7 +3602,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/password/reset',
+fetch('//localhost:32769//api/v2/Account/{id}/integration/operation',
 {
   method: 'POST',
   body: inputBody,
@@ -2984,7 +3626,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Account/password/reset',
+result = RestClient.post '//localhost:32769//api/v2/Account/{id}/integration/operation',
   params: {
   }, headers: headers
 
@@ -3000,7 +3642,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Account/password/reset', params={
+r = requests.post('//localhost:32769//api/v2/Account/{id}/integration/operation', params={
 
 }, headers = headers)
 
@@ -3009,7 +3651,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/password/reset");
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration/operation");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -3043,7 +3685,587 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Account/password/reset", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/{id}/integration/operation", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Account/{id}/integration/operation`
+
+*Creates a new account integration*
+
+Post Integration Operation
+
+> Body parameter
+
+```json
+{
+  "operation": "elevioUserHash"
+}
+```
+
+<h3 id="apiv2accountbyidintegrationoperationpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the account object being modified|
+|body|body|[AccountIntegrationOperationModel](#schemaaccountintegrationoperationmodel)|false|The account model containing the details|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": [
+    {
+      "organizationId": 0,
+      "key": "elevio",
+      "value": "string"
+    }
+  ],
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationoperationpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_List_AccountIntegrationDetailModel_](#schemascalaractionresult_list_accountintegrationdetailmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountByIdIntegrationByKeyByOrganizationIdDelete
+
+<a id="opIdApiV2AccountByIdIntegrationByKeyByOrganizationIdDelete"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X DELETE //localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+DELETE //localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
+  method: 'delete',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
+{
+  method: 'DELETE',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.delete '//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.delete('//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("DELETE");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Account/{id}/integration/{key}/{organizationId}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`DELETE /api/v2/Account/{id}/integration/{key}/{organizationId}`
+
+*Patches (partial update) an account object by id*
+
+Delete Integration
+
+<h3 id="apiv2accountbyidintegrationbykeybyorganizationiddelete-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the account object being modified|
+|key|path|string|true|The type of integration being deleted|
+|organizationId|path|integer(int32)|true|The id of the organization that owns the value|
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+|key|elevio|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationbykeybyorganizationiddelete-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ObjectActionResult](#schemaobjectactionresult)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ObjectActionResult](#schemaobjectactionresult)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountByIdIntegrationByKeyDelete
+
+<a id="opIdApiV2AccountByIdIntegrationByKeyDelete"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X DELETE //localhost:32769//api/v2/Account/{id}/integration/{key} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+DELETE //localhost:32769//api/v2/Account/{id}/integration/{key} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account/{id}/integration/{key}',
+  method: 'delete',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account/{id}/integration/{key}',
+{
+  method: 'DELETE',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.delete '//localhost:32769//api/v2/Account/{id}/integration/{key}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.delete('//localhost:32769//api/v2/Account/{id}/integration/{key}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account/{id}/integration/{key}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("DELETE");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Account/{id}/integration/{key}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`DELETE /api/v2/Account/{id}/integration/{key}`
+
+*Patches (partial update) an account object by id*
+
+Delete Integration
+
+<h3 id="apiv2accountbyidintegrationbykeydelete-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the account object being modified|
+|key|path|string|true|The type of integration being deleted|
+|organizationId|query|integer(int32)|false|The id of the organization that owns the value|
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+|key|elevio|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountbyidintegrationbykeydelete-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ObjectActionResult](#schemaobjectactionresult)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ObjectActionResult](#schemaobjectactionresult)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2AccountPasswordResetPost
+
+<a id="opIdApiV2AccountPasswordResetPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Account/password/reset \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Account/password/reset HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Account/password/reset',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "email": "string"
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Account/password/reset',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Account/password/reset',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Account/password/reset', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Account/password/reset");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/password/reset", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -3056,6 +4278,8 @@ func main() {
 `POST /api/v2/Account/password/reset`
 
 *Starts a password reset process*
+
+Post Password Reset Request
 
 > Body parameter
 
@@ -3108,7 +4332,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Account/password/update \
+curl -X POST //localhost:32769//api/v2/Account/password/update \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -3116,7 +4340,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Account/password/update \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Account/password/update HTTP/1.1
+POST //localhost:32769//api/v2/Account/password/update HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -3132,7 +4356,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/password/update',
+  url: '//localhost:32769//api/v2/Account/password/update',
   method: 'post',
 
   headers: headers,
@@ -3156,7 +4380,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/password/update',
+fetch('//localhost:32769//api/v2/Account/password/update',
 {
   method: 'POST',
   body: inputBody,
@@ -3180,7 +4404,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Account/password/update',
+result = RestClient.post '//localhost:32769//api/v2/Account/password/update',
   params: {
   }, headers: headers
 
@@ -3196,7 +4420,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Account/password/update', params={
+r = requests.post('//localhost:32769//api/v2/Account/password/update', params={
 
 }, headers = headers)
 
@@ -3205,7 +4429,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/password/update");
+URL obj = new URL("//localhost:32769//api/v2/Account/password/update");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -3239,7 +4463,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Account/password/update", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/password/update", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -3252,6 +4476,8 @@ func main() {
 `POST /api/v2/Account/password/update`
 
 *Updates the password for a specific account based on an email and reset token*
+
+Post Password Update
 
 > Body parameter
 
@@ -3305,7 +4531,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Account/search \
+curl -X POST //localhost:32769//api/v2/Account/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -3313,7 +4539,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Account/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Account/search HTTP/1.1
+POST //localhost:32769//api/v2/Account/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -3329,7 +4555,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/search',
+  url: '//localhost:32769//api/v2/Account/search',
   method: 'post',
 
   headers: headers,
@@ -3367,7 +4593,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/search',
+fetch('//localhost:32769//api/v2/Account/search',
 {
   method: 'POST',
   body: inputBody,
@@ -3391,7 +4617,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Account/search',
+result = RestClient.post '//localhost:32769//api/v2/Account/search',
   params: {
   }, headers: headers
 
@@ -3407,7 +4633,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Account/search', params={
+r = requests.post('//localhost:32769//api/v2/Account/search', params={
 
 }, headers = headers)
 
@@ -3416,7 +4642,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/search");
+URL obj = new URL("//localhost:32769//api/v2/Account/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -3450,7 +4676,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Account/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -3463,6 +4689,8 @@ func main() {
 `POST /api/v2/Account/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -3505,27 +4733,28 @@ func main() {
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
         "email": "string",
         "firstName": "string",
+        "id": 0,
+        "isAdmin": true,
+        "isFundraiser": true,
+        "isOrgAdmin": true,
+        "isSysAdmin": true,
+        "lastLoggedInAt": "2018-09-19T06:46:27Z",
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "lastLoggedInAt": "2018-08-20T06:00:18Z",
-        "status": "active",
-        "roles": "notDefined",
-        "isOrgAdmin": true,
-        "isSysAdmin": true,
-        "isFundraiser": true,
-        "isAdmin": true,
+        "onboardedDate": "2018-09-19T06:46:27Z",
         "organizationId": 0,
-        "source": "default",
         "organization": {
           "id": 0,
           "name": "string",
           "urlPath": "string"
-        }
+        },
+        "roles": "notDefined",
+        "source": "default",
+        "status": "active"
       }
     ]
   },
@@ -3559,7 +4788,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Account/export \
+curl -X POST //localhost:32769//api/v2/Account/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -3567,7 +4796,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Account/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Account/export HTTP/1.1
+POST //localhost:32769//api/v2/Account/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -3583,7 +4812,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/export',
+  url: '//localhost:32769//api/v2/Account/export',
   method: 'post',
 
   headers: headers,
@@ -3621,7 +4850,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/export',
+fetch('//localhost:32769//api/v2/Account/export',
 {
   method: 'POST',
   body: inputBody,
@@ -3645,7 +4874,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Account/export',
+result = RestClient.post '//localhost:32769//api/v2/Account/export',
   params: {
   }, headers: headers
 
@@ -3661,7 +4890,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Account/export', params={
+r = requests.post('//localhost:32769//api/v2/Account/export', params={
 
 }, headers = headers)
 
@@ -3670,7 +4899,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/export");
+URL obj = new URL("//localhost:32769//api/v2/Account/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -3704,7 +4933,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Account/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Account/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -3717,6 +4946,8 @@ func main() {
 `POST /api/v2/Account/export`
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -3783,14 +5014,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Account/metadata \
+curl -X GET //localhost:32769//api/v2/Account/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Account/metadata HTTP/1.1
+GET //localhost:32769//api/v2/Account/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -3805,7 +5036,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/metadata',
+  url: '//localhost:32769//api/v2/Account/metadata',
   method: 'get',
 
   headers: headers,
@@ -3825,7 +5056,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/metadata',
+fetch('//localhost:32769//api/v2/Account/metadata',
 {
   method: 'GET',
 
@@ -3848,7 +5079,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Account/metadata',
+result = RestClient.get '//localhost:32769//api/v2/Account/metadata',
   params: {
   }, headers: headers
 
@@ -3863,7 +5094,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Account/metadata', params={
+r = requests.get('//localhost:32769//api/v2/Account/metadata', params={
 
 }, headers = headers)
 
@@ -3872,7 +5103,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/metadata");
+URL obj = new URL("//localhost:32769//api/v2/Account/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3905,7 +5136,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Account/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Account/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -3918,6 +5149,8 @@ func main() {
 `GET /api/v2/Account/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -3970,14 +5203,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Account/aggregate \
+curl -X GET //localhost:32769//api/v2/Account/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Account/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/Account/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -3992,7 +5225,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Account/aggregate',
+  url: '//localhost:32769//api/v2/Account/aggregate',
   method: 'get',
 
   headers: headers,
@@ -4012,7 +5245,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Account/aggregate',
+fetch('//localhost:32769//api/v2/Account/aggregate',
 {
   method: 'GET',
 
@@ -4035,7 +5268,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Account/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/Account/aggregate',
   params: {
   }, headers: headers
 
@@ -4050,7 +5283,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Account/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/Account/aggregate', params={
 
 }, headers = headers)
 
@@ -4059,7 +5292,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Account/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/Account/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -4092,7 +5325,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Account/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Account/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -4105,6 +5338,8 @@ func main() {
 `GET /api/v2/Account/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2accountaggregateget-parameters">Parameters</h3>
 
@@ -4165,7 +5400,201 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-AccountDonor">AccountDonor</h1>
+<h1 id="Core-API-AccountDonor">AccountDonor</h1>
+
+## ApiV2AccountDonorByIdGet
+
+<a id="opIdApiV2AccountDonorByIdGet"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //localhost:32769//api/v2/account/donor/{id} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/account/donor/{id} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/account/donor/{id}',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/account/donor/{id}',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/account/donor/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/account/donor/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/account/donor/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/donor/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/account/donor/{id}`
+
+*Gets an acccount donor object by id*
+
+Get
+
+<h3 id="apiv2accountdonorbyidget-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|Account id for donor|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "averageDonationAmount": 0,
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
+    "email": "string",
+    "firstName": "string",
+    "id": 0,
+    "lastName": "string",
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "raisedAmount": 0,
+    "roles": "notDefined",
+    "status": "active"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountdonorbyidget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_AccountDonorElementModel_](#schemascalaractionresult_accountdonorelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_AccountDonorElementModel_](#schemascalaractionresult_accountdonorelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
 
 ## ApiV2AccountDonorSearchPost
 
@@ -4175,7 +5604,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/account/donor/search \
+curl -X POST //localhost:32769//api/v2/account/donor/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -4183,7 +5612,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/account/donor/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/account/donor/search HTTP/1.1
+POST //localhost:32769//api/v2/account/donor/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -4199,7 +5628,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/donor/search',
+  url: '//localhost:32769//api/v2/account/donor/search',
   method: 'post',
 
   headers: headers,
@@ -4237,7 +5666,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/donor/search',
+fetch('//localhost:32769//api/v2/account/donor/search',
 {
   method: 'POST',
   body: inputBody,
@@ -4261,7 +5690,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/account/donor/search',
+result = RestClient.post '//localhost:32769//api/v2/account/donor/search',
   params: {
   }, headers: headers
 
@@ -4277,7 +5706,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/account/donor/search', params={
+r = requests.post('//localhost:32769//api/v2/account/donor/search', params={
 
 }, headers = headers)
 
@@ -4286,7 +5715,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/donor/search");
+URL obj = new URL("//localhost:32769//api/v2/account/donor/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -4320,7 +5749,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/account/donor/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/account/donor/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -4333,6 +5762,8 @@ func main() {
 `POST /api/v2/account/donor/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -4375,16 +5806,18 @@ func main() {
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "averageDonationAmount": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "email": "string",
         "firstName": "string",
+        "id": 0,
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "donationCount": 0,
         "raisedAmount": 0,
-        "averageDonationAmount": 0
+        "roles": "notDefined",
+        "status": "active"
       }
     ]
   },
@@ -4418,7 +5851,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/account/donor/export \
+curl -X POST //localhost:32769//api/v2/account/donor/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -4426,7 +5859,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/account/donor/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/account/donor/export HTTP/1.1
+POST //localhost:32769//api/v2/account/donor/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -4442,7 +5875,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/donor/export',
+  url: '//localhost:32769//api/v2/account/donor/export',
   method: 'post',
 
   headers: headers,
@@ -4480,7 +5913,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/donor/export',
+fetch('//localhost:32769//api/v2/account/donor/export',
 {
   method: 'POST',
   body: inputBody,
@@ -4504,7 +5937,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/account/donor/export',
+result = RestClient.post '//localhost:32769//api/v2/account/donor/export',
   params: {
   }, headers: headers
 
@@ -4520,7 +5953,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/account/donor/export', params={
+r = requests.post('//localhost:32769//api/v2/account/donor/export', params={
 
 }, headers = headers)
 
@@ -4529,7 +5962,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/donor/export");
+URL obj = new URL("//localhost:32769//api/v2/account/donor/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -4563,7 +5996,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/account/donor/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/account/donor/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -4576,6 +6009,8 @@ func main() {
 `POST /api/v2/account/donor/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -4642,14 +6077,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/account/donor/metadata \
+curl -X GET //localhost:32769//api/v2/account/donor/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/account/donor/metadata HTTP/1.1
+GET //localhost:32769//api/v2/account/donor/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -4664,7 +6099,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/donor/metadata',
+  url: '//localhost:32769//api/v2/account/donor/metadata',
   method: 'get',
 
   headers: headers,
@@ -4684,7 +6119,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/donor/metadata',
+fetch('//localhost:32769//api/v2/account/donor/metadata',
 {
   method: 'GET',
 
@@ -4707,7 +6142,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/account/donor/metadata',
+result = RestClient.get '//localhost:32769//api/v2/account/donor/metadata',
   params: {
   }, headers: headers
 
@@ -4722,7 +6157,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/account/donor/metadata', params={
+r = requests.get('//localhost:32769//api/v2/account/donor/metadata', params={
 
 }, headers = headers)
 
@@ -4731,7 +6166,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/donor/metadata");
+URL obj = new URL("//localhost:32769//api/v2/account/donor/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -4764,7 +6199,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/account/donor/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/donor/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -4777,6 +6212,8 @@ func main() {
 `GET /api/v2/account/donor/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -4829,14 +6266,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/account/donor/aggregate \
+curl -X GET //localhost:32769//api/v2/account/donor/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/account/donor/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/account/donor/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -4851,7 +6288,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/donor/aggregate',
+  url: '//localhost:32769//api/v2/account/donor/aggregate',
   method: 'get',
 
   headers: headers,
@@ -4871,7 +6308,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/donor/aggregate',
+fetch('//localhost:32769//api/v2/account/donor/aggregate',
 {
   method: 'GET',
 
@@ -4894,7 +6331,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/account/donor/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/account/donor/aggregate',
   params: {
   }, headers: headers
 
@@ -4909,7 +6346,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/account/donor/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/account/donor/aggregate', params={
 
 }, headers = headers)
 
@@ -4918,7 +6355,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/donor/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/account/donor/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -4951,7 +6388,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/account/donor/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/donor/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -4964,6 +6401,8 @@ func main() {
 `GET /api/v2/account/donor/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2accountdonoraggregateget-parameters">Parameters</h3>
 
@@ -5024,7 +6463,203 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-AccountFundraiser">AccountFundraiser</h1>
+<h1 id="Core-API-AccountFundraiser">AccountFundraiser</h1>
+
+## ApiV2AccountFundraiserByIdGet
+
+<a id="opIdApiV2AccountFundraiserByIdGet"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //localhost:32769//api/v2/account/fundraiser/{id} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/account/fundraiser/{id} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/account/fundraiser/{id}',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/account/fundraiser/{id}',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/account/fundraiser/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/account/fundraiser/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/account/fundraiser/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/fundraiser/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/account/fundraiser/{id}`
+
+*Gets an acccount fundraiser object by id*
+
+Get
+
+<h3 id="apiv2accountfundraiserbyidget-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|Account id for fundraiser|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "activePagesCount": 0,
+    "averageDonationAmount": 0,
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
+    "email": "string",
+    "firstName": "string",
+    "id": 0,
+    "lastName": "string",
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "raisedAmount": 0,
+    "pagesCount": 0,
+    "roles": "notDefined",
+    "status": "active"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2accountfundraiserbyidget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_AccountFundraiserElementModel_](#schemascalaractionresult_accountfundraiserelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_AccountFundraiserElementModel_](#schemascalaractionresult_accountfundraiserelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
 
 ## ApiV2AccountFundraiserSearchPost
 
@@ -5034,7 +6669,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/account/fundraiser/search \
+curl -X POST //localhost:32769//api/v2/account/fundraiser/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -5042,7 +6677,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/account/fundraiser/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/account/fundraiser/search HTTP/1.1
+POST //localhost:32769//api/v2/account/fundraiser/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -5058,7 +6693,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/fundraiser/search',
+  url: '//localhost:32769//api/v2/account/fundraiser/search',
   method: 'post',
 
   headers: headers,
@@ -5096,7 +6731,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/fundraiser/search',
+fetch('//localhost:32769//api/v2/account/fundraiser/search',
 {
   method: 'POST',
   body: inputBody,
@@ -5120,7 +6755,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/account/fundraiser/search',
+result = RestClient.post '//localhost:32769//api/v2/account/fundraiser/search',
   params: {
   }, headers: headers
 
@@ -5136,7 +6771,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/account/fundraiser/search', params={
+r = requests.post('//localhost:32769//api/v2/account/fundraiser/search', params={
 
 }, headers = headers)
 
@@ -5145,7 +6780,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/fundraiser/search");
+URL obj = new URL("//localhost:32769//api/v2/account/fundraiser/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -5179,7 +6814,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/account/fundraiser/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/account/fundraiser/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -5192,6 +6827,8 @@ func main() {
 `POST /api/v2/account/fundraiser/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -5234,18 +6871,20 @@ func main() {
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "activePagesCount": 0,
+        "averageDonationAmount": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "email": "string",
         "firstName": "string",
+        "id": 0,
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "donationCount": 0,
         "raisedAmount": 0,
-        "averageDonationAmount": 0,
-        "activePagesCount": 0,
-        "pagesCount": 0
+        "pagesCount": 0,
+        "roles": "notDefined",
+        "status": "active"
       }
     ]
   },
@@ -5279,7 +6918,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/account/fundraiser/export \
+curl -X POST //localhost:32769//api/v2/account/fundraiser/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -5287,7 +6926,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/account/fundraiser/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/account/fundraiser/export HTTP/1.1
+POST //localhost:32769//api/v2/account/fundraiser/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -5303,7 +6942,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/fundraiser/export',
+  url: '//localhost:32769//api/v2/account/fundraiser/export',
   method: 'post',
 
   headers: headers,
@@ -5341,7 +6980,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/fundraiser/export',
+fetch('//localhost:32769//api/v2/account/fundraiser/export',
 {
   method: 'POST',
   body: inputBody,
@@ -5365,7 +7004,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/account/fundraiser/export',
+result = RestClient.post '//localhost:32769//api/v2/account/fundraiser/export',
   params: {
   }, headers: headers
 
@@ -5381,7 +7020,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/account/fundraiser/export', params={
+r = requests.post('//localhost:32769//api/v2/account/fundraiser/export', params={
 
 }, headers = headers)
 
@@ -5390,7 +7029,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/fundraiser/export");
+URL obj = new URL("//localhost:32769//api/v2/account/fundraiser/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -5424,7 +7063,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/account/fundraiser/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/account/fundraiser/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -5437,6 +7076,8 @@ func main() {
 `POST /api/v2/account/fundraiser/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -5503,14 +7144,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/account/fundraiser/metadata \
+curl -X GET //localhost:32769//api/v2/account/fundraiser/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/account/fundraiser/metadata HTTP/1.1
+GET //localhost:32769//api/v2/account/fundraiser/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -5525,7 +7166,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata',
+  url: '//localhost:32769//api/v2/account/fundraiser/metadata',
   method: 'get',
 
   headers: headers,
@@ -5545,7 +7186,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata',
+fetch('//localhost:32769//api/v2/account/fundraiser/metadata',
 {
   method: 'GET',
 
@@ -5568,7 +7209,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata',
+result = RestClient.get '//localhost:32769//api/v2/account/fundraiser/metadata',
   params: {
   }, headers: headers
 
@@ -5583,7 +7224,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata', params={
+r = requests.get('//localhost:32769//api/v2/account/fundraiser/metadata', params={
 
 }, headers = headers)
 
@@ -5592,7 +7233,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata");
+URL obj = new URL("//localhost:32769//api/v2/account/fundraiser/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -5625,7 +7266,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/account/fundraiser/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/fundraiser/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -5638,6 +7279,8 @@ func main() {
 `GET /api/v2/account/fundraiser/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -5690,14 +7333,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate \
+curl -X GET //localhost:32769//api/v2/account/fundraiser/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/account/fundraiser/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -5712,7 +7355,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate',
+  url: '//localhost:32769//api/v2/account/fundraiser/aggregate',
   method: 'get',
 
   headers: headers,
@@ -5732,7 +7375,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate',
+fetch('//localhost:32769//api/v2/account/fundraiser/aggregate',
 {
   method: 'GET',
 
@@ -5755,7 +7398,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/account/fundraiser/aggregate',
   params: {
   }, headers: headers
 
@@ -5770,7 +7413,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/account/fundraiser/aggregate', params={
 
 }, headers = headers)
 
@@ -5779,7 +7422,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/account/fundraiser/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -5812,7 +7455,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/account/fundraiser/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/account/fundraiser/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -5825,6 +7468,8 @@ func main() {
 `GET /api/v2/account/fundraiser/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2accountfundraiseraggregateget-parameters">Parameters</h3>
 
@@ -5885,7 +7530,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Campaign">Campaign</h1>
+<h1 id="Core-API-Campaign">Campaign</h1>
 
 ## ApiV2PageCampaignByIdGet
 
@@ -5895,14 +7540,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
+curl -X GET //localhost:32769//api/v2/page/Campaign/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Campaign/{id} HTTP/1.1
+GET //localhost:32769//api/v2/page/Campaign/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -5917,7 +7562,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+  url: '//localhost:32769//api/v2/page/Campaign/{id}',
   method: 'get',
 
   headers: headers,
@@ -5937,7 +7582,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+fetch('//localhost:32769//api/v2/page/Campaign/{id}',
 {
   method: 'GET',
 
@@ -5960,7 +7605,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+result = RestClient.get '//localhost:32769//api/v2/page/Campaign/{id}',
   params: {
   }, headers: headers
 
@@ -5975,7 +7620,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}', params={
+r = requests.get('//localhost:32769//api/v2/page/Campaign/{id}', params={
 
 }, headers = headers)
 
@@ -5984,7 +7629,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -6017,7 +7662,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Campaign/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Campaign/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -6030,6 +7675,8 @@ func main() {
 `GET /api/v2/page/Campaign/{id}`
 
 *Gets a campaign object by id*
+
+Get
 
 <h3 id="apiv2pagecampaignbyidget-parameters">Parameters</h3>
 
@@ -6047,8 +7694,8 @@ func main() {
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -6083,8 +7730,8 @@ func main() {
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -6171,7 +7818,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
+curl -X PUT //localhost:32769//api/v2/page/Campaign/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -6179,7 +7826,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/page/Campaign/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/page/Campaign/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -6195,7 +7842,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+  url: '//localhost:32769//api/v2/page/Campaign/{id}',
   method: 'put',
 
   headers: headers,
@@ -6294,7 +7941,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+fetch('//localhost:32769//api/v2/page/Campaign/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -6318,7 +7965,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+result = RestClient.put '//localhost:32769//api/v2/page/Campaign/{id}',
   params: {
   }, headers: headers
 
@@ -6334,7 +7981,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}', params={
+r = requests.put('//localhost:32769//api/v2/page/Campaign/{id}', params={
 
 }, headers = headers)
 
@@ -6343,7 +7990,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -6377,7 +8024,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/page/Campaign/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/page/Campaign/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -6390,6 +8037,8 @@ func main() {
 `PUT /api/v2/page/Campaign/{id}`
 
 *Updates a campaign object by id*
+
+Put
 
 > Body parameter
 
@@ -6492,8 +8141,8 @@ func main() {
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -6528,8 +8177,8 @@ func main() {
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -6616,14 +8265,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
+curl -X DELETE //localhost:32769//api/v2/page/Campaign/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/page/Campaign/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/page/Campaign/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -6638,7 +8287,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+  url: '//localhost:32769//api/v2/page/Campaign/{id}',
   method: 'delete',
 
   headers: headers,
@@ -6658,7 +8307,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+fetch('//localhost:32769//api/v2/page/Campaign/{id}',
 {
   method: 'DELETE',
 
@@ -6681,7 +8330,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/page/Campaign/{id}',
   params: {
   }, headers: headers
 
@@ -6696,7 +8345,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/page/Campaign/{id}', params={
 
 }, headers = headers)
 
@@ -6705,7 +8354,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -6738,7 +8387,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/page/Campaign/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/page/Campaign/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -6751,6 +8400,8 @@ func main() {
 `DELETE /api/v2/page/Campaign/{id}`
 
 *Patches (partial update) a campaign object by id*
+
+Delete
 
 <h3 id="apiv2pagecampaignbyiddelete-parameters">Parameters</h3>
 
@@ -6794,7 +8445,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
+curl -X PATCH //localhost:32769//api/v2/page/Campaign/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -6802,7 +8453,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Campaign/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/page/Campaign/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/page/Campaign/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -6818,7 +8469,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+  url: '//localhost:32769//api/v2/page/Campaign/{id}',
   method: 'patch',
 
   headers: headers,
@@ -6846,7 +8497,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+fetch('//localhost:32769//api/v2/page/Campaign/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -6870,7 +8521,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/page/Campaign/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/page/Campaign/{id}',
   params: {
   }, headers: headers
 
@@ -6886,7 +8537,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/page/Campaign/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/page/Campaign/{id}', params={
 
 }, headers = headers)
 
@@ -6895,7 +8546,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -6929,7 +8580,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/page/Campaign/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/page/Campaign/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -6942,6 +8593,8 @@ func main() {
 `PATCH /api/v2/page/Campaign/{id}`
 
 *Patches (partial update) a campaign object by id*
+
+Patch
 
 > Body parameter
 
@@ -6973,8 +8626,8 @@ func main() {
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -7009,8 +8662,8 @@ func main() {
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -7097,14 +8750,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath} \
+curl -X GET //localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath} HTTP/1.1
+GET //localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -7119,7 +8772,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
+  url: '//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
   method: 'get',
 
   headers: headers,
@@ -7139,7 +8792,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
+fetch('//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
 {
   method: 'GET',
 
@@ -7162,7 +8815,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
+result = RestClient.get '//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}',
   params: {
   }, headers: headers
 
@@ -7177,7 +8830,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}', params={
+r = requests.get('//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}', params={
 
 }, headers = headers)
 
@@ -7186,7 +8839,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -7219,7 +8872,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -7232,6 +8885,8 @@ func main() {
 `GET /api/v2/page/Campaign/public/{primaryPath}/{secondaryPath}`
 
 *Gets a campaign object by paths*
+
+Get By Path
 
 <h3 id="apiv2pagecampaignpublicbyprimarypathbysecondarypathget-parameters">Parameters</h3>
 
@@ -7249,8 +8904,8 @@ func main() {
   "data": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -7364,7 +9019,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign \
+curl -X POST //localhost:32769//api/v2/page/Campaign \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -7372,7 +9027,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Campaign HTTP/1.1
+POST //localhost:32769//api/v2/page/Campaign HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -7388,7 +9043,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign',
+  url: '//localhost:32769//api/v2/page/Campaign',
   method: 'post',
 
   headers: headers,
@@ -7487,7 +9142,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign',
+fetch('//localhost:32769//api/v2/page/Campaign',
 {
   method: 'POST',
   body: inputBody,
@@ -7511,7 +9166,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Campaign',
+result = RestClient.post '//localhost:32769//api/v2/page/Campaign',
   params: {
   }, headers: headers
 
@@ -7527,7 +9182,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Campaign', params={
+r = requests.post('//localhost:32769//api/v2/page/Campaign', params={
 
 }, headers = headers)
 
@@ -7536,7 +9191,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -7570,7 +9225,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Campaign", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Campaign", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -7583,6 +9238,8 @@ func main() {
 `POST /api/v2/page/Campaign`
 
 *Creates a new campaign*
+
+Post
 
 > Body parameter
 
@@ -7684,8 +9341,8 @@ func main() {
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -7720,8 +9377,8 @@ func main() {
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -7808,7 +9465,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign/search \
+curl -X POST //localhost:32769//api/v2/page/Campaign/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -7816,7 +9473,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Campaign/search HTTP/1.1
+POST //localhost:32769//api/v2/page/Campaign/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -7832,7 +9489,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/search',
+  url: '//localhost:32769//api/v2/page/Campaign/search',
   method: 'post',
 
   headers: headers,
@@ -7870,7 +9527,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/search',
+fetch('//localhost:32769//api/v2/page/Campaign/search',
 {
   method: 'POST',
   body: inputBody,
@@ -7894,7 +9551,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Campaign/search',
+result = RestClient.post '//localhost:32769//api/v2/page/Campaign/search',
   params: {
   }, headers: headers
 
@@ -7910,7 +9567,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Campaign/search', params={
+r = requests.post('//localhost:32769//api/v2/page/Campaign/search', params={
 
 }, headers = headers)
 
@@ -7919,7 +9576,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/search");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -7953,7 +9610,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Campaign/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Campaign/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -7966,6 +9623,8 @@ func main() {
 `POST /api/v2/page/Campaign/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -8011,8 +9670,8 @@ func main() {
         "activePagesCount": 0,
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "dataCapture": {
           "registration": {
             "phone": {
@@ -8047,8 +9706,8 @@ func main() {
           "allowSelfSignUp": true
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
@@ -8137,7 +9796,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign/export \
+curl -X POST //localhost:32769//api/v2/page/Campaign/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -8145,7 +9804,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Campaign/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Campaign/export HTTP/1.1
+POST //localhost:32769//api/v2/page/Campaign/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -8161,7 +9820,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/export',
+  url: '//localhost:32769//api/v2/page/Campaign/export',
   method: 'post',
 
   headers: headers,
@@ -8199,7 +9858,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/export',
+fetch('//localhost:32769//api/v2/page/Campaign/export',
 {
   method: 'POST',
   body: inputBody,
@@ -8223,7 +9882,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Campaign/export',
+result = RestClient.post '//localhost:32769//api/v2/page/Campaign/export',
   params: {
   }, headers: headers
 
@@ -8239,7 +9898,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Campaign/export', params={
+r = requests.post('//localhost:32769//api/v2/page/Campaign/export', params={
 
 }, headers = headers)
 
@@ -8248,7 +9907,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/export");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -8282,7 +9941,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Campaign/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Campaign/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -8295,6 +9954,8 @@ func main() {
 `POST /api/v2/page/Campaign/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -8361,14 +10022,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Campaign/metadata \
+curl -X GET //localhost:32769//api/v2/page/Campaign/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Campaign/metadata HTTP/1.1
+GET //localhost:32769//api/v2/page/Campaign/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -8383,7 +10044,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/metadata',
+  url: '//localhost:32769//api/v2/page/Campaign/metadata',
   method: 'get',
 
   headers: headers,
@@ -8403,7 +10064,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/metadata',
+fetch('//localhost:32769//api/v2/page/Campaign/metadata',
 {
   method: 'GET',
 
@@ -8426,7 +10087,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Campaign/metadata',
+result = RestClient.get '//localhost:32769//api/v2/page/Campaign/metadata',
   params: {
   }, headers: headers
 
@@ -8441,7 +10102,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Campaign/metadata', params={
+r = requests.get('//localhost:32769//api/v2/page/Campaign/metadata', params={
 
 }, headers = headers)
 
@@ -8450,7 +10111,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/metadata");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -8483,7 +10144,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Campaign/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Campaign/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -8496,6 +10157,8 @@ func main() {
 `GET /api/v2/page/Campaign/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -8548,14 +10211,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Campaign/aggregate \
+curl -X GET //localhost:32769//api/v2/page/Campaign/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Campaign/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/page/Campaign/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -8570,7 +10233,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate',
+  url: '//localhost:32769//api/v2/page/Campaign/aggregate',
   method: 'get',
 
   headers: headers,
@@ -8590,7 +10253,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate',
+fetch('//localhost:32769//api/v2/page/Campaign/aggregate',
 {
   method: 'GET',
 
@@ -8613,7 +10276,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/page/Campaign/aggregate',
   params: {
   }, headers: headers
 
@@ -8628,7 +10291,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/page/Campaign/aggregate', params={
 
 }, headers = headers)
 
@@ -8637,7 +10300,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/page/Campaign/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -8670,7 +10333,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Campaign/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Campaign/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -8683,6 +10346,8 @@ func main() {
 `GET /api/v2/page/Campaign/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2pagecampaignaggregateget-parameters">Parameters</h3>
 
@@ -8743,7 +10408,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Donation">Donation</h1>
+<h1 id="Core-API-Donation">Donation</h1>
 
 ## ApiV2DonationByIdGet
 
@@ -8753,14 +10418,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Donation/{id} \
+curl -X GET //localhost:32769//api/v2/Donation/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Donation/{id} HTTP/1.1
+GET //localhost:32769//api/v2/Donation/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -8775,7 +10440,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+  url: '//localhost:32769//api/v2/Donation/{id}',
   method: 'get',
 
   headers: headers,
@@ -8795,7 +10460,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}',
+fetch('//localhost:32769//api/v2/Donation/{id}',
 {
   method: 'GET',
 
@@ -8818,7 +10483,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+result = RestClient.get '//localhost:32769//api/v2/Donation/{id}',
   params: {
   }, headers: headers
 
@@ -8833,7 +10498,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Donation/{id}', params={
+r = requests.get('//localhost:32769//api/v2/Donation/{id}', params={
 
 }, headers = headers)
 
@@ -8842,7 +10507,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -8875,7 +10540,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Donation/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -8888,6 +10553,8 @@ func main() {
 `GET /api/v2/Donation/{id}`
 
 *Gets a donation object by id*
+
+Get
 
 <h3 id="apiv2donationbyidget-parameters">Parameters</h3>
 
@@ -8908,15 +10575,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -8943,8 +10611,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -8954,17 +10622,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -8973,8 +10644,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -8982,8 +10653,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -9022,7 +10694,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/Donation/{id} \
+curl -X PUT //localhost:32769//api/v2/Donation/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -9030,7 +10702,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/Donation/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/Donation/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/Donation/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -9046,7 +10718,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+  url: '//localhost:32769//api/v2/Donation/{id}',
   method: 'put',
 
   headers: headers,
@@ -9112,7 +10784,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}',
+fetch('//localhost:32769//api/v2/Donation/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -9136,7 +10808,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+result = RestClient.put '//localhost:32769//api/v2/Donation/{id}',
   params: {
   }, headers: headers
 
@@ -9152,7 +10824,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/Donation/{id}', params={
+r = requests.put('//localhost:32769//api/v2/Donation/{id}', params={
 
 }, headers = headers)
 
@@ -9161,7 +10833,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -9195,7 +10867,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/Donation/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Donation/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -9208,6 +10880,8 @@ func main() {
 `PUT /api/v2/Donation/{id}`
 
 *Updates a donation object by id*
+
+Put
 
 > Body parameter
 
@@ -9280,15 +10954,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -9315,8 +10990,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -9326,17 +11001,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -9345,8 +11023,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -9354,8 +11032,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -9394,14 +11073,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/Donation/{id} \
+curl -X DELETE //localhost:32769//api/v2/Donation/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/Donation/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/Donation/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -9416,7 +11095,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+  url: '//localhost:32769//api/v2/Donation/{id}',
   method: 'delete',
 
   headers: headers,
@@ -9436,7 +11115,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}',
+fetch('//localhost:32769//api/v2/Donation/{id}',
 {
   method: 'DELETE',
 
@@ -9459,7 +11138,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/Donation/{id}',
   params: {
   }, headers: headers
 
@@ -9474,7 +11153,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/Donation/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/Donation/{id}', params={
 
 }, headers = headers)
 
@@ -9483,7 +11162,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -9516,7 +11195,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/Donation/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Donation/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -9529,6 +11208,8 @@ func main() {
 `DELETE /api/v2/Donation/{id}`
 
 *Patches (partial update) a donation object by id*
+
+Delete
 
 <h3 id="apiv2donationbyiddelete-parameters">Parameters</h3>
 
@@ -9572,7 +11253,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/Donation/{id} \
+curl -X PATCH //localhost:32769//api/v2/Donation/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -9580,7 +11261,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/Donation/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/Donation/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/Donation/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -9596,7 +11277,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+  url: '//localhost:32769//api/v2/Donation/{id}',
   method: 'patch',
 
   headers: headers,
@@ -9624,7 +11305,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}',
+fetch('//localhost:32769//api/v2/Donation/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -9648,7 +11329,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/Donation/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/Donation/{id}',
   params: {
   }, headers: headers
 
@@ -9664,7 +11345,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/Donation/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/Donation/{id}', params={
 
 }, headers = headers)
 
@@ -9673,7 +11354,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -9707,7 +11388,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/Donation/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/Donation/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -9720,6 +11401,8 @@ func main() {
 `PATCH /api/v2/Donation/{id}`
 
 *Patches (partial update) a donation object by id*
+
+Patch
 
 > Body parameter
 
@@ -9754,15 +11437,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -9789,8 +11473,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -9800,17 +11484,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -9819,8 +11506,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -9828,8 +11515,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -9868,14 +11556,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath} \
+curl -X GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath} HTTP/1.1
+GET //localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -9890,7 +11578,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
+  url: '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
   method: 'get',
 
   headers: headers,
@@ -9910,7 +11598,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
+fetch('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
 {
   method: 'GET',
 
@@ -9933,7 +11621,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
+result = RestClient.get '//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}',
   params: {
   }, headers: headers
 
@@ -9948,7 +11636,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}', params={
+r = requests.get('//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}', params={
 
 }, headers = headers)
 
@@ -9957,7 +11645,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}");
+URL obj = new URL("//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -9990,7 +11678,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Donation/fee/{primaryPath}/{secondaryPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/fee/{primaryPath}/{secondaryPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -10003,6 +11691,8 @@ func main() {
 `GET /api/v2/Donation/fee/{primaryPath}/{secondaryPath}`
 
 *Gets a donation object by id*
+
+Get
 
 <h3 id="apiv2donationfeebyprimarypathbysecondarypathget-parameters">Parameters</h3>
 
@@ -10056,7 +11746,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation \
+curl -X POST //localhost:32769//api/v2/Donation \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -10064,7 +11754,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Donation \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation HTTP/1.1
+POST //localhost:32769//api/v2/Donation HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -10080,7 +11770,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation',
+  url: '//localhost:32769//api/v2/Donation',
   method: 'post',
 
   headers: headers,
@@ -10146,7 +11836,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation',
+fetch('//localhost:32769//api/v2/Donation',
 {
   method: 'POST',
   body: inputBody,
@@ -10170,7 +11860,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation',
+result = RestClient.post '//localhost:32769//api/v2/Donation',
   params: {
   }, headers: headers
 
@@ -10186,7 +11876,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation', params={
+r = requests.post('//localhost:32769//api/v2/Donation', params={
 
 }, headers = headers)
 
@@ -10195,7 +11885,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation");
+URL obj = new URL("//localhost:32769//api/v2/Donation");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -10229,7 +11919,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -10242,6 +11932,8 @@ func main() {
 `POST /api/v2/Donation`
 
 *Creates a new donation*
+
+Post
 
 > Body parameter
 
@@ -10313,15 +12005,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -10348,8 +12041,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -10359,17 +12052,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -10378,8 +12074,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -10387,8 +12083,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -10427,7 +12124,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/{id}/reply \
+curl -X POST //localhost:32769//api/v2/Donation/{id}/reply \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -10435,7 +12132,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Donation/{id}/reply \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/{id}/reply HTTP/1.1
+POST //localhost:32769//api/v2/Donation/{id}/reply HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -10451,7 +12148,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}/reply',
+  url: '//localhost:32769//api/v2/Donation/{id}/reply',
   method: 'post',
 
   headers: headers,
@@ -10474,7 +12171,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}/reply',
+fetch('//localhost:32769//api/v2/Donation/{id}/reply',
 {
   method: 'POST',
   body: inputBody,
@@ -10498,7 +12195,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/{id}/reply',
+result = RestClient.post '//localhost:32769//api/v2/Donation/{id}/reply',
   params: {
   }, headers: headers
 
@@ -10514,7 +12211,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/{id}/reply', params={
+r = requests.post('//localhost:32769//api/v2/Donation/{id}/reply', params={
 
 }, headers = headers)
 
@@ -10523,7 +12220,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}/reply");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}/reply");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -10557,7 +12254,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/{id}/reply", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/{id}/reply", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -10570,6 +12267,8 @@ func main() {
 `POST /api/v2/Donation/{id}/reply`
 
 *Creates a new donation message reply*
+
+Post Reply
 
 > Body parameter
 
@@ -10622,7 +12321,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/search \
+curl -X POST //localhost:32769//api/v2/Donation/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -10630,7 +12329,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Donation/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/search HTTP/1.1
+POST //localhost:32769//api/v2/Donation/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -10646,7 +12345,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/search',
+  url: '//localhost:32769//api/v2/Donation/search',
   method: 'post',
 
   headers: headers,
@@ -10684,7 +12383,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/search',
+fetch('//localhost:32769//api/v2/Donation/search',
 {
   method: 'POST',
   body: inputBody,
@@ -10708,7 +12407,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/search',
+result = RestClient.post '//localhost:32769//api/v2/Donation/search',
   params: {
   }, headers: headers
 
@@ -10724,7 +12423,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/search', params={
+r = requests.post('//localhost:32769//api/v2/Donation/search', params={
 
 }, headers = headers)
 
@@ -10733,7 +12432,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/search");
+URL obj = new URL("//localhost:32769//api/v2/Donation/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -10767,7 +12466,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -10780,6 +12479,8 @@ func main() {
 `POST /api/v2/Donation/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -10828,15 +12529,16 @@ func main() {
         "campaign": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
           "url": "string",
+          "urlFull": "string",
+          "urlPath": "string",
           "template": {
             "key": "string",
             "value": {}
           }
         },
-        "donatedAtLocal": "2018-08-20T06:00:18Z",
-        "donatedAt": "2018-08-20T06:00:18Z",
+        "donatedAtLocal": "2018-09-19T06:46:27Z",
+        "donatedAt": "2018-09-19T06:46:27Z",
         "donor": {
           "address": {
             "street": "string",
@@ -10863,8 +12565,8 @@ func main() {
           "feeCovered": true,
           "platform": "stripe",
           "refunded": true,
-          "refundedAt": "2018-08-20T06:00:18Z",
-          "refundedAtLocal": "2018-08-20T06:00:18Z",
+          "refundedAt": "2018-09-19T06:46:27Z",
+          "refundedAtLocal": "2018-09-19T06:46:27Z",
           "subscription": true,
           "tax": 0,
           "totalFees": 0,
@@ -10874,17 +12576,20 @@ func main() {
         "fundraiser": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
-          "url": "string"
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAt": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "message": "string",
         "organizationId": 0,
         "organization": {
           "id": 0,
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "pageType": "campaign",
@@ -10893,8 +12598,8 @@ func main() {
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-08-20T06:00:18Z",
-          "repliedAt": "2018-08-20T06:00:18Z",
+          "repliedAtLocal": "2018-09-19T06:46:27Z",
+          "repliedAt": "2018-09-19T06:46:27Z",
           "reply": "string"
         },
         "status": "collectedFromCustomer",
@@ -10902,8 +12607,9 @@ func main() {
         "team": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
-          "url": "string"
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
         },
         "template": {
           "key": "string",
@@ -10944,7 +12650,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/search/public \
+curl -X POST //localhost:32769//api/v2/Donation/search/public \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -10952,7 +12658,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Donation/search/public \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/search/public HTTP/1.1
+POST //localhost:32769//api/v2/Donation/search/public HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -10968,7 +12674,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/search/public',
+  url: '//localhost:32769//api/v2/Donation/search/public',
   method: 'post',
 
   headers: headers,
@@ -10985,7 +12691,8 @@ const inputBody = '{
   "primaryUrlPath": "string",
   "secondaryUrlPath": "string",
   "tertiaryUrlPath": "string",
-  "page": 0
+  "page": 0,
+  "pageSize": 0
 }';
 const headers = {
   'Content-Type':'application/json-patch+json',
@@ -10994,7 +12701,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/search/public',
+fetch('//localhost:32769//api/v2/Donation/search/public',
 {
   method: 'POST',
   body: inputBody,
@@ -11018,7 +12725,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/search/public',
+result = RestClient.post '//localhost:32769//api/v2/Donation/search/public',
   params: {
   }, headers: headers
 
@@ -11034,7 +12741,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/search/public', params={
+r = requests.post('//localhost:32769//api/v2/Donation/search/public', params={
 
 }, headers = headers)
 
@@ -11043,7 +12750,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/search/public");
+URL obj = new URL("//localhost:32769//api/v2/Donation/search/public");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -11077,7 +12784,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/search/public", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/search/public", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -11091,6 +12798,8 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
+Post Search Public
+
 > Body parameter
 
 ```json
@@ -11098,7 +12807,8 @@ func main() {
   "primaryUrlPath": "string",
   "secondaryUrlPath": "string",
   "tertiaryUrlPath": "string",
-  "page": 0
+  "page": 0,
+  "pageSize": 0
 }
 ```
 
@@ -11122,8 +12832,8 @@ func main() {
       {
         "amount": 0,
         "anonymous": true,
-        "donatedAtLocal": "2018-08-20T06:00:18Z",
-        "donatedAt": "2018-08-20T06:00:18Z",
+        "donatedAtLocal": "2018-09-19T06:46:27Z",
+        "donatedAt": "2018-09-19T06:46:27Z",
         "donorDisplayName": "string",
         "id": 0,
         "message": "string",
@@ -11132,8 +12842,8 @@ func main() {
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-08-20T06:00:18Z",
-          "repliedAt": "2018-08-20T06:00:18Z",
+          "repliedAtLocal": "2018-09-19T06:46:27Z",
+          "repliedAt": "2018-09-19T06:46:27Z",
           "reply": "string"
         },
         "type": "online"
@@ -11170,7 +12880,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/export \
+curl -X POST //localhost:32769//api/v2/Donation/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -11178,7 +12888,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Donation/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/export HTTP/1.1
+POST //localhost:32769//api/v2/Donation/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -11194,7 +12904,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/export',
+  url: '//localhost:32769//api/v2/Donation/export',
   method: 'post',
 
   headers: headers,
@@ -11232,7 +12942,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/export',
+fetch('//localhost:32769//api/v2/Donation/export',
 {
   method: 'POST',
   body: inputBody,
@@ -11256,7 +12966,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/export',
+result = RestClient.post '//localhost:32769//api/v2/Donation/export',
   params: {
   }, headers: headers
 
@@ -11272,7 +12982,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/export', params={
+r = requests.post('//localhost:32769//api/v2/Donation/export', params={
 
 }, headers = headers)
 
@@ -11281,7 +12991,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/export");
+URL obj = new URL("//localhost:32769//api/v2/Donation/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -11315,7 +13025,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -11328,6 +13038,8 @@ func main() {
 `POST /api/v2/Donation/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -11394,14 +13106,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Donation/metadata \
+curl -X GET //localhost:32769//api/v2/Donation/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Donation/metadata HTTP/1.1
+GET //localhost:32769//api/v2/Donation/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -11416,7 +13128,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/metadata',
+  url: '//localhost:32769//api/v2/Donation/metadata',
   method: 'get',
 
   headers: headers,
@@ -11436,7 +13148,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/metadata',
+fetch('//localhost:32769//api/v2/Donation/metadata',
 {
   method: 'GET',
 
@@ -11459,7 +13171,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Donation/metadata',
+result = RestClient.get '//localhost:32769//api/v2/Donation/metadata',
   params: {
   }, headers: headers
 
@@ -11474,7 +13186,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Donation/metadata', params={
+r = requests.get('//localhost:32769//api/v2/Donation/metadata', params={
 
 }, headers = headers)
 
@@ -11483,7 +13195,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/metadata");
+URL obj = new URL("//localhost:32769//api/v2/Donation/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -11516,7 +13228,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Donation/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -11529,6 +13241,8 @@ func main() {
 `GET /api/v2/Donation/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -11581,14 +13295,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Donation/aggregate \
+curl -X GET //localhost:32769//api/v2/Donation/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Donation/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/Donation/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -11603,7 +13317,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/aggregate',
+  url: '//localhost:32769//api/v2/Donation/aggregate',
   method: 'get',
 
   headers: headers,
@@ -11623,7 +13337,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/aggregate',
+fetch('//localhost:32769//api/v2/Donation/aggregate',
 {
   method: 'GET',
 
@@ -11646,7 +13360,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Donation/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/Donation/aggregate',
   params: {
   }, headers: headers
 
@@ -11661,7 +13375,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Donation/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/Donation/aggregate', params={
 
 }, headers = headers)
 
@@ -11670,7 +13384,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/Donation/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -11703,7 +13417,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Donation/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Donation/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -11716,6 +13430,8 @@ func main() {
 `GET /api/v2/Donation/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2donationaggregateget-parameters">Parameters</h3>
 
@@ -11784,14 +13500,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/{id}/refund \
+curl -X POST //localhost:32769//api/v2/Donation/{id}/refund \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/{id}/refund HTTP/1.1
+POST //localhost:32769//api/v2/Donation/{id}/refund HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -11806,7 +13522,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}/refund',
+  url: '//localhost:32769//api/v2/Donation/{id}/refund',
   method: 'post',
 
   headers: headers,
@@ -11826,7 +13542,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}/refund',
+fetch('//localhost:32769//api/v2/Donation/{id}/refund',
 {
   method: 'POST',
 
@@ -11849,7 +13565,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/{id}/refund',
+result = RestClient.post '//localhost:32769//api/v2/Donation/{id}/refund',
   params: {
   }, headers: headers
 
@@ -11864,7 +13580,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/{id}/refund', params={
+r = requests.post('//localhost:32769//api/v2/Donation/{id}/refund', params={
 
 }, headers = headers)
 
@@ -11873,7 +13589,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}/refund");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}/refund");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -11906,7 +13622,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/{id}/refund", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/{id}/refund", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -11919,6 +13635,8 @@ func main() {
 `POST /api/v2/Donation/{id}/refund`
 
 *Perform a refund on an online donation*
+
+Post Refund
 
 <h3 id="apiv2donationbyidrefundpost-parameters">Parameters</h3>
 
@@ -11962,14 +13680,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Donation/{id}/receipt \
+curl -X POST //localhost:32769//api/v2/Donation/{id}/receipt \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Donation/{id}/receipt HTTP/1.1
+POST //localhost:32769//api/v2/Donation/{id}/receipt HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -11984,7 +13702,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt',
+  url: '//localhost:32769//api/v2/Donation/{id}/receipt',
   method: 'post',
 
   headers: headers,
@@ -12004,7 +13722,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt',
+fetch('//localhost:32769//api/v2/Donation/{id}/receipt',
 {
   method: 'POST',
 
@@ -12027,7 +13745,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt',
+result = RestClient.post '//localhost:32769//api/v2/Donation/{id}/receipt',
   params: {
   }, headers: headers
 
@@ -12042,7 +13760,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt', params={
+r = requests.post('//localhost:32769//api/v2/Donation/{id}/receipt', params={
 
 }, headers = headers)
 
@@ -12051,7 +13769,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt");
+URL obj = new URL("//localhost:32769//api/v2/Donation/{id}/receipt");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -12084,7 +13802,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Donation/{id}/receipt", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Donation/{id}/receipt", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -12097,6 +13815,8 @@ func main() {
 `POST /api/v2/Donation/{id}/receipt`
 
 *Perform a refund on an online donation*
+
+Post Receipt
 
 <h3 id="apiv2donationbyidreceiptpost-parameters">Parameters</h3>
 
@@ -12132,7 +13852,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-DonationFee">DonationFee</h1>
+<h1 id="Core-API-DonationFee">DonationFee</h1>
 
 ## ApiV2DonationFeeByIdGet
 
@@ -12142,14 +13862,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
+curl -X GET //localhost:32769//api/v2/DonationFee/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/DonationFee/{id} HTTP/1.1
+GET //localhost:32769//api/v2/DonationFee/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -12164,7 +13884,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+  url: '//localhost:32769//api/v2/DonationFee/{id}',
   method: 'get',
 
   headers: headers,
@@ -12184,7 +13904,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+fetch('//localhost:32769//api/v2/DonationFee/{id}',
 {
   method: 'GET',
 
@@ -12207,7 +13927,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+result = RestClient.get '//localhost:32769//api/v2/DonationFee/{id}',
   params: {
   }, headers: headers
 
@@ -12222,7 +13942,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/DonationFee/{id}', params={
+r = requests.get('//localhost:32769//api/v2/DonationFee/{id}', params={
 
 }, headers = headers)
 
@@ -12231,7 +13951,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/{id}");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -12264,7 +13984,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/DonationFee/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/DonationFee/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -12277,6 +13997,8 @@ func main() {
 `GET /api/v2/DonationFee/{id}`
 
 *Gets a donation fee object by id*
+
+Get
 
 <h3 id="apiv2donationfeebyidget-parameters">Parameters</h3>
 
@@ -12339,7 +14061,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
+curl -X PUT //localhost:32769//api/v2/DonationFee/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -12347,7 +14069,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/DonationFee/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/DonationFee/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -12363,7 +14085,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+  url: '//localhost:32769//api/v2/DonationFee/{id}',
   method: 'put',
 
   headers: headers,
@@ -12389,7 +14111,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+fetch('//localhost:32769//api/v2/DonationFee/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -12413,7 +14135,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+result = RestClient.put '//localhost:32769//api/v2/DonationFee/{id}',
   params: {
   }, headers: headers
 
@@ -12429,7 +14151,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/DonationFee/{id}', params={
+r = requests.put('//localhost:32769//api/v2/DonationFee/{id}', params={
 
 }, headers = headers)
 
@@ -12438,7 +14160,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/{id}");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -12472,7 +14194,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/DonationFee/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/DonationFee/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -12485,6 +14207,8 @@ func main() {
 `PUT /api/v2/DonationFee/{id}`
 
 *Updates a donation fee object by id*
+
+Put
 
 > Body parameter
 
@@ -12559,14 +14283,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
+curl -X DELETE //localhost:32769//api/v2/DonationFee/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/DonationFee/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/DonationFee/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -12581,7 +14305,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+  url: '//localhost:32769//api/v2/DonationFee/{id}',
   method: 'delete',
 
   headers: headers,
@@ -12601,7 +14325,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+fetch('//localhost:32769//api/v2/DonationFee/{id}',
 {
   method: 'DELETE',
 
@@ -12624,7 +14348,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/DonationFee/{id}',
   params: {
   }, headers: headers
 
@@ -12639,7 +14363,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/DonationFee/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/DonationFee/{id}', params={
 
 }, headers = headers)
 
@@ -12648,7 +14372,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/{id}");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -12681,7 +14405,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/DonationFee/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/DonationFee/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -12694,6 +14418,8 @@ func main() {
 `DELETE /api/v2/DonationFee/{id}`
 
 *Patches (partial update) a donation fee object by id*
+
+Delete
 
 <h3 id="apiv2donationfeebyiddelete-parameters">Parameters</h3>
 
@@ -12737,7 +14463,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
+curl -X PATCH //localhost:32769//api/v2/DonationFee/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -12745,7 +14471,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/DonationFee/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/DonationFee/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/DonationFee/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -12761,7 +14487,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+  url: '//localhost:32769//api/v2/DonationFee/{id}',
   method: 'patch',
 
   headers: headers,
@@ -12789,7 +14515,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+fetch('//localhost:32769//api/v2/DonationFee/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -12813,7 +14539,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/DonationFee/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/DonationFee/{id}',
   params: {
   }, headers: headers
 
@@ -12829,7 +14555,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/DonationFee/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/DonationFee/{id}', params={
 
 }, headers = headers)
 
@@ -12838,7 +14564,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/{id}");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -12872,7 +14598,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/DonationFee/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/DonationFee/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -12885,6 +14611,8 @@ func main() {
 `PATCH /api/v2/DonationFee/{id}`
 
 *Patches (partial update) a donation fee object by id*
+
+Patch
 
 > Body parameter
 
@@ -12919,15 +14647,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -12954,8 +14683,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -12965,17 +14694,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -12984,8 +14716,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -12993,8 +14725,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -13033,7 +14766,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee \
+curl -X POST //localhost:32769//api/v2/DonationFee \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -13041,7 +14774,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/DonationFee HTTP/1.1
+POST //localhost:32769//api/v2/DonationFee HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -13057,7 +14790,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee',
+  url: '//localhost:32769//api/v2/DonationFee',
   method: 'post',
 
   headers: headers,
@@ -13083,7 +14816,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee',
+fetch('//localhost:32769//api/v2/DonationFee',
 {
   method: 'POST',
   body: inputBody,
@@ -13107,7 +14840,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/DonationFee',
+result = RestClient.post '//localhost:32769//api/v2/DonationFee',
   params: {
   }, headers: headers
 
@@ -13123,7 +14856,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/DonationFee', params={
+r = requests.post('//localhost:32769//api/v2/DonationFee', params={
 
 }, headers = headers)
 
@@ -13132,7 +14865,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -13166,7 +14899,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/DonationFee", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/DonationFee", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -13179,6 +14912,8 @@ func main() {
 `POST /api/v2/DonationFee`
 
 *Creates a new donation fee*
+
+Post
 
 > Body parameter
 
@@ -13210,15 +14945,16 @@ func main() {
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -13245,8 +14981,8 @@ func main() {
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -13256,17 +14992,20 @@ func main() {
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -13275,8 +15014,8 @@ func main() {
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -13284,8 +15023,9 @@ func main() {
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -13324,7 +15064,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee/search \
+curl -X POST //localhost:32769//api/v2/DonationFee/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -13332,7 +15072,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/DonationFee/search HTTP/1.1
+POST //localhost:32769//api/v2/DonationFee/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -13348,7 +15088,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/search',
+  url: '//localhost:32769//api/v2/DonationFee/search',
   method: 'post',
 
   headers: headers,
@@ -13386,7 +15126,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/search',
+fetch('//localhost:32769//api/v2/DonationFee/search',
 {
   method: 'POST',
   body: inputBody,
@@ -13410,7 +15150,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/DonationFee/search',
+result = RestClient.post '//localhost:32769//api/v2/DonationFee/search',
   params: {
   }, headers: headers
 
@@ -13426,7 +15166,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/DonationFee/search', params={
+r = requests.post('//localhost:32769//api/v2/DonationFee/search', params={
 
 }, headers = headers)
 
@@ -13435,7 +15175,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/search");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -13469,7 +15209,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/DonationFee/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/DonationFee/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -13482,6 +15222,8 @@ func main() {
 `POST /api/v2/DonationFee/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -13574,14 +15316,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/DonationFee/export \
+curl -X GET //localhost:32769//api/v2/DonationFee/export \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/DonationFee/export HTTP/1.1
+GET //localhost:32769//api/v2/DonationFee/export HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -13596,7 +15338,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/export',
+  url: '//localhost:32769//api/v2/DonationFee/export',
   method: 'get',
 
   headers: headers,
@@ -13616,7 +15358,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/export',
+fetch('//localhost:32769//api/v2/DonationFee/export',
 {
   method: 'GET',
 
@@ -13639,7 +15381,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/DonationFee/export',
+result = RestClient.get '//localhost:32769//api/v2/DonationFee/export',
   params: {
   }, headers: headers
 
@@ -13654,7 +15396,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/DonationFee/export', params={
+r = requests.get('//localhost:32769//api/v2/DonationFee/export', params={
 
 }, headers = headers)
 
@@ -13663,7 +15405,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/export");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -13696,7 +15438,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/DonationFee/export", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/DonationFee/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -13709,6 +15451,8 @@ func main() {
 `GET /api/v2/DonationFee/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Get Export
 
 <h3 id="apiv2donationfeeexportget-parameters">Parameters</h3>
 
@@ -13769,7 +15513,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee/export \
+curl -X POST //localhost:32769//api/v2/DonationFee/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -13777,7 +15521,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/DonationFee/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/DonationFee/export HTTP/1.1
+POST //localhost:32769//api/v2/DonationFee/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -13793,7 +15537,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/export',
+  url: '//localhost:32769//api/v2/DonationFee/export',
   method: 'post',
 
   headers: headers,
@@ -13831,7 +15575,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/export',
+fetch('//localhost:32769//api/v2/DonationFee/export',
 {
   method: 'POST',
   body: inputBody,
@@ -13855,7 +15599,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/DonationFee/export',
+result = RestClient.post '//localhost:32769//api/v2/DonationFee/export',
   params: {
   }, headers: headers
 
@@ -13871,7 +15615,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/DonationFee/export', params={
+r = requests.post('//localhost:32769//api/v2/DonationFee/export', params={
 
 }, headers = headers)
 
@@ -13880,7 +15624,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/export");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -13914,7 +15658,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/DonationFee/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/DonationFee/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -13927,6 +15671,8 @@ func main() {
 `POST /api/v2/DonationFee/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -13993,14 +15739,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/DonationFee/metadata \
+curl -X GET //localhost:32769//api/v2/DonationFee/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/DonationFee/metadata HTTP/1.1
+GET //localhost:32769//api/v2/DonationFee/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -14015,7 +15761,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/DonationFee/metadata',
+  url: '//localhost:32769//api/v2/DonationFee/metadata',
   method: 'get',
 
   headers: headers,
@@ -14035,7 +15781,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/DonationFee/metadata',
+fetch('//localhost:32769//api/v2/DonationFee/metadata',
 {
   method: 'GET',
 
@@ -14058,7 +15804,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/DonationFee/metadata',
+result = RestClient.get '//localhost:32769//api/v2/DonationFee/metadata',
   params: {
   }, headers: headers
 
@@ -14073,7 +15819,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/DonationFee/metadata', params={
+r = requests.get('//localhost:32769//api/v2/DonationFee/metadata', params={
 
 }, headers = headers)
 
@@ -14082,7 +15828,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/DonationFee/metadata");
+URL obj = new URL("//localhost:32769//api/v2/DonationFee/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -14115,7 +15861,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/DonationFee/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/DonationFee/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -14128,6 +15874,8 @@ func main() {
 `GET /api/v2/DonationFee/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -14172,7 +15920,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Event">Event</h1>
+<h1 id="Core-API-Event">Event</h1>
 
 ## ApiV2PageEventByIdGet
 
@@ -14182,14 +15930,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Event/{id} \
+curl -X GET //localhost:32769//api/v2/page/Event/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Event/{id} HTTP/1.1
+GET //localhost:32769//api/v2/page/Event/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -14204,7 +15952,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+  url: '//localhost:32769//api/v2/page/Event/{id}',
   method: 'get',
 
   headers: headers,
@@ -14224,7 +15972,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+fetch('//localhost:32769//api/v2/page/Event/{id}',
 {
   method: 'GET',
 
@@ -14247,7 +15995,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+result = RestClient.get '//localhost:32769//api/v2/page/Event/{id}',
   params: {
   }, headers: headers
 
@@ -14262,7 +16010,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Event/{id}', params={
+r = requests.get('//localhost:32769//api/v2/page/Event/{id}', params={
 
 }, headers = headers)
 
@@ -14271,7 +16019,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -14304,7 +16052,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Event/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Event/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -14317,6 +16065,8 @@ func main() {
 `GET /api/v2/page/Event/{id}`
 
 *Gets a event object by id*
+
+Get
 
 <h3 id="apiv2pageeventbyidget-parameters">Parameters</h3>
 
@@ -14335,10 +16085,9 @@ func main() {
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "urlPath": "string",
     "status": "live",
     "targetAmount": 0,
     "averageDonationAmount": 0,
@@ -14393,7 +16142,10 @@ func main() {
     "template": {
       "key": "string",
       "value": {}
-    }
+    },
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -14425,7 +16177,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/page/Event/{id} \
+curl -X PUT //localhost:32769//api/v2/page/Event/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -14433,7 +16185,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/page/Event/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/page/Event/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/page/Event/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -14449,7 +16201,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+  url: '//localhost:32769//api/v2/page/Event/{id}',
   method: 'put',
 
   headers: headers,
@@ -14532,7 +16284,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+fetch('//localhost:32769//api/v2/page/Event/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -14556,7 +16308,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+result = RestClient.put '//localhost:32769//api/v2/page/Event/{id}',
   params: {
   }, headers: headers
 
@@ -14572,7 +16324,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/page/Event/{id}', params={
+r = requests.put('//localhost:32769//api/v2/page/Event/{id}', params={
 
 }, headers = headers)
 
@@ -14581,7 +16333,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -14615,7 +16367,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/page/Event/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/page/Event/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -14628,6 +16380,8 @@ func main() {
 `PUT /api/v2/page/Event/{id}`
 
 *Updates a event object by id*
+
+Put
 
 > Body parameter
 
@@ -14715,10 +16469,9 @@ func main() {
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "urlPath": "string",
     "status": "live",
     "targetAmount": 0,
     "averageDonationAmount": 0,
@@ -14773,7 +16526,10 @@ func main() {
     "template": {
       "key": "string",
       "value": {}
-    }
+    },
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -14805,14 +16561,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/page/Event/{id} \
+curl -X DELETE //localhost:32769//api/v2/page/Event/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/page/Event/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/page/Event/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -14827,7 +16583,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+  url: '//localhost:32769//api/v2/page/Event/{id}',
   method: 'delete',
 
   headers: headers,
@@ -14847,7 +16603,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+fetch('//localhost:32769//api/v2/page/Event/{id}',
 {
   method: 'DELETE',
 
@@ -14870,7 +16626,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/page/Event/{id}',
   params: {
   }, headers: headers
 
@@ -14885,7 +16641,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/page/Event/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/page/Event/{id}', params={
 
 }, headers = headers)
 
@@ -14894,7 +16650,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -14927,7 +16683,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/page/Event/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/page/Event/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -14940,6 +16696,8 @@ func main() {
 `DELETE /api/v2/page/Event/{id}`
 
 *Patches (partial update) a event object by id*
+
+Delete
 
 <h3 id="apiv2pageeventbyiddelete-parameters">Parameters</h3>
 
@@ -14983,7 +16741,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Event/{id} \
+curl -X PATCH //localhost:32769//api/v2/page/Event/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -14991,7 +16749,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Event/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/page/Event/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/page/Event/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -15007,7 +16765,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+  url: '//localhost:32769//api/v2/page/Event/{id}',
   method: 'patch',
 
   headers: headers,
@@ -15035,7 +16793,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+fetch('//localhost:32769//api/v2/page/Event/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -15059,7 +16817,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/page/Event/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/page/Event/{id}',
   params: {
   }, headers: headers
 
@@ -15075,7 +16833,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/page/Event/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/page/Event/{id}', params={
 
 }, headers = headers)
 
@@ -15084,7 +16842,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -15118,7 +16876,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/page/Event/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/page/Event/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -15131,6 +16889,8 @@ func main() {
 `PATCH /api/v2/page/Event/{id}`
 
 *Patches (partial update) a event object by id*
+
+Patch
 
 > Body parameter
 
@@ -15163,10 +16923,9 @@ func main() {
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "urlPath": "string",
     "status": "live",
     "targetAmount": 0,
     "averageDonationAmount": 0,
@@ -15221,7 +16980,10 @@ func main() {
     "template": {
       "key": "string",
       "value": {}
-    }
+    },
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -15253,7 +17015,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Event \
+curl -X POST //localhost:32769//api/v2/page/Event \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -15261,7 +17023,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Event \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Event HTTP/1.1
+POST //localhost:32769//api/v2/page/Event HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -15277,7 +17039,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event',
+  url: '//localhost:32769//api/v2/page/Event',
   method: 'post',
 
   headers: headers,
@@ -15360,7 +17122,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event',
+fetch('//localhost:32769//api/v2/page/Event',
 {
   method: 'POST',
   body: inputBody,
@@ -15384,7 +17146,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Event',
+result = RestClient.post '//localhost:32769//api/v2/page/Event',
   params: {
   }, headers: headers
 
@@ -15400,7 +17162,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Event', params={
+r = requests.post('//localhost:32769//api/v2/page/Event', params={
 
 }, headers = headers)
 
@@ -15409,7 +17171,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event");
+URL obj = new URL("//localhost:32769//api/v2/page/Event");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -15443,7 +17205,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Event", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Event", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -15456,6 +17218,8 @@ func main() {
 `POST /api/v2/page/Event`
 
 *Creates a new event*
+
+Post
 
 > Body parameter
 
@@ -15542,10 +17306,9 @@ func main() {
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "urlPath": "string",
     "status": "live",
     "targetAmount": 0,
     "averageDonationAmount": 0,
@@ -15600,7 +17363,10 @@ func main() {
     "template": {
       "key": "string",
       "value": {}
-    }
+    },
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -15632,7 +17398,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Event/search \
+curl -X POST //localhost:32769//api/v2/page/Event/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -15640,7 +17406,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Event/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Event/search HTTP/1.1
+POST //localhost:32769//api/v2/page/Event/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -15656,7 +17422,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/search',
+  url: '//localhost:32769//api/v2/page/Event/search',
   method: 'post',
 
   headers: headers,
@@ -15694,7 +17460,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/search',
+fetch('//localhost:32769//api/v2/page/Event/search',
 {
   method: 'POST',
   body: inputBody,
@@ -15718,7 +17484,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Event/search',
+result = RestClient.post '//localhost:32769//api/v2/page/Event/search',
   params: {
   }, headers: headers
 
@@ -15734,7 +17500,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Event/search', params={
+r = requests.post('//localhost:32769//api/v2/page/Event/search', params={
 
 }, headers = headers)
 
@@ -15743,7 +17509,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/search");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -15777,7 +17543,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Event/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Event/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -15790,6 +17556,8 @@ func main() {
 `POST /api/v2/page/Event/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -15836,10 +17604,9 @@ func main() {
         "organizationId": 0,
         "organizationFee": 0,
         "name": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "urlPath": "string",
         "status": "live",
         "targetAmount": 0,
         "averageDonationAmount": 0,
@@ -15894,7 +17661,10 @@ func main() {
         "template": {
           "key": "string",
           "value": {}
-        }
+        },
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -15928,7 +17698,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Event/export \
+curl -X POST //localhost:32769//api/v2/page/Event/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -15936,7 +17706,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Event/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Event/export HTTP/1.1
+POST //localhost:32769//api/v2/page/Event/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -15952,7 +17722,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/export',
+  url: '//localhost:32769//api/v2/page/Event/export',
   method: 'post',
 
   headers: headers,
@@ -15990,7 +17760,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/export',
+fetch('//localhost:32769//api/v2/page/Event/export',
 {
   method: 'POST',
   body: inputBody,
@@ -16014,7 +17784,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Event/export',
+result = RestClient.post '//localhost:32769//api/v2/page/Event/export',
   params: {
   }, headers: headers
 
@@ -16030,7 +17800,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Event/export', params={
+r = requests.post('//localhost:32769//api/v2/page/Event/export', params={
 
 }, headers = headers)
 
@@ -16039,7 +17809,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/export");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -16073,7 +17843,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Event/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Event/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -16086,6 +17856,8 @@ func main() {
 `POST /api/v2/page/Event/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -16152,14 +17924,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Event/metadata \
+curl -X GET //localhost:32769//api/v2/page/Event/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Event/metadata HTTP/1.1
+GET //localhost:32769//api/v2/page/Event/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -16174,7 +17946,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/metadata',
+  url: '//localhost:32769//api/v2/page/Event/metadata',
   method: 'get',
 
   headers: headers,
@@ -16194,7 +17966,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/metadata',
+fetch('//localhost:32769//api/v2/page/Event/metadata',
 {
   method: 'GET',
 
@@ -16217,7 +17989,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Event/metadata',
+result = RestClient.get '//localhost:32769//api/v2/page/Event/metadata',
   params: {
   }, headers: headers
 
@@ -16232,7 +18004,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Event/metadata', params={
+r = requests.get('//localhost:32769//api/v2/page/Event/metadata', params={
 
 }, headers = headers)
 
@@ -16241,7 +18013,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/metadata");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -16274,7 +18046,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Event/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Event/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -16287,6 +18059,8 @@ func main() {
 `GET /api/v2/page/Event/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -16339,14 +18113,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Event/aggregate \
+curl -X GET //localhost:32769//api/v2/page/Event/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Event/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/page/Event/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -16361,7 +18135,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Event/aggregate',
+  url: '//localhost:32769//api/v2/page/Event/aggregate',
   method: 'get',
 
   headers: headers,
@@ -16381,7 +18155,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Event/aggregate',
+fetch('//localhost:32769//api/v2/page/Event/aggregate',
 {
   method: 'GET',
 
@@ -16404,7 +18178,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Event/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/page/Event/aggregate',
   params: {
   }, headers: headers
 
@@ -16419,7 +18193,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Event/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/page/Event/aggregate', params={
 
 }, headers = headers)
 
@@ -16428,7 +18202,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Event/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/page/Event/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -16461,7 +18235,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Event/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Event/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -16474,6 +18248,8 @@ func main() {
 `GET /api/v2/page/Event/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2pageeventaggregateget-parameters">Parameters</h3>
 
@@ -16534,7 +18310,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Fundraiser">Fundraiser</h1>
+<h1 id="Core-API-Fundraiser">Fundraiser</h1>
 
 ## ApiV2PageFundraiserByIdGet
 
@@ -16544,14 +18320,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
+curl -X GET //localhost:32769//api/v2/page/Fundraiser/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} HTTP/1.1
+GET //localhost:32769//api/v2/page/Fundraiser/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -16566,7 +18342,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/{id}',
   method: 'get',
 
   headers: headers,
@@ -16586,7 +18362,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/{id}',
 {
   method: 'GET',
 
@@ -16609,7 +18385,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+result = RestClient.get '//localhost:32769//api/v2/page/Fundraiser/{id}',
   params: {
   }, headers: headers
 
@@ -16624,7 +18400,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}', params={
+r = requests.get('//localhost:32769//api/v2/page/Fundraiser/{id}', params={
 
 }, headers = headers)
 
@@ -16633,7 +18409,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -16666,7 +18442,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Fundraiser/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -16679,6 +18455,8 @@ func main() {
 `GET /api/v2/page/Fundraiser/{id}`
 
 *Gets a fundraiser object by id*
+
+Get
 
 <h3 id="apiv2pagefundraiserbyidget-parameters">Parameters</h3>
 
@@ -16723,11 +18501,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -16778,9 +18558,9 @@ func main() {
       "key": "string",
       "value": {}
     },
-    "urlPath": "string",
     "url": "string",
-    "urlFull": "string"
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -16812,7 +18592,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
+curl -X PUT //localhost:32769//api/v2/page/Fundraiser/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -16820,7 +18600,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/page/Fundraiser/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -16836,7 +18616,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/{id}',
   method: 'put',
 
   headers: headers,
@@ -16890,7 +18670,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -16914,7 +18694,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+result = RestClient.put '//localhost:32769//api/v2/page/Fundraiser/{id}',
   params: {
   }, headers: headers
 
@@ -16930,7 +18710,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}', params={
+r = requests.put('//localhost:32769//api/v2/page/Fundraiser/{id}', params={
 
 }, headers = headers)
 
@@ -16939,7 +18719,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -16973,7 +18753,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/page/Fundraiser/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -16986,6 +18766,8 @@ func main() {
 `PUT /api/v2/page/Fundraiser/{id}`
 
 *Updates a fundraiser object by id*
+
+Put
 
 > Body parameter
 
@@ -17070,11 +18852,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -17125,9 +18909,9 @@ func main() {
       "key": "string",
       "value": {}
     },
-    "urlPath": "string",
     "url": "string",
-    "urlFull": "string"
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -17159,14 +18943,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
+curl -X DELETE //localhost:32769//api/v2/page/Fundraiser/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/page/Fundraiser/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -17181,7 +18965,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/{id}',
   method: 'delete',
 
   headers: headers,
@@ -17201,7 +18985,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/{id}',
 {
   method: 'DELETE',
 
@@ -17224,7 +19008,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/page/Fundraiser/{id}',
   params: {
   }, headers: headers
 
@@ -17239,7 +19023,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/page/Fundraiser/{id}', params={
 
 }, headers = headers)
 
@@ -17248,7 +19032,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -17281,7 +19065,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/page/Fundraiser/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -17294,6 +19078,8 @@ func main() {
 `DELETE /api/v2/page/Fundraiser/{id}`
 
 *Patches (partial update) a fundraiser object by id*
+
+Delete
 
 <h3 id="apiv2pagefundraiserbyiddelete-parameters">Parameters</h3>
 
@@ -17337,7 +19123,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
+curl -X PATCH //localhost:32769//api/v2/page/Fundraiser/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -17345,7 +19131,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/page/Fundraiser/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/page/Fundraiser/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -17361,7 +19147,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/{id}',
   method: 'patch',
 
   headers: headers,
@@ -17389,7 +19175,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -17413,7 +19199,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/page/Fundraiser/{id}',
   params: {
   }, headers: headers
 
@@ -17429,7 +19215,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/page/Fundraiser/{id}', params={
 
 }, headers = headers)
 
@@ -17438,7 +19224,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -17472,7 +19258,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/page/Fundraiser/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -17485,6 +19271,8 @@ func main() {
 `PATCH /api/v2/page/Fundraiser/{id}`
 
 *Patches (partial update) a fundraiser object by id*
+
+Patch
 
 > Body parameter
 
@@ -17543,11 +19331,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -17598,9 +19388,9 @@ func main() {
       "key": "string",
       "value": {}
     },
-    "urlPath": "string",
     "url": "string",
-    "urlFull": "string"
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -17632,14 +19422,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X HEAD //api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id} \
+curl -X HEAD //localhost:32769//api/v2/page/Fundraiser/owner/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-HEAD //api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id} HTTP/1.1
+HEAD //localhost:32769//api/v2/page/Fundraiser/owner/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -17654,7 +19444,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/owner/{id}',
   method: 'head',
 
   headers: headers,
@@ -17674,7 +19464,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/owner/{id}',
 {
   method: 'HEAD',
 
@@ -17697,7 +19487,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.head '//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}',
+result = RestClient.head '//localhost:32769//api/v2/page/Fundraiser/owner/{id}',
   params: {
   }, headers: headers
 
@@ -17712,7 +19502,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.head('//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}', params={
+r = requests.head('//localhost:32769//api/v2/page/Fundraiser/owner/{id}', params={
 
 }, headers = headers)
 
@@ -17721,7 +19511,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/owner/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("HEAD");
 int responseCode = con.getResponseCode();
@@ -17754,7 +19544,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("HEAD", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/owner/{id}", data)
+    req, err := http.NewRequest("HEAD", "//localhost:32769//api/v2/page/Fundraiser/owner/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -17767,6 +19557,8 @@ func main() {
 `HEAD /api/v2/page/Fundraiser/owner/{id}`
 
 *Checks a fundraiser owner via id*
+
+Head
 
 <h3 id="apiv2pagefundraiserownerbyidhead-parameters">Parameters</h3>
 
@@ -17802,14 +19594,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath} \
+curl -X GET //localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
+GET //localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -17824,7 +19616,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
+  url: '//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
   method: 'get',
 
   headers: headers,
@@ -17844,7 +19636,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
+fetch('//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
 {
   method: 'GET',
 
@@ -17867,7 +19659,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
+result = RestClient.get '//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}',
   params: {
   }, headers: headers
 
@@ -17882,7 +19674,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
+r = requests.get('//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
 
 }, headers = headers)
 
@@ -17891,7 +19683,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -17924,7 +19716,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -17937,6 +19729,8 @@ func main() {
 `GET /api/v2/page/Fundraiser/public/{primaryPath}/{secondaryPath}/{urlPath}`
 
 *Gets a fundraiser object by paths*
+
+Get By Path
 
 <h3 id="apiv2pagefundraiserpublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
 
@@ -17971,8 +19765,8 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -18045,7 +19839,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser \
+curl -X POST //localhost:32769//api/v2/page/Fundraiser \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -18053,7 +19847,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Fundraiser HTTP/1.1
+POST //localhost:32769//api/v2/page/Fundraiser HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -18069,7 +19863,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser',
+  url: '//localhost:32769//api/v2/page/Fundraiser',
   method: 'post',
 
   headers: headers,
@@ -18123,7 +19917,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser',
+fetch('//localhost:32769//api/v2/page/Fundraiser',
 {
   method: 'POST',
   body: inputBody,
@@ -18147,7 +19941,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Fundraiser',
+result = RestClient.post '//localhost:32769//api/v2/page/Fundraiser',
   params: {
   }, headers: headers
 
@@ -18163,7 +19957,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Fundraiser', params={
+r = requests.post('//localhost:32769//api/v2/page/Fundraiser', params={
 
 }, headers = headers)
 
@@ -18172,7 +19966,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -18206,7 +20000,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Fundraiser", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Fundraiser", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -18219,6 +20013,8 @@ func main() {
 `POST /api/v2/page/Fundraiser`
 
 *Creates a new fundraiser*
+
+Post
 
 > Body parameter
 
@@ -18302,11 +20098,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -18357,9 +20155,9 @@ func main() {
       "key": "string",
       "value": {}
     },
-    "urlPath": "string",
     "url": "string",
-    "urlFull": "string"
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -18391,7 +20189,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/search \
+curl -X POST //localhost:32769//api/v2/page/Fundraiser/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -18399,7 +20197,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/search HTTP/1.1
+POST //localhost:32769//api/v2/page/Fundraiser/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -18415,7 +20213,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/search',
+  url: '//localhost:32769//api/v2/page/Fundraiser/search',
   method: 'post',
 
   headers: headers,
@@ -18453,7 +20251,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/search',
+fetch('//localhost:32769//api/v2/page/Fundraiser/search',
 {
   method: 'POST',
   body: inputBody,
@@ -18477,7 +20275,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Fundraiser/search',
+result = RestClient.post '//localhost:32769//api/v2/page/Fundraiser/search',
   params: {
   }, headers: headers
 
@@ -18493,7 +20291,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Fundraiser/search', params={
+r = requests.post('//localhost:32769//api/v2/page/Fundraiser/search', params={
 
 }, headers = headers)
 
@@ -18502,7 +20300,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/search");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -18536,7 +20334,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Fundraiser/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -18549,6 +20347,8 @@ func main() {
 `POST /api/v2/page/Fundraiser/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -18621,11 +20421,13 @@ func main() {
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -18676,9 +20478,9 @@ func main() {
           "key": "string",
           "value": {}
         },
-        "urlPath": "string",
         "url": "string",
-        "urlFull": "string"
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -18712,7 +20514,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/export \
+curl -X POST //localhost:32769//api/v2/page/Fundraiser/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -18720,7 +20522,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Fundraiser/export HTTP/1.1
+POST //localhost:32769//api/v2/page/Fundraiser/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -18736,7 +20538,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/export',
+  url: '//localhost:32769//api/v2/page/Fundraiser/export',
   method: 'post',
 
   headers: headers,
@@ -18774,7 +20576,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/export',
+fetch('//localhost:32769//api/v2/page/Fundraiser/export',
 {
   method: 'POST',
   body: inputBody,
@@ -18798,7 +20600,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Fundraiser/export',
+result = RestClient.post '//localhost:32769//api/v2/page/Fundraiser/export',
   params: {
   }, headers: headers
 
@@ -18814,7 +20616,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Fundraiser/export', params={
+r = requests.post('//localhost:32769//api/v2/page/Fundraiser/export', params={
 
 }, headers = headers)
 
@@ -18823,7 +20625,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/export");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -18857,7 +20659,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Fundraiser/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -18870,6 +20672,8 @@ func main() {
 `POST /api/v2/page/Fundraiser/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -18936,14 +20740,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata \
+curl -X GET //localhost:32769//api/v2/page/Fundraiser/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata HTTP/1.1
+GET //localhost:32769//api/v2/page/Fundraiser/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -18958,7 +20762,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata',
+  url: '//localhost:32769//api/v2/page/Fundraiser/metadata',
   method: 'get',
 
   headers: headers,
@@ -18978,7 +20782,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata',
+fetch('//localhost:32769//api/v2/page/Fundraiser/metadata',
 {
   method: 'GET',
 
@@ -19001,7 +20805,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata',
+result = RestClient.get '//localhost:32769//api/v2/page/Fundraiser/metadata',
   params: {
   }, headers: headers
 
@@ -19016,7 +20820,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata', params={
+r = requests.get('//localhost:32769//api/v2/page/Fundraiser/metadata', params={
 
 }, headers = headers)
 
@@ -19025,7 +20829,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -19058,7 +20862,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Fundraiser/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -19071,6 +20875,8 @@ func main() {
 `GET /api/v2/page/Fundraiser/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -19123,14 +20929,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate \
+curl -X GET //localhost:32769//api/v2/page/Fundraiser/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/page/Fundraiser/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -19145,7 +20951,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate',
+  url: '//localhost:32769//api/v2/page/Fundraiser/aggregate',
   method: 'get',
 
   headers: headers,
@@ -19165,7 +20971,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate',
+fetch('//localhost:32769//api/v2/page/Fundraiser/aggregate',
 {
   method: 'GET',
 
@@ -19188,7 +20994,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/page/Fundraiser/aggregate',
   params: {
   }, headers: headers
 
@@ -19203,7 +21009,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/page/Fundraiser/aggregate', params={
 
 }, headers = headers)
 
@@ -19212,7 +21018,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/page/Fundraiser/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -19245,7 +21051,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Fundraiser/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Fundraiser/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -19258,6 +21064,8 @@ func main() {
 `GET /api/v2/page/Fundraiser/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2pagefundraiseraggregateget-parameters">Parameters</h3>
 
@@ -19318,24 +21126,24 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Organization">Organization</h1>
+<h1 id="Core-API-Microblog">Microblog</h1>
 
-## ApiV2OrganizationByIdGet
+## ApiV2MicroblogByIdGet
 
-<a id="opIdApiV2OrganizationByIdGet"></a>
+<a id="opIdApiV2MicroblogByIdGet"></a>
 
 > Code samples
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Organization/{id} \
+curl -X GET //localhost:32769//api/v2/Microblog/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Organization/{id} HTTP/1.1
+GET //localhost:32769//api/v2/Microblog/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -19350,7 +21158,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+  url: '//localhost:32769//api/v2/Microblog/{id}',
   method: 'get',
 
   headers: headers,
@@ -19370,7 +21178,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/{id}',
+fetch('//localhost:32769//api/v2/Microblog/{id}',
 {
   method: 'GET',
 
@@ -19393,7 +21201,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+result = RestClient.get '//localhost:32769//api/v2/Microblog/{id}',
   params: {
   }, headers: headers
 
@@ -19408,7 +21216,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Organization/{id}', params={
+r = requests.get('//localhost:32769//api/v2/Microblog/{id}', params={
 
 }, headers = headers)
 
@@ -19417,7 +21225,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Microblog/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -19450,7 +21258,2505 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Organization/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Microblog/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/Microblog/{id}`
+
+*Gets a microblog object by id*
+
+Get
+
+<h3 id="apiv2microblogbyidget-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|Microblog id|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "campaignId": 0,
+    "campaign": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "items": [
+      {
+        "key": "text",
+        "value": [
+          "string"
+        ]
+      }
+    ],
+    "eventId": 0,
+    "event": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "id": 0,
+    "fundraiserId": 0,
+    "fundraiser": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "organizationId": 0,
+    "organization": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "status": "live",
+    "teamId": 0,
+    "team": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "text": "string",
+    "type": "campaign"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogbyidget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogByIdPut
+
+<a id="opIdApiV2MicroblogByIdPut"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X PUT //localhost:32769//api/v2/Microblog/{id} \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+PUT //localhost:32769//api/v2/Microblog/{id} HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/{id}',
+  method: 'put',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "campaignId": 0,
+  "eventId": 0,
+  "fundraiserId": 0,
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "teamId": 0,
+  "type": "campaign",
+  "notify": {
+    "donors": true,
+    "fundraisers": true
+  }
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/{id}',
+{
+  method: 'PUT',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.put '//localhost:32769//api/v2/Microblog/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.put('//localhost:32769//api/v2/Microblog/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("PUT");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Microblog/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`PUT /api/v2/Microblog/{id}`
+
+*Updates a microblog object by id*
+
+Put
+
+> Body parameter
+
+```json
+{
+  "campaignId": 0,
+  "eventId": 0,
+  "fundraiserId": 0,
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "teamId": 0,
+  "type": "campaign",
+  "notify": {
+    "donors": true,
+    "fundraisers": true
+  }
+}
+```
+
+<h3 id="apiv2microblogbyidput-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the microblog object being modified|
+|body|body|[MicroblogEditModel](#schemamicroblogeditmodel)|false|The microblog model containing the changes|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "campaignId": 0,
+    "campaign": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "items": [
+      {
+        "key": "text",
+        "value": [
+          "string"
+        ]
+      }
+    ],
+    "eventId": 0,
+    "event": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "id": 0,
+    "fundraiserId": 0,
+    "fundraiser": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "organizationId": 0,
+    "organization": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "status": "live",
+    "teamId": 0,
+    "team": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "text": "string",
+    "type": "campaign"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogbyidput-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogByIdDelete
+
+<a id="opIdApiV2MicroblogByIdDelete"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X DELETE //localhost:32769//api/v2/Microblog/{id} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+DELETE //localhost:32769//api/v2/Microblog/{id} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/{id}',
+  method: 'delete',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/{id}',
+{
+  method: 'DELETE',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.delete '//localhost:32769//api/v2/Microblog/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.delete('//localhost:32769//api/v2/Microblog/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("DELETE");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Microblog/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`DELETE /api/v2/Microblog/{id}`
+
+*Patches (partial update) a microblog object by id*
+
+Delete
+
+<h3 id="apiv2microblogbyiddelete-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the microblog object being modified|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogbyiddelete-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ObjectActionResult](#schemaobjectactionresult)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ObjectActionResult](#schemaobjectactionresult)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogByIdPatch
+
+<a id="opIdApiV2MicroblogByIdPatch"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X PATCH //localhost:32769//api/v2/Microblog/{id} \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+PATCH //localhost:32769//api/v2/Microblog/{id} HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/{id}',
+  method: 'patch',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '[
+  {
+    "value": {},
+    "path": "string",
+    "op": "string",
+    "from": "string"
+  }
+]';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/{id}',
+{
+  method: 'PATCH',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.patch '//localhost:32769//api/v2/Microblog/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.patch('//localhost:32769//api/v2/Microblog/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("PATCH");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/Microblog/{id}", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`PATCH /api/v2/Microblog/{id}`
+
+*Patches (partial update) a microblog object by id*
+
+Patch
+
+> Body parameter
+
+```json
+[
+  {
+    "value": {},
+    "path": "string",
+    "op": "string",
+    "from": "string"
+  }
+]
+```
+
+<h3 id="apiv2microblogbyidpatch-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|id|path|integer(int32)|true|The id of the microblog object being modified|
+|body|body|array[object]|false|The microblog model containing the changes|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "campaignId": 0,
+    "campaign": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "items": [
+      {
+        "key": "text",
+        "value": [
+          "string"
+        ]
+      }
+    ],
+    "eventId": 0,
+    "event": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "id": 0,
+    "fundraiserId": 0,
+    "fundraiser": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "organizationId": 0,
+    "organization": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "status": "live",
+    "teamId": 0,
+    "team": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "text": "string",
+    "type": "campaign"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogbyidpatch-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogPost
+
+<a id="opIdApiV2MicroblogPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Microblog \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Microblog HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "campaignId": 0,
+  "eventId": 0,
+  "fundraiserId": 0,
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "teamId": 0,
+  "type": "campaign",
+  "notify": {
+    "donors": true,
+    "fundraisers": true
+  }
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Microblog',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Microblog', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Microblog", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Microblog`
+
+*Creates a new microblog*
+
+Post
+
+> Body parameter
+
+```json
+{
+  "campaignId": 0,
+  "eventId": 0,
+  "fundraiserId": 0,
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "teamId": 0,
+  "type": "campaign",
+  "notify": {
+    "donors": true,
+    "fundraisers": true
+  }
+}
+```
+
+<h3 id="apiv2microblogpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[MicroblogEditModel](#schemamicroblogeditmodel)|false|The microblog model containing the details|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": {
+    "campaignId": 0,
+    "campaign": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "items": [
+      {
+        "key": "text",
+        "value": [
+          "string"
+        ]
+      }
+    ],
+    "eventId": 0,
+    "event": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "id": 0,
+    "fundraiserId": 0,
+    "fundraiser": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "organizationId": 0,
+    "organization": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "status": "live",
+    "teamId": 0,
+    "team": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "text": "string",
+    "type": "campaign"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_MicroblogElementModel_](#schemascalaractionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogSearchPost
+
+<a id="opIdApiV2MicroblogSearchPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Microblog/search \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Microblog/search HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/search',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/search',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Microblog/search',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Microblog/search', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/search");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Microblog/search", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Microblog/search`
+
+*Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
+
+> Body parameter
+
+```json
+{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}
+```
+
+<h3 id="apiv2microblogsearchpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[MicroblogSearchModel](#schemamicroblogsearchmodel)|false|Implements ISearching and offers custom filters, text matching, paging and ordering|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": {
+    "totalCount": 0,
+    "page": 0,
+    "pageSize": 0,
+    "list": [
+      {
+        "campaignId": 0,
+        "campaign": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "items": [
+          {
+            "key": "text",
+            "value": [
+              "string"
+            ]
+          }
+        ],
+        "eventId": 0,
+        "event": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "id": 0,
+        "fundraiserId": 0,
+        "fundraiser": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "organizationId": 0,
+        "organization": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "status": "live",
+        "teamId": 0,
+        "team": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "text": "string",
+        "type": "campaign"
+      }
+    ]
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogsearchpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ListActionResult_MicroblogElementModel_](#schemalistactionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ListActionResult_MicroblogElementModel_](#schemalistactionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogSearchPublicPost
+
+<a id="opIdApiV2MicroblogSearchPublicPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Microblog/search/public \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Microblog/search/public HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/search/public',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "primaryUrlPath": "string",
+  "secondaryUrlPath": "string",
+  "tertiaryUrlPath": "string",
+  "page": 0,
+  "pageSize": 0
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/search/public',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Microblog/search/public',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Microblog/search/public', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/search/public");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Microblog/search/public", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Microblog/search/public`
+
+*Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search Public
+
+> Body parameter
+
+```json
+{
+  "primaryUrlPath": "string",
+  "secondaryUrlPath": "string",
+  "tertiaryUrlPath": "string",
+  "page": 0,
+  "pageSize": 0
+}
+```
+
+<h3 id="apiv2microblogsearchpublicpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[MicroblogPublicSearchModel](#schemamicroblogpublicsearchmodel)|false|Implements ISearching and offers custom filters, text matching, paging and ordering|
+
+> Example responses
+
+> 201 Response
+
+```json
+{
+  "data": {
+    "totalCount": 0,
+    "page": 0,
+    "pageSize": 0,
+    "list": [
+      {
+        "campaignId": 0,
+        "campaign": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "items": [
+          {
+            "key": "text",
+            "value": [
+              "string"
+            ]
+          }
+        ],
+        "eventId": 0,
+        "event": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "id": 0,
+        "fundraiserId": 0,
+        "fundraiser": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "organizationId": 0,
+        "organization": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "status": "live",
+        "teamId": 0,
+        "team": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "text": "string",
+        "type": "campaign"
+      }
+    ]
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogsearchpublicpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[ListActionResult_MicroblogElementModel_](#schemalistactionresult_microblogelementmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ListActionResult_MicroblogElementModel_](#schemalistactionresult_microblogelementmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader
+</aside>
+
+## ApiV2MicroblogExportPost
+
+<a id="opIdApiV2MicroblogExportPost"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X POST //localhost:32769//api/v2/Microblog/export \
+  -H 'Content-Type: application/json-patch+json' \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+POST //localhost:32769//api/v2/Microblog/export HTTP/1.1
+Host: null
+Content-Type: application/json-patch+json
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/export',
+  method: 'post',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+const inputBody = '{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}';
+const headers = {
+  'Content-Type':'application/json-patch+json',
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/export',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' => 'application/json-patch+json',
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.post '//localhost:32769//api/v2/Microblog/export',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Content-Type': 'application/json-patch+json',
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.post('//localhost:32769//api/v2/Microblog/export', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/export");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Content-Type": []string{"application/json-patch+json"},
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Microblog/export", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`POST /api/v2/Microblog/export`
+
+*Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
+
+> Body parameter
+
+```json
+{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}
+```
+
+<h3 id="apiv2microblogexportpost-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[MicroblogSearchModel](#schemamicroblogsearchmodel)|false|Implements ISearching and offers custom filters, text matching, paging and ordering|
+
+> Example responses
+
+> 400 Response
+
+```json
+{
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogexportpost-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ObjectActionResult](#schemaobjectactionresult)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogMetadataGet
+
+<a id="opIdApiV2MicroblogMetadataGet"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //localhost:32769//api/v2/Microblog/metadata \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/Microblog/metadata HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/metadata',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/metadata',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/Microblog/metadata',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/Microblog/metadata', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/metadata");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Microblog/metadata", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/Microblog/metadata`
+
+*Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "columns": [
+      {
+        "key": "string",
+        "dataType": "string",
+        "additionalData": {}
+      }
+    ],
+    "filters": [
+      "string"
+    ],
+    "sort": [
+      "string"
+    ]
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogmetadataget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_MetadataPublicModel_](#schemascalaractionresult_metadatapublicmodel_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_MetadataPublicModel_](#schemascalaractionresult_metadatapublicmodel_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+## ApiV2MicroblogAggregateGet
+
+<a id="opIdApiV2MicroblogAggregateGet"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //localhost:32769//api/v2/Microblog/aggregate \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/Microblog/aggregate HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Microblog/aggregate',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Microblog/aggregate',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/Microblog/aggregate',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/Microblog/aggregate', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Microblog/aggregate");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Microblog/aggregate", data)
+    req.Header = headers
+
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    // ...
+}
+
+```
+
+`GET /api/v2/Microblog/aggregate`
+
+*Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
+
+<h3 id="apiv2microblogaggregateget-parameters">Parameters</h3>
+
+|Parameter|In|Type|Required|Description|
+|---|---|---|---|---|
+|fieldName|query|string|false|none|
+|fieldAggregate|query|string|false|none|
+|filters|query|array[any]|false|none|
+|text|query|string|false|none|
+|orderBy.key|query|string|false|none|
+|orderBy.direction|query|string|false|none|
+|page|query|integer(int32)|false|none|
+|pageSize|query|integer(int32)|false|none|
+|resultType|query|string|false|none|
+|includeDataTemplate|query|boolean|false|none|
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+|fieldAggregate|sum|
+|fieldAggregate|average|
+|fieldAggregate|min|
+|fieldAggregate|max|
+|fieldAggregate|count|
+|orderBy.direction|asc|
+|orderBy.direction|desc|
+|resultType|lookup|
+|resultType|basic|
+|resultType|full|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": 0,
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+```
+
+<h3 id="apiv2microblogaggregateget-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ScalarActionResult_Decimal_](#schemascalaractionresult_decimal_)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|[ScalarActionResult_Decimal_](#schemascalaractionresult_decimal_)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+ApiKeyHeader & None
+</aside>
+
+<h1 id="Core-API-Organization">Organization</h1>
+
+## ApiV2OrganizationByIdGet
+
+<a id="opIdApiV2OrganizationByIdGet"></a>
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //localhost:32769//api/v2/Organization/{id} \
+  -H 'Accept: application/json' \
+  -H 'ApiKey: API_KEY'
+
+```
+
+```http
+GET //localhost:32769//api/v2/Organization/{id} HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+$.ajax({
+  url: '//localhost:32769//api/v2/Organization/{id}',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json',
+  'ApiKey':'API_KEY'
+
+};
+
+fetch('//localhost:32769//api/v2/Organization/{id}',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json',
+  'ApiKey' => 'API_KEY'
+}
+
+result = RestClient.get '//localhost:32769//api/v2/Organization/{id}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json',
+  'ApiKey': 'API_KEY'
+}
+
+r = requests.get('//localhost:32769//api/v2/Organization/{id}', params={
+
+}, headers = headers)
+
+print r.json()
+
+```
+
+```java
+URL obj = new URL("//localhost:32769//api/v2/Organization/{id}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+```go
+package main
+
+import (
+       "bytes"
+       "net/http"
+)
+
+func main() {
+
+    headers := map[string][]string{
+        "Accept": []string{"application/json"},
+        "ApiKey": []string{"API_KEY"},
+        
+    }
+
+    data := bytes.NewBuffer([]byte{jsonReq})
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Organization/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -19463,6 +23769,8 @@ func main() {
 `GET /api/v2/Organization/{id}`
 
 *Gets an organization object by id*
+
+Get
 
 <h3 id="apiv2organizationbyidget-parameters">Parameters</h3>
 
@@ -19477,6 +23785,7 @@ func main() {
 ```json
 {
   "data": {
+    "averageDonationAmount": 0,
     "address": {
       "street": "string",
       "city": "string",
@@ -19484,9 +23793,12 @@ func main() {
       "postcode": "string",
       "country": "string"
     },
+    "campaignCount": 0,
+    "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
     "legalName": "string",
@@ -19502,12 +23814,16 @@ func main() {
         "platform": "stripe"
       }
     ],
+    "raisedAmount": 0,
+    "raisedAmountOnlineOnly": 0,
     "taxId": "string",
+    "teamsCount": 0,
     "template": {
       "key": "string",
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -19541,7 +23857,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/Organization/{id} \
+curl -X PUT //localhost:32769//api/v2/Organization/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -19549,7 +23865,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/Organization/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/Organization/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/Organization/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -19565,7 +23881,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+  url: '//localhost:32769//api/v2/Organization/{id}',
   method: 'put',
 
   headers: headers,
@@ -19608,7 +23924,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/{id}',
+fetch('//localhost:32769//api/v2/Organization/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -19632,7 +23948,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+result = RestClient.put '//localhost:32769//api/v2/Organization/{id}',
   params: {
   }, headers: headers
 
@@ -19648,7 +23964,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/Organization/{id}', params={
+r = requests.put('//localhost:32769//api/v2/Organization/{id}', params={
 
 }, headers = headers)
 
@@ -19657,7 +23973,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Organization/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -19691,7 +24007,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/Organization/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/Organization/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -19704,6 +24020,8 @@ func main() {
 `PUT /api/v2/Organization/{id}`
 
 *Updates an organization object by id*
+
+Put
 
 > Body parameter
 
@@ -19747,6 +24065,7 @@ func main() {
 ```json
 {
   "data": {
+    "averageDonationAmount": 0,
     "address": {
       "street": "string",
       "city": "string",
@@ -19754,9 +24073,12 @@ func main() {
       "postcode": "string",
       "country": "string"
     },
+    "campaignCount": 0,
+    "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
     "legalName": "string",
@@ -19772,12 +24094,16 @@ func main() {
         "platform": "stripe"
       }
     ],
+    "raisedAmount": 0,
+    "raisedAmountOnlineOnly": 0,
     "taxId": "string",
+    "teamsCount": 0,
     "template": {
       "key": "string",
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -19811,14 +24137,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/Organization/{id} \
+curl -X DELETE //localhost:32769//api/v2/Organization/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/Organization/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/Organization/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -19833,7 +24159,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+  url: '//localhost:32769//api/v2/Organization/{id}',
   method: 'delete',
 
   headers: headers,
@@ -19853,7 +24179,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/{id}',
+fetch('//localhost:32769//api/v2/Organization/{id}',
 {
   method: 'DELETE',
 
@@ -19876,7 +24202,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/Organization/{id}',
   params: {
   }, headers: headers
 
@@ -19891,7 +24217,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/Organization/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/Organization/{id}', params={
 
 }, headers = headers)
 
@@ -19900,7 +24226,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Organization/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -19933,7 +24259,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/Organization/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Organization/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -19946,6 +24272,8 @@ func main() {
 `DELETE /api/v2/Organization/{id}`
 
 *Patches (partial update) an organization object by id*
+
+Delete
 
 <h3 id="apiv2organizationbyiddelete-parameters">Parameters</h3>
 
@@ -19989,7 +24317,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/Organization/{id} \
+curl -X PATCH //localhost:32769//api/v2/Organization/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -19997,7 +24325,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/Organization/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/Organization/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/Organization/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -20013,7 +24341,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+  url: '//localhost:32769//api/v2/Organization/{id}',
   method: 'patch',
 
   headers: headers,
@@ -20041,7 +24369,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/{id}',
+fetch('//localhost:32769//api/v2/Organization/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -20065,7 +24393,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/Organization/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/Organization/{id}',
   params: {
   }, headers: headers
 
@@ -20081,7 +24409,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/Organization/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/Organization/{id}', params={
 
 }, headers = headers)
 
@@ -20090,7 +24418,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/{id}");
+URL obj = new URL("//localhost:32769//api/v2/Organization/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -20124,7 +24452,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/Organization/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/Organization/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -20137,6 +24465,8 @@ func main() {
 `PATCH /api/v2/Organization/{id}`
 
 *Patches (partial update) an organization object by id*
+
+Patch
 
 > Body parameter
 
@@ -20165,6 +24495,7 @@ func main() {
 ```json
 {
   "data": {
+    "averageDonationAmount": 0,
     "address": {
       "street": "string",
       "city": "string",
@@ -20172,9 +24503,12 @@ func main() {
       "postcode": "string",
       "country": "string"
     },
+    "campaignCount": 0,
+    "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
     "legalName": "string",
@@ -20190,12 +24524,16 @@ func main() {
         "platform": "stripe"
       }
     ],
+    "raisedAmount": 0,
+    "raisedAmountOnlineOnly": 0,
     "taxId": "string",
+    "teamsCount": 0,
     "template": {
       "key": "string",
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -20229,14 +24567,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Organization/public/{urlPath} \
+curl -X GET //localhost:32769//api/v2/Organization/public/{urlPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Organization/public/{urlPath} HTTP/1.1
+GET //localhost:32769//api/v2/Organization/public/{urlPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -20251,7 +24589,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}',
+  url: '//localhost:32769//api/v2/Organization/public/{urlPath}',
   method: 'get',
 
   headers: headers,
@@ -20271,7 +24609,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}',
+fetch('//localhost:32769//api/v2/Organization/public/{urlPath}',
 {
   method: 'GET',
 
@@ -20294,7 +24632,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}',
+result = RestClient.get '//localhost:32769//api/v2/Organization/public/{urlPath}',
   params: {
   }, headers: headers
 
@@ -20309,7 +24647,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}', params={
+r = requests.get('//localhost:32769//api/v2/Organization/public/{urlPath}', params={
 
 }, headers = headers)
 
@@ -20318,7 +24656,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}");
+URL obj = new URL("//localhost:32769//api/v2/Organization/public/{urlPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -20351,7 +24689,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Organization/public/{urlPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Organization/public/{urlPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -20364,6 +24702,8 @@ func main() {
 `GET /api/v2/Organization/public/{urlPath}`
 
 *Gets a Organization object by paths*
+
+Get By Path
 
 <h3 id="apiv2organizationpublicbyurlpathget-parameters">Parameters</h3>
 
@@ -20380,8 +24720,8 @@ func main() {
   "data": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -20392,6 +24732,7 @@ func main() {
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -20425,7 +24766,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Organization \
+curl -X POST //localhost:32769//api/v2/Organization \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -20433,7 +24774,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Organization \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Organization HTTP/1.1
+POST //localhost:32769//api/v2/Organization HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -20449,7 +24790,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization',
+  url: '//localhost:32769//api/v2/Organization',
   method: 'post',
 
   headers: headers,
@@ -20492,7 +24833,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization',
+fetch('//localhost:32769//api/v2/Organization',
 {
   method: 'POST',
   body: inputBody,
@@ -20516,7 +24857,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Organization',
+result = RestClient.post '//localhost:32769//api/v2/Organization',
   params: {
   }, headers: headers
 
@@ -20532,7 +24873,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Organization', params={
+r = requests.post('//localhost:32769//api/v2/Organization', params={
 
 }, headers = headers)
 
@@ -20541,7 +24882,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization");
+URL obj = new URL("//localhost:32769//api/v2/Organization");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -20575,7 +24916,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Organization", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Organization", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -20588,6 +24929,8 @@ func main() {
 `POST /api/v2/Organization`
 
 *Creates a new organization*
+
+Post
 
 > Body parameter
 
@@ -20630,6 +24973,7 @@ func main() {
 ```json
 {
   "data": {
+    "averageDonationAmount": 0,
     "address": {
       "street": "string",
       "city": "string",
@@ -20637,9 +24981,12 @@ func main() {
       "postcode": "string",
       "country": "string"
     },
+    "campaignCount": 0,
+    "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
     "legalName": "string",
@@ -20655,12 +25002,16 @@ func main() {
         "platform": "stripe"
       }
     ],
+    "raisedAmount": 0,
+    "raisedAmountOnlineOnly": 0,
     "taxId": "string",
+    "teamsCount": 0,
     "template": {
       "key": "string",
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -20694,7 +25045,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Organization/search \
+curl -X POST //localhost:32769//api/v2/Organization/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -20702,7 +25053,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Organization/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Organization/search HTTP/1.1
+POST //localhost:32769//api/v2/Organization/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -20718,7 +25069,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/search',
+  url: '//localhost:32769//api/v2/Organization/search',
   method: 'post',
 
   headers: headers,
@@ -20756,7 +25107,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/search',
+fetch('//localhost:32769//api/v2/Organization/search',
 {
   method: 'POST',
   body: inputBody,
@@ -20780,7 +25131,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Organization/search',
+result = RestClient.post '//localhost:32769//api/v2/Organization/search',
   params: {
   }, headers: headers
 
@@ -20796,7 +25147,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Organization/search', params={
+r = requests.post('//localhost:32769//api/v2/Organization/search', params={
 
 }, headers = headers)
 
@@ -20805,7 +25156,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/search");
+URL obj = new URL("//localhost:32769//api/v2/Organization/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -20839,7 +25190,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Organization/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Organization/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -20852,6 +25203,8 @@ func main() {
 `POST /api/v2/Organization/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -20894,6 +25247,7 @@ func main() {
     "pageSize": 0,
     "list": [
       {
+        "averageDonationAmount": 0,
         "address": {
           "street": "string",
           "city": "string",
@@ -20901,9 +25255,12 @@ func main() {
           "postcode": "string",
           "country": "string"
         },
+        "campaignCount": 0,
+        "campaignLiveCount": 0,
         "currency": "string",
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "fundraisingPageCreatedEmail": "string",
         "id": 0,
         "legalName": "string",
@@ -20919,12 +25276,16 @@ func main() {
             "platform": "stripe"
           }
         ],
+        "raisedAmount": 0,
+        "raisedAmountOnlineOnly": 0,
         "taxId": "string",
+        "teamsCount": 0,
         "template": {
           "key": "string",
           "value": {}
         },
         "timezone": "string",
+        "url": "string",
         "urlFull": "string",
         "urlPath": "string"
       }
@@ -20960,7 +25321,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Organization/export \
+curl -X POST //localhost:32769//api/v2/Organization/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -20968,7 +25329,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Organization/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Organization/export HTTP/1.1
+POST //localhost:32769//api/v2/Organization/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -20984,7 +25345,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/export',
+  url: '//localhost:32769//api/v2/Organization/export',
   method: 'post',
 
   headers: headers,
@@ -21022,7 +25383,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/export',
+fetch('//localhost:32769//api/v2/Organization/export',
 {
   method: 'POST',
   body: inputBody,
@@ -21046,7 +25407,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Organization/export',
+result = RestClient.post '//localhost:32769//api/v2/Organization/export',
   params: {
   }, headers: headers
 
@@ -21062,7 +25423,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Organization/export', params={
+r = requests.post('//localhost:32769//api/v2/Organization/export', params={
 
 }, headers = headers)
 
@@ -21071,7 +25432,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/export");
+URL obj = new URL("//localhost:32769//api/v2/Organization/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -21105,7 +25466,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Organization/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Organization/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -21118,6 +25479,8 @@ func main() {
 `POST /api/v2/Organization/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -21184,14 +25547,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Organization/metadata \
+curl -X GET //localhost:32769//api/v2/Organization/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Organization/metadata HTTP/1.1
+GET //localhost:32769//api/v2/Organization/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -21206,7 +25569,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/metadata',
+  url: '//localhost:32769//api/v2/Organization/metadata',
   method: 'get',
 
   headers: headers,
@@ -21226,7 +25589,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/metadata',
+fetch('//localhost:32769//api/v2/Organization/metadata',
 {
   method: 'GET',
 
@@ -21249,7 +25612,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Organization/metadata',
+result = RestClient.get '//localhost:32769//api/v2/Organization/metadata',
   params: {
   }, headers: headers
 
@@ -21264,7 +25627,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Organization/metadata', params={
+r = requests.get('//localhost:32769//api/v2/Organization/metadata', params={
 
 }, headers = headers)
 
@@ -21273,7 +25636,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/metadata");
+URL obj = new URL("//localhost:32769//api/v2/Organization/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -21306,7 +25669,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Organization/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Organization/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -21319,6 +25682,8 @@ func main() {
 `GET /api/v2/Organization/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -21371,14 +25736,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Organization/aggregate \
+curl -X GET //localhost:32769//api/v2/Organization/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Organization/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/Organization/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -21393,7 +25758,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/aggregate',
+  url: '//localhost:32769//api/v2/Organization/aggregate',
   method: 'get',
 
   headers: headers,
@@ -21413,7 +25778,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/aggregate',
+fetch('//localhost:32769//api/v2/Organization/aggregate',
 {
   method: 'GET',
 
@@ -21436,7 +25801,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Organization/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/Organization/aggregate',
   params: {
   }, headers: headers
 
@@ -21451,7 +25816,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Organization/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/Organization/aggregate', params={
 
 }, headers = headers)
 
@@ -21460,7 +25825,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/Organization/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -21493,7 +25858,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Organization/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Organization/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -21506,6 +25871,8 @@ func main() {
 `GET /api/v2/Organization/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2organizationaggregateget-parameters">Parameters</h3>
 
@@ -21574,14 +25941,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup \
+curl -X GET //localhost:32769//api/v2/Organization/paymentPlatform/setup \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup HTTP/1.1
+GET //localhost:32769//api/v2/Organization/paymentPlatform/setup HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -21596,7 +25963,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup',
+  url: '//localhost:32769//api/v2/Organization/paymentPlatform/setup',
   method: 'get',
 
   headers: headers,
@@ -21616,7 +25983,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup',
+fetch('//localhost:32769//api/v2/Organization/paymentPlatform/setup',
 {
   method: 'GET',
 
@@ -21639,7 +26006,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup',
+result = RestClient.get '//localhost:32769//api/v2/Organization/paymentPlatform/setup',
   params: {
   }, headers: headers
 
@@ -21654,7 +26021,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup', params={
+r = requests.get('//localhost:32769//api/v2/Organization/paymentPlatform/setup', params={
 
 }, headers = headers)
 
@@ -21663,7 +26030,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup");
+URL obj = new URL("//localhost:32769//api/v2/Organization/paymentPlatform/setup");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -21696,7 +26063,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform/setup", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Organization/paymentPlatform/setup", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -21709,6 +26076,8 @@ func main() {
 `GET /api/v2/Organization/paymentPlatform/setup`
 
 *Get a setup link for a payment platform*
+
+Payment Setup
 
 <h3 id="apiv2organizationpaymentplatformsetupget-parameters">Parameters</h3>
 
@@ -21762,14 +26131,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Organization/paymentPlatform \
+curl -X POST //localhost:32769//api/v2/Organization/paymentPlatform \
   -H 'Content-Type: application/json-patch+json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Organization/paymentPlatform HTTP/1.1
+POST //localhost:32769//api/v2/Organization/paymentPlatform HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 
@@ -21783,7 +26152,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform',
+  url: '//localhost:32769//api/v2/Organization/paymentPlatform',
   method: 'post',
 
   headers: headers,
@@ -21808,7 +26177,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform',
+fetch('//localhost:32769//api/v2/Organization/paymentPlatform',
 {
   method: 'POST',
   body: inputBody,
@@ -21831,7 +26200,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform',
+result = RestClient.post '//localhost:32769//api/v2/Organization/paymentPlatform',
   params: {
   }, headers: headers
 
@@ -21846,7 +26215,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform', params={
+r = requests.post('//localhost:32769//api/v2/Organization/paymentPlatform', params={
 
 }, headers = headers)
 
@@ -21855,7 +26224,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform");
+URL obj = new URL("//localhost:32769//api/v2/Organization/paymentPlatform");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -21888,7 +26257,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Organization/paymentPlatform", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Organization/paymentPlatform", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -21901,6 +26270,8 @@ func main() {
 `POST /api/v2/Organization/paymentPlatform`
 
 *Complete payment platform setup*
+
+Post Payment Platform
 
 > Body parameter
 
@@ -21938,14 +26309,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint \
+curl -X POST //localhost:32769//api/v2/Organization/webhookEndpoint \
   -H 'Content-Type: application/json-patch+json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint HTTP/1.1
+POST //localhost:32769//api/v2/Organization/webhookEndpoint HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 
@@ -21959,7 +26330,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+  url: '//localhost:32769//api/v2/Organization/webhookEndpoint',
   method: 'post',
 
   headers: headers,
@@ -21982,7 +26353,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+fetch('//localhost:32769//api/v2/Organization/webhookEndpoint',
 {
   method: 'POST',
   body: inputBody,
@@ -22005,7 +26376,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+result = RestClient.post '//localhost:32769//api/v2/Organization/webhookEndpoint',
   params: {
   }, headers: headers
 
@@ -22020,7 +26391,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint', params={
+r = requests.post('//localhost:32769//api/v2/Organization/webhookEndpoint', params={
 
 }, headers = headers)
 
@@ -22029,7 +26400,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint");
+URL obj = new URL("//localhost:32769//api/v2/Organization/webhookEndpoint");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -22062,7 +26433,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Organization/webhookEndpoint", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -22075,6 +26446,8 @@ func main() {
 `POST /api/v2/Organization/webhookEndpoint`
 
 *Setup webhook endpoint*
+
+Post Webhook Endpoint
 
 > Body parameter
 
@@ -22110,14 +26483,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint \
+curl -X DELETE //localhost:32769//api/v2/Organization/webhookEndpoint \
   -H 'Content-Type: application/json-patch+json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint HTTP/1.1
+DELETE //localhost:32769//api/v2/Organization/webhookEndpoint HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 
@@ -22131,7 +26504,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+  url: '//localhost:32769//api/v2/Organization/webhookEndpoint',
   method: 'delete',
 
   headers: headers,
@@ -22151,7 +26524,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+fetch('//localhost:32769//api/v2/Organization/webhookEndpoint',
 {
   method: 'DELETE',
   body: inputBody,
@@ -22174,7 +26547,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint',
+result = RestClient.delete '//localhost:32769//api/v2/Organization/webhookEndpoint',
   params: {
   }, headers: headers
 
@@ -22189,7 +26562,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint', params={
+r = requests.delete('//localhost:32769//api/v2/Organization/webhookEndpoint', params={
 
 }, headers = headers)
 
@@ -22198,7 +26571,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint");
+URL obj = new URL("//localhost:32769//api/v2/Organization/webhookEndpoint");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -22231,7 +26604,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/Organization/webhookEndpoint", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Organization/webhookEndpoint", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -22244,6 +26617,8 @@ func main() {
 `DELETE /api/v2/Organization/webhookEndpoint`
 
 *Setup webhook endpoint*
+
+Delete Webhook Endpoint
 
 > Body parameter
 
@@ -22268,7 +26643,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Page">Page</h1>
+<h1 id="Core-API-Page">Page</h1>
 
 ## ApiV2PagePublicByPrimaryPathBySecondaryPathByUrlPathGet
 
@@ -22278,14 +26653,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} \
+curl -X GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
+GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -22300,7 +26675,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
+  url: '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
   method: 'get',
 
   headers: headers,
@@ -22320,7 +26695,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
+fetch('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
 {
   method: 'GET',
 
@@ -22343,7 +26718,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
+result = RestClient.get '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}',
   params: {
   }, headers: headers
 
@@ -22358,7 +26733,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
+r = requests.get('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
 
 }, headers = headers)
 
@@ -22367,7 +26742,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}");
+URL obj = new URL("//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -22400,7 +26775,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -22413,6 +26788,8 @@ func main() {
 `GET /api/v2/Page/public/{primaryPath}/{secondaryPath}/{urlPath}`
 
 *Gets a fundraiser object by paths*
+
+Get Public
 
 <h3 id="apiv2pagepublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
 
@@ -22433,8 +26810,8 @@ func main() {
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -22537,8 +26914,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -22584,8 +26961,8 @@ func main() {
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -22596,6 +26973,7 @@ func main() {
         "value": {}
       },
       "timezone": "string",
+      "url": "string",
       "urlFull": "string",
       "urlPath": "string"
     },
@@ -22618,8 +26996,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -22682,14 +27060,14 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath} \
+curl -X GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath} HTTP/1.1
+GET //localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -22704,7 +27082,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}',
+  url: '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
   method: 'get',
 
   headers: headers,
@@ -22724,7 +27102,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}',
+fetch('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
 {
   method: 'GET',
 
@@ -22747,7 +27125,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}',
+result = RestClient.get '//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}',
   params: {
   }, headers: headers
 
@@ -22762,7 +27140,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}', params={
+r = requests.get('//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}', params={
 
 }, headers = headers)
 
@@ -22771,7 +27149,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}");
+URL obj = new URL("//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -22804,7 +27182,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}/{secondaryPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/public/{primaryPath}/{secondaryPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -22817,6 +27195,8 @@ func main() {
 `GET /api/v2/Page/public/{primaryPath}/{secondaryPath}`
 
 *Gets a fundraiser object by paths*
+
+Get Public
 
 <h3 id="apiv2pagepublicbyprimarypathbysecondarypathget-parameters">Parameters</h3>
 
@@ -22837,8 +27217,8 @@ func main() {
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -22941,8 +27321,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -22988,8 +27368,8 @@ func main() {
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -23000,6 +27380,7 @@ func main() {
         "value": {}
       },
       "timezone": "string",
+      "url": "string",
       "urlFull": "string",
       "urlPath": "string"
     },
@@ -23022,8 +27403,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -23086,14 +27467,14 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath} \
+curl -X GET //localhost:32769//api/v2/Page/public/{primaryPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Page/public/{primaryPath} HTTP/1.1
+GET //localhost:32769//api/v2/Page/public/{primaryPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -23108,7 +27489,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}',
+  url: '//localhost:32769//api/v2/Page/public/{primaryPath}',
   method: 'get',
 
   headers: headers,
@@ -23128,7 +27509,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}',
+fetch('//localhost:32769//api/v2/Page/public/{primaryPath}',
 {
   method: 'GET',
 
@@ -23151,7 +27532,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}',
+result = RestClient.get '//localhost:32769//api/v2/Page/public/{primaryPath}',
   params: {
   }, headers: headers
 
@@ -23166,7 +27547,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}', params={
+r = requests.get('//localhost:32769//api/v2/Page/public/{primaryPath}', params={
 
 }, headers = headers)
 
@@ -23175,7 +27556,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}");
+URL obj = new URL("//localhost:32769//api/v2/Page/public/{primaryPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -23208,7 +27589,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Page/public/{primaryPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/public/{primaryPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -23221,6 +27602,8 @@ func main() {
 `GET /api/v2/Page/public/{primaryPath}`
 
 *Gets a fundraiser object by paths*
+
+Get Public
 
 <h3 id="apiv2pagepublicbyprimarypathget-parameters">Parameters</h3>
 
@@ -23241,8 +27624,8 @@ func main() {
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -23345,8 +27728,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -23392,8 +27775,8 @@ func main() {
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -23404,6 +27787,7 @@ func main() {
         "value": {}
       },
       "timezone": "string",
+      "url": "string",
       "urlFull": "string",
       "urlPath": "string"
     },
@@ -23426,8 +27810,8 @@ func main() {
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -23490,7 +27874,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Page/search \
+curl -X POST //localhost:32769//api/v2/Page/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -23498,7 +27882,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Page/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Page/search HTTP/1.1
+POST //localhost:32769//api/v2/Page/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -23514,7 +27898,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/search',
+  url: '//localhost:32769//api/v2/Page/search',
   method: 'post',
 
   headers: headers,
@@ -23552,7 +27936,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/search',
+fetch('//localhost:32769//api/v2/Page/search',
 {
   method: 'POST',
   body: inputBody,
@@ -23576,7 +27960,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Page/search',
+result = RestClient.post '//localhost:32769//api/v2/Page/search',
   params: {
   }, headers: headers
 
@@ -23592,7 +27976,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Page/search', params={
+r = requests.post('//localhost:32769//api/v2/Page/search', params={
 
 }, headers = headers)
 
@@ -23601,7 +27985,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/search");
+URL obj = new URL("//localhost:32769//api/v2/Page/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -23635,7 +28019,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Page/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Page/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -23648,6 +28032,8 @@ func main() {
 `POST /api/v2/Page/search`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -23710,10 +28096,12 @@ func main() {
           "id": 0,
           "mainImagePath": "string",
           "mainImageUrl": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "eventId": 0,
         "event": {
@@ -23722,6 +28110,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "fundraiserId": 0,
@@ -23731,13 +28121,15 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "isFundraiserOrTeam": true,
         "isActive": true,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAt": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "name": "string",
         "newsletterOptIn": true,
         "organizationId": 0,
@@ -23746,6 +28138,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "phoneNumber": "string",
@@ -23759,12 +28153,14 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "type": "campaign",
-        "urlPath": "string",
         "url": "string",
-        "urlFull": "string"
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -23798,7 +28194,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Page/search/public \
+curl -X POST //localhost:32769//api/v2/Page/search/public \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -23806,7 +28202,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Page/search/public \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Page/search/public HTTP/1.1
+POST //localhost:32769//api/v2/Page/search/public HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -23822,7 +28218,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/search/public',
+  url: '//localhost:32769//api/v2/Page/search/public',
   method: 'post',
 
   headers: headers,
@@ -23844,6 +28240,7 @@ const inputBody = '{
   "inactiveOnly": true,
   "text": "string",
   "page": 0,
+  "pageSize": 0,
   "orderKey": "string",
   "orderDirection": "asc"
 }';
@@ -23854,7 +28251,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/search/public',
+fetch('//localhost:32769//api/v2/Page/search/public',
 {
   method: 'POST',
   body: inputBody,
@@ -23878,7 +28275,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Page/search/public',
+result = RestClient.post '//localhost:32769//api/v2/Page/search/public',
   params: {
   }, headers: headers
 
@@ -23894,7 +28291,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Page/search/public', params={
+r = requests.post('//localhost:32769//api/v2/Page/search/public', params={
 
 }, headers = headers)
 
@@ -23903,7 +28300,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/search/public");
+URL obj = new URL("//localhost:32769//api/v2/Page/search/public");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -23937,7 +28334,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Page/search/public", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Page/search/public", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -23951,6 +28348,8 @@ func main() {
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
 
+Post Search Public
+
 > Body parameter
 
 ```json
@@ -23963,6 +28362,7 @@ func main() {
   "inactiveOnly": true,
   "text": "string",
   "page": 0,
+  "pageSize": 0,
   "orderKey": "string",
   "orderDirection": "asc"
 }
@@ -23988,8 +28388,8 @@ func main() {
       {
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "campaignId": 0,
         "campaign": {
           "name": "string",
@@ -23997,6 +28397,8 @@ func main() {
           "id": 0,
           "mainImagePath": "string",
           "mainImageUrl": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "donationCount": 0,
@@ -24006,6 +28408,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "fundraiserId": 0,
@@ -24015,6 +28419,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "name": "string",
@@ -24024,6 +28430,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "raisedAmount": 0,
@@ -24036,6 +28444,8 @@ func main() {
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "type": "campaign",
@@ -24075,7 +28485,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Page/export \
+curl -X POST //localhost:32769//api/v2/Page/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -24083,7 +28493,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Page/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Page/export HTTP/1.1
+POST //localhost:32769//api/v2/Page/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -24099,7 +28509,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/export',
+  url: '//localhost:32769//api/v2/Page/export',
   method: 'post',
 
   headers: headers,
@@ -24137,7 +28547,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/export',
+fetch('//localhost:32769//api/v2/Page/export',
 {
   method: 'POST',
   body: inputBody,
@@ -24161,7 +28571,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Page/export',
+result = RestClient.post '//localhost:32769//api/v2/Page/export',
   params: {
   }, headers: headers
 
@@ -24177,7 +28587,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Page/export', params={
+r = requests.post('//localhost:32769//api/v2/Page/export', params={
 
 }, headers = headers)
 
@@ -24186,7 +28596,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/export");
+URL obj = new URL("//localhost:32769//api/v2/Page/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -24220,7 +28630,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Page/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Page/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -24233,6 +28643,8 @@ func main() {
 `POST /api/v2/Page/export`
 
 *Search (list request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -24299,14 +28711,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Page/metadata \
+curl -X GET //localhost:32769//api/v2/Page/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Page/metadata HTTP/1.1
+GET //localhost:32769//api/v2/Page/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -24321,7 +28733,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/metadata',
+  url: '//localhost:32769//api/v2/Page/metadata',
   method: 'get',
 
   headers: headers,
@@ -24341,7 +28753,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/metadata',
+fetch('//localhost:32769//api/v2/Page/metadata',
 {
   method: 'GET',
 
@@ -24364,7 +28776,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Page/metadata',
+result = RestClient.get '//localhost:32769//api/v2/Page/metadata',
   params: {
   }, headers: headers
 
@@ -24379,7 +28791,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Page/metadata', params={
+r = requests.get('//localhost:32769//api/v2/Page/metadata', params={
 
 }, headers = headers)
 
@@ -24388,7 +28800,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/metadata");
+URL obj = new URL("//localhost:32769//api/v2/Page/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -24421,7 +28833,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Page/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -24434,6 +28846,8 @@ func main() {
 `GET /api/v2/Page/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -24486,14 +28900,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Page/aggregate \
+curl -X GET //localhost:32769//api/v2/Page/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Page/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/Page/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -24508,7 +28922,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Page/aggregate',
+  url: '//localhost:32769//api/v2/Page/aggregate',
   method: 'get',
 
   headers: headers,
@@ -24528,7 +28942,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Page/aggregate',
+fetch('//localhost:32769//api/v2/Page/aggregate',
 {
   method: 'GET',
 
@@ -24551,7 +28965,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Page/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/Page/aggregate',
   params: {
   }, headers: headers
 
@@ -24566,7 +28980,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Page/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/Page/aggregate', params={
 
 }, headers = headers)
 
@@ -24575,7 +28989,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Page/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/Page/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -24608,7 +29022,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Page/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Page/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -24621,6 +29035,8 @@ func main() {
 `GET /api/v2/Page/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2pageaggregateget-parameters">Parameters</h3>
 
@@ -24681,7 +29097,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Session">Session</h1>
+<h1 id="Core-API-Session">Session</h1>
 
 ## ApiV2SessionGet
 
@@ -24691,14 +29107,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/Session \
+curl -X GET //localhost:32769//api/v2/Session \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/Session HTTP/1.1
+GET //localhost:32769//api/v2/Session HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -24713,7 +29129,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session',
+  url: '//localhost:32769//api/v2/Session',
   method: 'get',
 
   headers: headers,
@@ -24733,7 +29149,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session',
+fetch('//localhost:32769//api/v2/Session',
 {
   method: 'GET',
 
@@ -24756,7 +29172,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/Session',
+result = RestClient.get '//localhost:32769//api/v2/Session',
   params: {
   }, headers: headers
 
@@ -24771,7 +29187,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/Session', params={
+r = requests.get('//localhost:32769//api/v2/Session', params={
 
 }, headers = headers)
 
@@ -24780,7 +29196,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session");
+URL obj = new URL("//localhost:32769//api/v2/Session");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -24813,7 +29229,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/Session", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/Session", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -24826,6 +29242,8 @@ func main() {
 `GET /api/v2/Session`
 
 *Returns the currently linked session object*
+
+Get
 
 > Example responses
 
@@ -24845,7 +29263,7 @@ func main() {
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-08-20T06:00:18Z",
+    "expiry": "2018-09-19T06:46:27Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -24888,7 +29306,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/login \
+curl -X POST //localhost:32769//api/v2/Session/login \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -24896,7 +29314,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/login \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/login HTTP/1.1
+POST //localhost:32769//api/v2/Session/login HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -24912,7 +29330,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/login',
+  url: '//localhost:32769//api/v2/Session/login',
   method: 'post',
 
   headers: headers,
@@ -24937,7 +29355,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/login',
+fetch('//localhost:32769//api/v2/Session/login',
 {
   method: 'POST',
   body: inputBody,
@@ -24961,7 +29379,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/login',
+result = RestClient.post '//localhost:32769//api/v2/Session/login',
   params: {
   }, headers: headers
 
@@ -24977,7 +29395,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/login', params={
+r = requests.post('//localhost:32769//api/v2/Session/login', params={
 
 }, headers = headers)
 
@@ -24986,7 +29404,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/login");
+URL obj = new URL("//localhost:32769//api/v2/Session/login");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -25020,7 +29438,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/login", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/login", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -25033,6 +29451,8 @@ func main() {
 `POST /api/v2/Session/login`
 
 *Creates a session through a login procedure, requiring an email and a password*
+
+Post Login
 
 > Body parameter
 
@@ -25068,7 +29488,7 @@ func main() {
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-08-20T06:00:18Z",
+    "expiry": "2018-09-19T06:46:27Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -25111,7 +29531,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/facebook \
+curl -X POST //localhost:32769//api/v2/Session/facebook \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -25119,7 +29539,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/facebook \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/facebook HTTP/1.1
+POST //localhost:32769//api/v2/Session/facebook HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -25135,7 +29555,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/facebook',
+  url: '//localhost:32769//api/v2/Session/facebook',
   method: 'post',
 
   headers: headers,
@@ -25158,7 +29578,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/facebook',
+fetch('//localhost:32769//api/v2/Session/facebook',
 {
   method: 'POST',
   body: inputBody,
@@ -25182,7 +29602,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/facebook',
+result = RestClient.post '//localhost:32769//api/v2/Session/facebook',
   params: {
   }, headers: headers
 
@@ -25198,7 +29618,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/facebook', params={
+r = requests.post('//localhost:32769//api/v2/Session/facebook', params={
 
 }, headers = headers)
 
@@ -25207,7 +29627,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/facebook");
+URL obj = new URL("//localhost:32769//api/v2/Session/facebook");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -25241,7 +29661,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/facebook", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/facebook", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -25254,6 +29674,8 @@ func main() {
 `POST /api/v2/Session/facebook`
 
 *Initiates a login procedure via a facebook*
+
+Post Facebook
 
 > Body parameter
 
@@ -25305,7 +29727,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/passwordless \
+curl -X POST //localhost:32769//api/v2/Session/passwordless \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -25313,7 +29735,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/passwordless \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/passwordless HTTP/1.1
+POST //localhost:32769//api/v2/Session/passwordless HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -25329,7 +29751,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/passwordless',
+  url: '//localhost:32769//api/v2/Session/passwordless',
   method: 'post',
 
   headers: headers,
@@ -25353,7 +29775,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/passwordless',
+fetch('//localhost:32769//api/v2/Session/passwordless',
 {
   method: 'POST',
   body: inputBody,
@@ -25377,7 +29799,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/passwordless',
+result = RestClient.post '//localhost:32769//api/v2/Session/passwordless',
   params: {
   }, headers: headers
 
@@ -25393,7 +29815,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/passwordless', params={
+r = requests.post('//localhost:32769//api/v2/Session/passwordless', params={
 
 }, headers = headers)
 
@@ -25402,7 +29824,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/passwordless");
+URL obj = new URL("//localhost:32769//api/v2/Session/passwordless");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -25436,7 +29858,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/passwordless", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/passwordless", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -25449,6 +29871,8 @@ func main() {
 `POST /api/v2/Session/passwordless`
 
 *Initiates a login procedure via a email-magic-link request*
+
+Post Password Less
 
 > Body parameter
 
@@ -25501,7 +29925,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/activate \
+curl -X POST //localhost:32769//api/v2/Session/activate \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -25509,7 +29933,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/activate \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/activate HTTP/1.1
+POST //localhost:32769//api/v2/Session/activate HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -25525,7 +29949,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/activate',
+  url: '//localhost:32769//api/v2/Session/activate',
   method: 'post',
 
   headers: headers,
@@ -25548,7 +29972,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/activate',
+fetch('//localhost:32769//api/v2/Session/activate',
 {
   method: 'POST',
   body: inputBody,
@@ -25572,7 +29996,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/activate',
+result = RestClient.post '//localhost:32769//api/v2/Session/activate',
   params: {
   }, headers: headers
 
@@ -25588,7 +30012,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/activate', params={
+r = requests.post('//localhost:32769//api/v2/Session/activate', params={
 
 }, headers = headers)
 
@@ -25597,7 +30021,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/activate");
+URL obj = new URL("//localhost:32769//api/v2/Session/activate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -25631,7 +30055,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/activate", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/activate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -25644,6 +30068,8 @@ func main() {
 `POST /api/v2/Session/activate`
 
 *Creates a session through an activate procedure, requiring an activation code*
+
+Post Activate
 
 > Body parameter
 
@@ -25677,7 +30103,7 @@ func main() {
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-08-20T06:00:18Z",
+    "expiry": "2018-09-19T06:46:27Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -25720,7 +30146,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/refresh \
+curl -X POST //localhost:32769//api/v2/Session/refresh \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -25728,7 +30154,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/refresh \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/refresh HTTP/1.1
+POST //localhost:32769//api/v2/Session/refresh HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -25744,7 +30170,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/refresh',
+  url: '//localhost:32769//api/v2/Session/refresh',
   method: 'post',
 
   headers: headers,
@@ -25768,7 +30194,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/refresh',
+fetch('//localhost:32769//api/v2/Session/refresh',
 {
   method: 'POST',
   body: inputBody,
@@ -25792,7 +30218,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/refresh',
+result = RestClient.post '//localhost:32769//api/v2/Session/refresh',
   params: {
   }, headers: headers
 
@@ -25808,7 +30234,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/refresh', params={
+r = requests.post('//localhost:32769//api/v2/Session/refresh', params={
 
 }, headers = headers)
 
@@ -25817,7 +30243,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/refresh");
+URL obj = new URL("//localhost:32769//api/v2/Session/refresh");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -25851,7 +30277,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/refresh", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/refresh", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -25864,6 +30290,8 @@ func main() {
 `POST /api/v2/Session/refresh`
 
 *Creates a session through a login procedure, requiring an email and a password*
+
+Post Refresh
 
 > Body parameter
 
@@ -25898,7 +30326,7 @@ func main() {
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-08-20T06:00:18Z",
+    "expiry": "2018-09-19T06:46:27Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -25941,14 +30369,14 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/logout \
+curl -X POST //localhost:32769//api/v2/Session/logout \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/logout HTTP/1.1
+POST //localhost:32769//api/v2/Session/logout HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -25963,7 +30391,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/logout',
+  url: '//localhost:32769//api/v2/Session/logout',
   method: 'post',
 
   headers: headers,
@@ -25983,7 +30411,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/logout',
+fetch('//localhost:32769//api/v2/Session/logout',
 {
   method: 'POST',
 
@@ -26006,7 +30434,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/logout',
+result = RestClient.post '//localhost:32769//api/v2/Session/logout',
   params: {
   }, headers: headers
 
@@ -26021,7 +30449,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/logout', params={
+r = requests.post('//localhost:32769//api/v2/Session/logout', params={
 
 }, headers = headers)
 
@@ -26030,7 +30458,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/logout");
+URL obj = new URL("//localhost:32769//api/v2/Session/logout");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -26063,7 +30491,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/logout", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/logout", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -26076,6 +30504,8 @@ func main() {
 `POST /api/v2/Session/logout`
 
 *Terminates a session through a logout call*
+
+Post Logout
 
 > Example responses
 
@@ -26113,7 +30543,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/Session/impersonate \
+curl -X POST //localhost:32769//api/v2/Session/impersonate \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -26121,7 +30551,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/Session/impersonate \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/Session/impersonate HTTP/1.1
+POST //localhost:32769//api/v2/Session/impersonate HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -26137,7 +30567,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/impersonate',
+  url: '//localhost:32769//api/v2/Session/impersonate',
   method: 'post',
 
   headers: headers,
@@ -26160,7 +30590,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/impersonate',
+fetch('//localhost:32769//api/v2/Session/impersonate',
 {
   method: 'POST',
   body: inputBody,
@@ -26184,7 +30614,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/Session/impersonate',
+result = RestClient.post '//localhost:32769//api/v2/Session/impersonate',
   params: {
   }, headers: headers
 
@@ -26200,7 +30630,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/Session/impersonate', params={
+r = requests.post('//localhost:32769//api/v2/Session/impersonate', params={
 
 }, headers = headers)
 
@@ -26209,7 +30639,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/impersonate");
+URL obj = new URL("//localhost:32769//api/v2/Session/impersonate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -26243,7 +30673,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/Session/impersonate", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/Session/impersonate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -26256,6 +30686,8 @@ func main() {
 `POST /api/v2/Session/impersonate`
 
 *Impersonates the given account using the current admin credential*
+
+Post Impersonate
 
 > Body parameter
 
@@ -26307,14 +30739,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/Session/impersonate \
+curl -X DELETE //localhost:32769//api/v2/Session/impersonate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/Session/impersonate HTTP/1.1
+DELETE //localhost:32769//api/v2/Session/impersonate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -26329,7 +30761,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/Session/impersonate',
+  url: '//localhost:32769//api/v2/Session/impersonate',
   method: 'delete',
 
   headers: headers,
@@ -26349,7 +30781,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/Session/impersonate',
+fetch('//localhost:32769//api/v2/Session/impersonate',
 {
   method: 'DELETE',
 
@@ -26372,7 +30804,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/Session/impersonate',
+result = RestClient.delete '//localhost:32769//api/v2/Session/impersonate',
   params: {
   }, headers: headers
 
@@ -26387,7 +30819,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/Session/impersonate', params={
+r = requests.delete('//localhost:32769//api/v2/Session/impersonate', params={
 
 }, headers = headers)
 
@@ -26396,7 +30828,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/Session/impersonate");
+URL obj = new URL("//localhost:32769//api/v2/Session/impersonate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -26429,7 +30861,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/Session/impersonate", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/Session/impersonate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -26442,6 +30874,8 @@ func main() {
 `DELETE /api/v2/Session/impersonate`
 
 *Terminates the impersonation using the current admin credential*
+
+Delete Impersonate
 
 > Example responses
 
@@ -26471,7 +30905,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Team">Team</h1>
+<h1 id="Core-API-Team">Team</h1>
 
 ## ApiV2PageTeamByIdGet
 
@@ -26481,14 +30915,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Team/{id} \
+curl -X GET //localhost:32769//api/v2/page/Team/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Team/{id} HTTP/1.1
+GET //localhost:32769//api/v2/page/Team/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -26503,7 +30937,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+  url: '//localhost:32769//api/v2/page/Team/{id}',
   method: 'get',
 
   headers: headers,
@@ -26523,7 +30957,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+fetch('//localhost:32769//api/v2/page/Team/{id}',
 {
   method: 'GET',
 
@@ -26546,7 +30980,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+result = RestClient.get '//localhost:32769//api/v2/page/Team/{id}',
   params: {
   }, headers: headers
 
@@ -26561,7 +30995,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Team/{id}', params={
+r = requests.get('//localhost:32769//api/v2/page/Team/{id}', params={
 
 }, headers = headers)
 
@@ -26570,7 +31004,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -26603,7 +31037,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Team/{id}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Team/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -26616,6 +31050,8 @@ func main() {
 `GET /api/v2/page/Team/{id}`
 
 *Gets a team object by id*
+
+Get
 
 <h3 id="apiv2pageteambyidget-parameters">Parameters</h3>
 
@@ -26660,11 +31096,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -26734,7 +31172,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PUT //api.dev.grassrootz.com//api/v2/page/Team/{id} \
+curl -X PUT //localhost:32769//api/v2/page/Team/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -26742,7 +31180,7 @@ curl -X PUT //api.dev.grassrootz.com//api/v2/page/Team/{id} \
 ```
 
 ```http
-PUT //api.dev.grassrootz.com//api/v2/page/Team/{id} HTTP/1.1
+PUT //localhost:32769//api/v2/page/Team/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -26758,7 +31196,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+  url: '//localhost:32769//api/v2/page/Team/{id}',
   method: 'put',
 
   headers: headers,
@@ -26812,7 +31250,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+fetch('//localhost:32769//api/v2/page/Team/{id}',
 {
   method: 'PUT',
   body: inputBody,
@@ -26836,7 +31274,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.put '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+result = RestClient.put '//localhost:32769//api/v2/page/Team/{id}',
   params: {
   }, headers: headers
 
@@ -26852,7 +31290,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.put('//api.dev.grassrootz.com//api/v2/page/Team/{id}', params={
+r = requests.put('//localhost:32769//api/v2/page/Team/{id}', params={
 
 }, headers = headers)
 
@@ -26861,7 +31299,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -26895,7 +31333,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "//api.dev.grassrootz.com//api/v2/page/Team/{id}", data)
+    req, err := http.NewRequest("PUT", "//localhost:32769//api/v2/page/Team/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -26908,6 +31346,8 @@ func main() {
 `PUT /api/v2/page/Team/{id}`
 
 *Updates a Team object by id*
+
+Put
 
 > Body parameter
 
@@ -26992,11 +31432,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -27066,14 +31508,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X DELETE //api.dev.grassrootz.com//api/v2/page/Team/{id} \
+curl -X DELETE //localhost:32769//api/v2/page/Team/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-DELETE //api.dev.grassrootz.com//api/v2/page/Team/{id} HTTP/1.1
+DELETE //localhost:32769//api/v2/page/Team/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -27088,7 +31530,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+  url: '//localhost:32769//api/v2/page/Team/{id}',
   method: 'delete',
 
   headers: headers,
@@ -27108,7 +31550,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+fetch('//localhost:32769//api/v2/page/Team/{id}',
 {
   method: 'DELETE',
 
@@ -27131,7 +31573,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.delete '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+result = RestClient.delete '//localhost:32769//api/v2/page/Team/{id}',
   params: {
   }, headers: headers
 
@@ -27146,7 +31588,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.delete('//api.dev.grassrootz.com//api/v2/page/Team/{id}', params={
+r = requests.delete('//localhost:32769//api/v2/page/Team/{id}', params={
 
 }, headers = headers)
 
@@ -27155,7 +31597,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -27188,7 +31630,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("DELETE", "//api.dev.grassrootz.com//api/v2/page/Team/{id}", data)
+    req, err := http.NewRequest("DELETE", "//localhost:32769//api/v2/page/Team/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -27201,6 +31643,8 @@ func main() {
 `DELETE /api/v2/page/Team/{id}`
 
 *Patches (partial update) a team object by id*
+
+Delete
 
 <h3 id="apiv2pageteambyiddelete-parameters">Parameters</h3>
 
@@ -27244,7 +31688,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Team/{id} \
+curl -X PATCH //localhost:32769//api/v2/page/Team/{id} \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -27252,7 +31696,7 @@ curl -X PATCH //api.dev.grassrootz.com//api/v2/page/Team/{id} \
 ```
 
 ```http
-PATCH //api.dev.grassrootz.com//api/v2/page/Team/{id} HTTP/1.1
+PATCH //localhost:32769//api/v2/page/Team/{id} HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -27268,7 +31712,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+  url: '//localhost:32769//api/v2/page/Team/{id}',
   method: 'patch',
 
   headers: headers,
@@ -27296,7 +31740,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+fetch('//localhost:32769//api/v2/page/Team/{id}',
 {
   method: 'PATCH',
   body: inputBody,
@@ -27320,7 +31764,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.patch '//api.dev.grassrootz.com//api/v2/page/Team/{id}',
+result = RestClient.patch '//localhost:32769//api/v2/page/Team/{id}',
   params: {
   }, headers: headers
 
@@ -27336,7 +31780,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.patch('//api.dev.grassrootz.com//api/v2/page/Team/{id}', params={
+r = requests.patch('//localhost:32769//api/v2/page/Team/{id}', params={
 
 }, headers = headers)
 
@@ -27345,7 +31789,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PATCH");
 int responseCode = con.getResponseCode();
@@ -27379,7 +31823,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PATCH", "//api.dev.grassrootz.com//api/v2/page/Team/{id}", data)
+    req, err := http.NewRequest("PATCH", "//localhost:32769//api/v2/page/Team/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -27392,6 +31836,8 @@ func main() {
 `PATCH /api/v2/page/Team/{id}`
 
 *Patches (partial update) a team object by id*
+
+Patch
 
 > Body parameter
 
@@ -27450,11 +31896,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -27524,14 +31972,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X HEAD //api.dev.grassrootz.com//api/v2/page/Team/owner/{id} \
+curl -X HEAD //localhost:32769//api/v2/page/Team/owner/{id} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-HEAD //api.dev.grassrootz.com//api/v2/page/Team/owner/{id} HTTP/1.1
+HEAD //localhost:32769//api/v2/page/Team/owner/{id} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -27546,7 +31994,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}',
+  url: '//localhost:32769//api/v2/page/Team/owner/{id}',
   method: 'head',
 
   headers: headers,
@@ -27566,7 +32014,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}',
+fetch('//localhost:32769//api/v2/page/Team/owner/{id}',
 {
   method: 'HEAD',
 
@@ -27589,7 +32037,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.head '//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}',
+result = RestClient.head '//localhost:32769//api/v2/page/Team/owner/{id}',
   params: {
   }, headers: headers
 
@@ -27604,7 +32052,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.head('//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}', params={
+r = requests.head('//localhost:32769//api/v2/page/Team/owner/{id}', params={
 
 }, headers = headers)
 
@@ -27613,7 +32061,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/owner/{id}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("HEAD");
 int responseCode = con.getResponseCode();
@@ -27646,7 +32094,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("HEAD", "//api.dev.grassrootz.com//api/v2/page/Team/owner/{id}", data)
+    req, err := http.NewRequest("HEAD", "//localhost:32769//api/v2/page/Team/owner/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -27659,6 +32107,8 @@ func main() {
 `HEAD /api/v2/page/Team/owner/{id}`
 
 *Checks a team owner via id*
+
+Head
 
 <h3 id="apiv2pageteamownerbyidhead-parameters">Parameters</h3>
 
@@ -27694,14 +32144,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath} \
+curl -X GET //localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath} \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
+GET //localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath} HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -27716,7 +32166,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
+  url: '//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
   method: 'get',
 
   headers: headers,
@@ -27736,7 +32186,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
+fetch('//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
 {
   method: 'GET',
 
@@ -27759,7 +32209,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
+result = RestClient.get '//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}',
   params: {
   }, headers: headers
 
@@ -27774,7 +32224,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
+r = requests.get('//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}', params={
 
 }, headers = headers)
 
@@ -27783,7 +32233,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -27816,7 +32266,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -27829,6 +32279,8 @@ func main() {
 `GET /api/v2/page/Team/public/{primaryPath}/{secondaryPath}/{urlPath}`
 
 *Gets a team object by paths*
+
+Get By Path
 
 <h3 id="apiv2pageteampublicbyprimarypathbysecondarypathbyurlpathget-parameters">Parameters</h3>
 
@@ -27863,8 +32315,8 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -27926,7 +32378,7 @@ ApiKeyHeader
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Team \
+curl -X POST //localhost:32769//api/v2/page/Team \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -27934,7 +32386,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Team \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Team HTTP/1.1
+POST //localhost:32769//api/v2/page/Team HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -27950,7 +32402,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team',
+  url: '//localhost:32769//api/v2/page/Team',
   method: 'post',
 
   headers: headers,
@@ -28004,7 +32456,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team',
+fetch('//localhost:32769//api/v2/page/Team',
 {
   method: 'POST',
   body: inputBody,
@@ -28028,7 +32480,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Team',
+result = RestClient.post '//localhost:32769//api/v2/page/Team',
   params: {
   }, headers: headers
 
@@ -28044,7 +32496,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Team', params={
+r = requests.post('//localhost:32769//api/v2/page/Team', params={
 
 }, headers = headers)
 
@@ -28053,7 +32505,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team");
+URL obj = new URL("//localhost:32769//api/v2/page/Team");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -28087,7 +32539,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Team", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Team", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -28100,6 +32552,8 @@ func main() {
 `POST /api/v2/page/Team`
 
 *Creates a new team*
+
+Post
 
 > Body parameter
 
@@ -28183,11 +32637,13 @@ func main() {
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -28257,7 +32713,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Team/search \
+curl -X POST //localhost:32769//api/v2/page/Team/search \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -28265,7 +32721,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Team/search \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Team/search HTTP/1.1
+POST //localhost:32769//api/v2/page/Team/search HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -28281,7 +32737,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/search',
+  url: '//localhost:32769//api/v2/page/Team/search',
   method: 'post',
 
   headers: headers,
@@ -28319,7 +32775,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/search',
+fetch('//localhost:32769//api/v2/page/Team/search',
 {
   method: 'POST',
   body: inputBody,
@@ -28343,7 +32799,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Team/search',
+result = RestClient.post '//localhost:32769//api/v2/page/Team/search',
   params: {
   }, headers: headers
 
@@ -28359,7 +32815,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Team/search', params={
+r = requests.post('//localhost:32769//api/v2/page/Team/search', params={
 
 }, headers = headers)
 
@@ -28368,7 +32824,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/search");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -28402,7 +32858,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Team/search", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Team/search", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -28415,6 +32871,8 @@ func main() {
 `POST /api/v2/page/Team/search`
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Search
 
 > Body parameter
 
@@ -28487,11 +32945,13 @@ func main() {
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -28563,7 +33023,7 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/page/Team/export \
+curl -X POST //localhost:32769//api/v2/page/Team/export \
   -H 'Content-Type: application/json-patch+json' \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
@@ -28571,7 +33031,7 @@ curl -X POST //api.dev.grassrootz.com//api/v2/page/Team/export \
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/page/Team/export HTTP/1.1
+POST //localhost:32769//api/v2/page/Team/export HTTP/1.1
 Host: null
 Content-Type: application/json-patch+json
 Accept: application/json
@@ -28587,7 +33047,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/export',
+  url: '//localhost:32769//api/v2/page/Team/export',
   method: 'post',
 
   headers: headers,
@@ -28625,7 +33085,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/export',
+fetch('//localhost:32769//api/v2/page/Team/export',
 {
   method: 'POST',
   body: inputBody,
@@ -28649,7 +33109,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/page/Team/export',
+result = RestClient.post '//localhost:32769//api/v2/page/Team/export',
   params: {
   }, headers: headers
 
@@ -28665,7 +33125,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/page/Team/export', params={
+r = requests.post('//localhost:32769//api/v2/page/Team/export', params={
 
 }, headers = headers)
 
@@ -28674,7 +33134,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/export");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/export");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -28708,7 +33168,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/page/Team/export", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/page/Team/export", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -28721,6 +33181,8 @@ func main() {
 `POST /api/v2/page/Team/export`
 
 *Search (List request) of a set of objects based on a list of filters, text, paging and ordering parameters*
+
+Post Export
 
 > Body parameter
 
@@ -28787,14 +33249,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Team/metadata \
+curl -X GET //localhost:32769//api/v2/page/Team/metadata \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Team/metadata HTTP/1.1
+GET //localhost:32769//api/v2/page/Team/metadata HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -28809,7 +33271,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/metadata',
+  url: '//localhost:32769//api/v2/page/Team/metadata',
   method: 'get',
 
   headers: headers,
@@ -28829,7 +33291,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/metadata',
+fetch('//localhost:32769//api/v2/page/Team/metadata',
 {
   method: 'GET',
 
@@ -28852,7 +33314,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Team/metadata',
+result = RestClient.get '//localhost:32769//api/v2/page/Team/metadata',
   params: {
   }, headers: headers
 
@@ -28867,7 +33329,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Team/metadata', params={
+r = requests.get('//localhost:32769//api/v2/page/Team/metadata', params={
 
 }, headers = headers)
 
@@ -28876,7 +33338,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/metadata");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/metadata");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -28909,7 +33371,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Team/metadata", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Team/metadata", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -28922,6 +33384,8 @@ func main() {
 `GET /api/v2/page/Team/metadata`
 
 *Returns a list of filters that can be implemented and work nicely with /search*
+
+Get Metadata
 
 > Example responses
 
@@ -28974,14 +33438,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X GET //api.dev.grassrootz.com//api/v2/page/Team/aggregate \
+curl -X GET //localhost:32769//api/v2/page/Team/aggregate \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-GET //api.dev.grassrootz.com//api/v2/page/Team/aggregate HTTP/1.1
+GET //localhost:32769//api/v2/page/Team/aggregate HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -28996,7 +33460,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/page/Team/aggregate',
+  url: '//localhost:32769//api/v2/page/Team/aggregate',
   method: 'get',
 
   headers: headers,
@@ -29016,7 +33480,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/page/Team/aggregate',
+fetch('//localhost:32769//api/v2/page/Team/aggregate',
 {
   method: 'GET',
 
@@ -29039,7 +33503,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.get '//api.dev.grassrootz.com//api/v2/page/Team/aggregate',
+result = RestClient.get '//localhost:32769//api/v2/page/Team/aggregate',
   params: {
   }, headers: headers
 
@@ -29054,7 +33518,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.get('//api.dev.grassrootz.com//api/v2/page/Team/aggregate', params={
+r = requests.get('//localhost:32769//api/v2/page/Team/aggregate', params={
 
 }, headers = headers)
 
@@ -29063,7 +33527,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/page/Team/aggregate");
+URL obj = new URL("//localhost:32769//api/v2/page/Team/aggregate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -29096,7 +33560,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "//api.dev.grassrootz.com//api/v2/page/Team/aggregate", data)
+    req, err := http.NewRequest("GET", "//localhost:32769//api/v2/page/Team/aggregate", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -29109,6 +33573,8 @@ func main() {
 `GET /api/v2/page/Team/aggregate`
 
 *Perform an aggregate function on a field based on a filter/custom-text criteria*
+
+Get Aggregate
 
 <h3 id="apiv2pageteamaggregateget-parameters">Parameters</h3>
 
@@ -29169,7 +33635,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 ApiKeyHeader & None
 </aside>
 
-<h1 id="Grassrootz-API-Upload">Upload</h1>
+<h1 id="Core-API-Upload">Upload</h1>
 
 ## ApiV2ByEntityByTypeUploadPost
 
@@ -29179,14 +33645,14 @@ ApiKeyHeader & None
 
 ```shell
 # You can also use wget
-curl -X POST //api.dev.grassrootz.com//api/v2/{entity}/{type}/upload \
+curl -X POST //localhost:32769//api/v2/{entity}/{type}/upload \
   -H 'Accept: application/json' \
   -H 'ApiKey: API_KEY'
 
 ```
 
 ```http
-POST //api.dev.grassrootz.com//api/v2/{entity}/{type}/upload HTTP/1.1
+POST //localhost:32769//api/v2/{entity}/{type}/upload HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -29201,7 +33667,7 @@ var headers = {
 };
 
 $.ajax({
-  url: '//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload',
+  url: '//localhost:32769//api/v2/{entity}/{type}/upload',
   method: 'post',
 
   headers: headers,
@@ -29221,7 +33687,7 @@ const headers = {
 
 };
 
-fetch('//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload',
+fetch('//localhost:32769//api/v2/{entity}/{type}/upload',
 {
   method: 'POST',
 
@@ -29244,7 +33710,7 @@ headers = {
   'ApiKey' => 'API_KEY'
 }
 
-result = RestClient.post '//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload',
+result = RestClient.post '//localhost:32769//api/v2/{entity}/{type}/upload',
   params: {
   }, headers: headers
 
@@ -29259,7 +33725,7 @@ headers = {
   'ApiKey': 'API_KEY'
 }
 
-r = requests.post('//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload', params={
+r = requests.post('//localhost:32769//api/v2/{entity}/{type}/upload', params={
 
 }, headers = headers)
 
@@ -29268,7 +33734,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload");
+URL obj = new URL("//localhost:32769//api/v2/{entity}/{type}/upload");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -29301,7 +33767,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "//api.dev.grassrootz.com//api/v2/{entity}/{type}/upload", data)
+    req, err := http.NewRequest("POST", "//localhost:32769//api/v2/{entity}/{type}/upload", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -29314,6 +33780,8 @@ func main() {
 `POST /api/v2/{entity}/{type}/upload`
 
 *Uploads a file to online storage and returns the new key for the uploaded file*
+
+Upload
 
 <h3 id="apiv2byentitybytypeuploadpost-parameters">Parameters</h3>
 
@@ -29387,7 +33855,7 @@ ApiKeyHeader & None
   },
   "clientKey": "string",
   "description": "string",
-  "createdAt": "2018-08-20T06:00:18Z"
+  "createdAt": "2018-09-19T06:46:27Z"
 }
 
 ```
@@ -29496,15 +33964,16 @@ ApiKeyHeader & None
   "campaign": {
     "id": 0,
     "name": "string",
-    "urlPath": "string",
     "url": "string",
+    "urlFull": "string",
+    "urlPath": "string",
     "template": {
       "key": "string",
       "value": {}
     }
   },
-  "donatedAtLocal": "2018-08-20T06:00:18Z",
-  "donatedAt": "2018-08-20T06:00:18Z",
+  "donatedAtLocal": "2018-09-19T06:46:27Z",
+  "donatedAt": "2018-09-19T06:46:27Z",
   "donor": {
     "address": {
       "street": "string",
@@ -29531,8 +34000,8 @@ ApiKeyHeader & None
     "feeCovered": true,
     "platform": "stripe",
     "refunded": true,
-    "refundedAt": "2018-08-20T06:00:18Z",
-    "refundedAtLocal": "2018-08-20T06:00:18Z",
+    "refundedAt": "2018-09-19T06:46:27Z",
+    "refundedAtLocal": "2018-09-19T06:46:27Z",
     "subscription": true,
     "tax": 0,
     "totalFees": 0,
@@ -29542,17 +34011,20 @@ ApiKeyHeader & None
   "fundraiser": {
     "id": 0,
     "name": "string",
-    "urlPath": "string",
-    "url": "string"
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "id": 0,
-  "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-  "lastUpdatedAt": "2018-08-20T06:00:18Z",
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
   "message": "string",
   "organizationId": 0,
   "organization": {
     "id": 0,
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "pageType": "campaign",
@@ -29561,8 +34033,8 @@ ApiKeyHeader & None
     "displayFirstName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "repliedAtLocal": "2018-08-20T06:00:18Z",
-    "repliedAt": "2018-08-20T06:00:18Z",
+    "repliedAtLocal": "2018-09-19T06:46:27Z",
+    "repliedAt": "2018-09-19T06:46:27Z",
     "reply": "string"
   },
   "status": "collectedFromCustomer",
@@ -29570,8 +34042,9 @@ ApiKeyHeader & None
   "team": {
     "id": 0,
     "name": "string",
-    "urlPath": "string",
-    "url": "string"
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "template": {
     "key": "string",
@@ -29636,8 +34109,9 @@ ApiKeyHeader & None
 {
   "id": 0,
   "name": "string",
-  "urlPath": "string",
   "url": "string",
+  "urlFull": "string",
+  "urlPath": "string",
   "template": {
     "key": "string",
     "value": {}
@@ -29652,8 +34126,9 @@ ApiKeyHeader & None
 |---|---|---|---|---|
 |id|integer(int32)|false|none|none|
 |name|string|false|none|none|
-|urlPath|string|false|none|none|
 |url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 
 <h2 id="tocSdonationaccountmodel">DonationAccountModel</h2>
@@ -29709,8 +34184,8 @@ ApiKeyHeader & None
   "feeCovered": true,
   "platform": "stripe",
   "refunded": true,
-  "refundedAt": "2018-08-20T06:00:18Z",
-  "refundedAtLocal": "2018-08-20T06:00:18Z",
+  "refundedAt": "2018-09-19T06:46:27Z",
+  "refundedAtLocal": "2018-09-19T06:46:27Z",
   "subscription": true,
   "tax": 0,
   "totalFees": 0,
@@ -29752,29 +34227,8 @@ ApiKeyHeader & None
 {
   "id": 0,
   "name": "string",
-  "urlPath": "string",
-  "url": "string"
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|integer(int32)|false|none|none|
-|name|string|false|none|none|
-|urlPath|string|false|none|none|
-|url|string|false|none|none|
-
-<h2 id="tocSdonationorganizationbasicmodel">DonationOrganizationBasicModel</h2>
-
-<a id="schemadonationorganizationbasicmodel"></a>
-
-```json
-{
-  "id": 0,
-  "name": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -29786,6 +34240,33 @@ ApiKeyHeader & None
 |---|---|---|---|---|
 |id|integer(int32)|false|none|none|
 |name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSdonationorganizationbasicmodel">DonationOrganizationBasicModel</h2>
+
+<a id="schemadonationorganizationbasicmodel"></a>
+
+```json
+{
+  "id": 0,
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSdonationmessagereplymodel">DonationMessageReplyModel</h2>
@@ -29797,8 +34278,8 @@ ApiKeyHeader & None
   "displayFirstName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "repliedAtLocal": "2018-08-20T06:00:18Z",
-  "repliedAt": "2018-08-20T06:00:18Z",
+  "repliedAtLocal": "2018-09-19T06:46:27Z",
+  "repliedAt": "2018-09-19T06:46:27Z",
   "reply": "string"
 }
 
@@ -29823,8 +34304,9 @@ ApiKeyHeader & None
 {
   "id": 0,
   "name": "string",
-  "urlPath": "string",
-  "url": "string"
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
 }
 
 ```
@@ -29835,8 +34317,9 @@ ApiKeyHeader & None
 |---|---|---|---|---|
 |id|integer(int32)|false|none|none|
 |name|string|false|none|none|
-|urlPath|string|false|none|none|
 |url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
 
 <h2 id="tocSdatatemplateelementmodel">DataTemplateElementModel</h2>
 
@@ -30067,27 +34550,28 @@ ApiKeyHeader & None
 
 ```json
 {
-  "id": 0,
+  "createdAt": "2018-09-19T06:46:27Z",
   "email": "string",
   "firstName": "string",
+  "id": 0,
+  "isAdmin": true,
+  "isFundraiser": true,
+  "isOrgAdmin": true,
+  "isSysAdmin": true,
+  "lastLoggedInAt": "2018-09-19T06:46:27Z",
   "lastName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "createdAt": "2018-08-20T06:00:18Z",
-  "lastLoggedInAt": "2018-08-20T06:00:18Z",
-  "status": "active",
-  "roles": "notDefined",
-  "isOrgAdmin": true,
-  "isSysAdmin": true,
-  "isFundraiser": true,
-  "isAdmin": true,
+  "onboardedDate": "2018-09-19T06:46:27Z",
   "organizationId": 0,
-  "source": "default",
   "organization": {
     "id": 0,
     "name": "string",
     "urlPath": "string"
-  }
+  },
+  "roles": "notDefined",
+  "source": "default",
+  "status": "active"
 }
 
 ```
@@ -30096,30 +34580,29 @@ ApiKeyHeader & None
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|integer(int32)|false|none|none|
+|createdAt|string(date-time)|false|none|none|
 |email|string|false|none|none|
 |firstName|string|false|none|none|
+|id|integer(int32)|false|none|none|
+|isAdmin|boolean|false|read-only|none|
+|isFundraiser|boolean|false|none|none|
+|isOrgAdmin|boolean|false|none|none|
+|isSysAdmin|boolean|false|none|none|
+|lastLoggedInAt|string(date-time)|false|none|none|
 |lastName|string|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
-|createdAt|string(date-time)|false|none|none|
-|lastLoggedInAt|string(date-time)|false|none|none|
-|status|string|false|none|none|
-|roles|string|false|none|none|
-|isOrgAdmin|boolean|false|none|none|
-|isSysAdmin|boolean|false|none|none|
-|isFundraiser|boolean|false|none|none|
-|isAdmin|boolean|false|read-only|none|
+|onboardedDate|string(date-time)|false|none|none|
 |organizationId|integer(int32)|false|none|none|
-|source|string|false|none|none|
 |organization|[AccountOrganizationBasicModel](#schemaaccountorganizationbasicmodel)|false|none|none|
+|roles|string|false|none|none|
+|source|string|false|none|none|
+|status|string|false|none|none|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|status|active|
-|status|deleted|
 |roles|notDefined|
 |roles|systemAdmin|
 |roles|fundraiser|
@@ -30128,6 +34611,8 @@ ApiKeyHeader & None
 |source|default|
 |source|facebook|
 |source|google|
+|status|active|
+|status|deleted|
 
 <h2 id="tocSaccountorganizationbasicmodel">AccountOrganizationBasicModel</h2>
 
@@ -30193,6 +34678,60 @@ ApiKeyHeader & None
 |roles|organizationAdmin|
 |roles|donor|
 
+<h2 id="tocSaccountintegrationdetailmodel">AccountIntegrationDetailModel</h2>
+
+<a id="schemaaccountintegrationdetailmodel"></a>
+
+```json
+{
+  "organizationId": 0,
+  "key": "elevio",
+  "value": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|organizationId|integer(int32)|false|none|none|
+|key|string|false|none|none|
+|value|string|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|key|elevio|
+
+<h2 id="tocSaccountintegrationeditmodel">AccountIntegrationEditModel</h2>
+
+<a id="schemaaccountintegrationeditmodel"></a>
+
+```json
+{
+  "key": "elevio",
+  "value": "string",
+  "organizationId": 0
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|key|string|false|none|none|
+|value|string|false|none|none|
+|organizationId|integer(int32)|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|key|elevio|
+
 <h2 id="tocSaccountpublicmodel">AccountPublicModel</h2>
 
 <a id="schemaaccountpublicmodel"></a>
@@ -30215,6 +34754,29 @@ ApiKeyHeader & None
 |firstName|string|false|none|none|
 |lastName|string|false|none|none|
 |sessionKey|string|false|none|none|
+
+<h2 id="tocSaccountintegrationoperationmodel">AccountIntegrationOperationModel</h2>
+
+<a id="schemaaccountintegrationoperationmodel"></a>
+
+```json
+{
+  "operation": "elevioUserHash"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|operation|string|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|operation|elevioUserHash|
 
 <h2 id="tocSaccountpasswordresetrequestmodel">AccountPasswordResetRequestModel</h2>
 
@@ -30298,68 +34860,24 @@ ApiKeyHeader & None
 |resultType|basic|
 |resultType|full|
 
-<h2 id="tocSaccountdonorsearchmodel">AccountDonorSearchModel</h2>
-
-<a id="schemaaccountdonorsearchmodel"></a>
-
-```json
-{
-  "filters": [
-    {
-      "key": "string",
-      "operator": "equalTo",
-      "value": "string"
-    }
-  ],
-  "text": "string",
-  "orderBy": {
-    "key": "string",
-    "direction": "asc"
-  },
-  "page": 0,
-  "pageSize": 0,
-  "resultType": "lookup",
-  "includeDataTemplate": true
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|filters|[[ListFilter](#schemalistfilter)]|false|none|none|
-|text|string|false|none|none|
-|orderBy|[ListOrderBy](#schemalistorderby)|false|none|none|
-|page|integer(int32)|false|none|none|
-|pageSize|integer(int32)|false|none|none|
-|resultType|string|false|none|none|
-|includeDataTemplate|boolean|false|none|none|
-
-#### Enumerated Values
-
-|Property|Value|
-|---|---|
-|resultType|lookup|
-|resultType|basic|
-|resultType|full|
-
 <h2 id="tocSaccountdonorelementmodel">AccountDonorElementModel</h2>
 
 <a id="schemaaccountdonorelementmodel"></a>
 
 ```json
 {
-  "id": 0,
+  "averageDonationAmount": 0,
+  "createdAt": "2018-09-19T06:46:27Z",
+  "donationCount": 0,
   "email": "string",
   "firstName": "string",
+  "id": 0,
   "lastName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "createdAt": "2018-08-20T06:00:18Z",
-  "donationCount": 0,
   "raisedAmount": 0,
-  "averageDonationAmount": 0
+  "roles": "notDefined",
+  "status": "active"
 }
 
 ```
@@ -30368,20 +34886,34 @@ ApiKeyHeader & None
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|integer(int32)|false|none|none|
+|averageDonationAmount|number(double)|false|none|none|
+|createdAt|string(date-time)|false|none|none|
+|donationCount|integer(int32)|false|none|none|
 |email|string|false|none|none|
 |firstName|string|false|none|none|
+|id|integer(int32)|false|none|none|
 |lastName|string|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
-|createdAt|string(date-time)|false|none|none|
-|donationCount|integer(int32)|false|none|none|
 |raisedAmount|number(double)|false|none|none|
-|averageDonationAmount|number(double)|false|none|none|
+|roles|string|false|none|none|
+|status|string|false|none|none|
 
-<h2 id="tocSaccountfundraisersearchmodel">AccountFundraiserSearchModel</h2>
+#### Enumerated Values
 
-<a id="schemaaccountfundraisersearchmodel"></a>
+|Property|Value|
+|---|---|
+|roles|notDefined|
+|roles|systemAdmin|
+|roles|fundraiser|
+|roles|organizationAdmin|
+|roles|donor|
+|status|active|
+|status|deleted|
+
+<h2 id="tocSaccountdonorsearchmodel">AccountDonorSearchModel</h2>
+
+<a id="schemaaccountdonorsearchmodel"></a>
 
 ```json
 {
@@ -30431,18 +34963,20 @@ ApiKeyHeader & None
 
 ```json
 {
-  "id": 0,
+  "activePagesCount": 0,
+  "averageDonationAmount": 0,
+  "createdAt": "2018-09-19T06:46:27Z",
+  "donationCount": 0,
   "email": "string",
   "firstName": "string",
+  "id": 0,
   "lastName": "string",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "createdAt": "2018-08-20T06:00:18Z",
-  "donationCount": 0,
   "raisedAmount": 0,
-  "averageDonationAmount": 0,
-  "activePagesCount": 0,
-  "pagesCount": 0
+  "pagesCount": 0,
+  "roles": "notDefined",
+  "status": "active"
 }
 
 ```
@@ -30451,18 +34985,78 @@ ApiKeyHeader & None
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|integer(int32)|false|none|none|
+|activePagesCount|integer(int32)|false|none|none|
+|averageDonationAmount|number(double)|false|none|none|
+|createdAt|string(date-time)|false|none|none|
+|donationCount|integer(int32)|false|none|none|
 |email|string|false|none|none|
 |firstName|string|false|none|none|
+|id|integer(int32)|false|none|none|
 |lastName|string|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
-|createdAt|string(date-time)|false|none|none|
-|donationCount|integer(int32)|false|none|none|
 |raisedAmount|number(double)|false|none|none|
-|averageDonationAmount|number(double)|false|none|none|
-|activePagesCount|integer(int32)|false|none|none|
 |pagesCount|integer(int32)|false|none|none|
+|roles|string|false|none|none|
+|status|string|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|roles|notDefined|
+|roles|systemAdmin|
+|roles|fundraiser|
+|roles|organizationAdmin|
+|roles|donor|
+|status|active|
+|status|deleted|
+
+<h2 id="tocSaccountfundraisersearchmodel">AccountFundraiserSearchModel</h2>
+
+<a id="schemaaccountfundraisersearchmodel"></a>
+
+```json
+{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|filters|[[ListFilter](#schemalistfilter)]|false|none|none|
+|text|string|false|none|none|
+|orderBy|[ListOrderBy](#schemalistorderby)|false|none|none|
+|page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
+|resultType|string|false|none|none|
+|includeDataTemplate|boolean|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|resultType|lookup|
+|resultType|basic|
+|resultType|full|
 
 <h2 id="tocScampaignelementmodel">CampaignElementModel</h2>
 
@@ -30473,8 +35067,8 @@ ApiKeyHeader & None
   "activePagesCount": 0,
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "dataCapture": {
     "registration": {
       "phone": {
@@ -30509,8 +35103,8 @@ ApiKeyHeader & None
     "allowSelfSignUp": true
   },
   "id": 0,
-  "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-  "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
@@ -30587,7 +35181,7 @@ ApiKeyHeader & None
 |fundraisers|[CampaignFundraiserFundraisingModel](#schemacampaignfundraiserfundraisingmodel)|false|none|none|
 |id|integer(int32)|false|none|none|
 |lastUpdatedAtLocal|string(date-time)|false|read-only|none|
-|lastUpdatedAtUtc|string(date-time)|false|none|none|
+|lastUpdatedAt|string(date-time)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
@@ -30605,7 +35199,7 @@ ApiKeyHeader & None
 |teams|[CampaignTeamFundraisingModel](#schemacampaignteamfundraisingmodel)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -30736,7 +35330,7 @@ ApiKeyHeader & None
 |name|string|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocScampaignteamfundraisingmodel">CampaignTeamFundraisingModel</h2>
@@ -31142,8 +35736,8 @@ ApiKeyHeader & None
 {
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "dataCapture": {
     "registration": {
       "phone": {
@@ -31259,7 +35853,7 @@ ApiKeyHeader & None
 |teams|[CampaignTeamFundraisingModel](#schemacampaignteamfundraisingmodel)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -31310,7 +35904,7 @@ ApiKeyHeader & None
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocScampaignsearchmodel">CampaignSearchModel</h2>
@@ -31650,7 +36244,8 @@ ApiKeyHeader & None
   "primaryUrlPath": "string",
   "secondaryUrlPath": "string",
   "tertiaryUrlPath": "string",
-  "page": 0
+  "page": 0,
+  "pageSize": 0
 }
 
 ```
@@ -31663,6 +36258,7 @@ ApiKeyHeader & None
 |secondaryUrlPath|string|false|none|none|
 |tertiaryUrlPath|string|false|none|none|
 |page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
 
 <h2 id="tocSdonationpublicresultmodel">DonationPublicResultModel</h2>
 
@@ -31672,8 +36268,8 @@ ApiKeyHeader & None
 {
   "amount": 0,
   "anonymous": true,
-  "donatedAtLocal": "2018-08-20T06:00:18Z",
-  "donatedAt": "2018-08-20T06:00:18Z",
+  "donatedAtLocal": "2018-09-19T06:46:27Z",
+  "donatedAt": "2018-09-19T06:46:27Z",
   "donorDisplayName": "string",
   "id": 0,
   "message": "string",
@@ -31682,8 +36278,8 @@ ApiKeyHeader & None
     "displayFirstName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "repliedAtLocal": "2018-08-20T06:00:18Z",
-    "repliedAt": "2018-08-20T06:00:18Z",
+    "repliedAtLocal": "2018-09-19T06:46:27Z",
+    "repliedAt": "2018-09-19T06:46:27Z",
     "reply": "string"
   },
   "type": "online"
@@ -31899,10 +36495,9 @@ ApiKeyHeader & None
   "organizationId": 0,
   "organizationFee": 0,
   "name": "string",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
-  "urlPath": "string",
   "status": "live",
   "targetAmount": 0,
   "averageDonationAmount": 0,
@@ -31957,7 +36552,10 @@ ApiKeyHeader & None
   "template": {
     "key": "string",
     "value": {}
-  }
+  },
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
 }
 
 ```
@@ -31973,7 +36571,6 @@ ApiKeyHeader & None
 |createdAt|string(date-time)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
-|urlPath|string|false|none|none|
 |status|string|false|none|none|
 |targetAmount|number(double)|false|none|none|
 |averageDonationAmount|number(double)|false|none|none|
@@ -31988,6 +36585,9 @@ ApiKeyHeader & None
 |» Donation|[[CustomFieldEditModel](#schemacustomfieldeditmodel)]|false|none|none|
 |» Ticket|[[CustomFieldEditModel](#schemacustomfieldeditmodel)]|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
 
 #### Enumerated Values
 
@@ -32340,11 +36940,13 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "manager": {
@@ -32395,9 +36997,9 @@ ApiKeyHeader & None
     "key": "string",
     "value": {}
   },
-  "urlPath": "string",
   "url": "string",
-  "urlFull": "string"
+  "urlFull": "string",
+  "urlPath": "string"
 }
 
 ```
@@ -32415,6 +37017,8 @@ ApiKeyHeader & None
 |donationCount|integer(int32)|false|none|none|
 |id|integer(int32)|false|none|none|
 |isPublic|boolean|false|none|none|
+|lastUpdatedAtLocal|string(date-time)|false|read-only|none|
+|lastUpdatedAt|string(date-time)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |manager|[FundraiserManagerModel](#schemafundraisermanagermodel)|false|none|none|
@@ -32428,9 +37032,9 @@ ApiKeyHeader & None
 |teamId|integer(int32)|false|none|none|
 |team|[FundraiserTeamModel](#schemafundraiserteammodel)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
-|urlPath|string|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
 
 #### Enumerated Values
 
@@ -32512,7 +37116,7 @@ ApiKeyHeader & None
 |targetAmount|number(double)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -32581,7 +37185,7 @@ ApiKeyHeader & None
 |name|string|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSfundraiserteammodel">FundraiserTeamModel</h2>
@@ -32621,7 +37225,7 @@ ApiKeyHeader & None
 |targetAmount|number(double)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSfundraisereditmodel">FundraiserEditModel</h2>
@@ -32772,8 +37376,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
@@ -32840,7 +37444,7 @@ ApiKeyHeader & None
 |team|[FundraiserTeamPublicModel](#schemafundraiserteampublicmodel)|false|none|none|
 |template|[DataTemplatePublicModel](#schemadatatemplatepublicmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -32893,7 +37497,7 @@ ApiKeyHeader & None
 |status|string|false|none|none|
 |targetAmount|number(double)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -32934,7 +37538,7 @@ ApiKeyHeader & None
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSfundraiserteampublicmodel">FundraiserTeamPublicModel</h2>
@@ -32969,7 +37573,7 @@ ApiKeyHeader & None
 |raisedAmount|number(double)|false|none|none|
 |targetAmount|number(double)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSdatatemplatepublicmodel">DataTemplatePublicModel</h2>
@@ -33039,12 +37643,468 @@ ApiKeyHeader & None
 |resultType|basic|
 |resultType|full|
 
+<h2 id="tocSmicroblogelementmodel">MicroblogElementModel</h2>
+
+<a id="schemamicroblogelementmodel"></a>
+
+```json
+{
+  "campaignId": 0,
+  "campaign": {
+    "id": 0,
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "name": "string",
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
+  },
+  "createdAt": "2018-09-19T06:46:27Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "eventId": 0,
+  "event": {
+    "id": 0,
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "name": "string",
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
+  },
+  "id": 0,
+  "fundraiserId": 0,
+  "fundraiser": {
+    "id": 0,
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "name": "string",
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
+  },
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
+  "organizationId": 0,
+  "organization": {
+    "id": 0,
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "name": "string",
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
+  },
+  "status": "live",
+  "teamId": 0,
+  "team": {
+    "id": 0,
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "name": "string",
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
+  },
+  "text": "string",
+  "type": "campaign"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|campaignId|integer(int32)|false|none|none|
+|campaign|[MicroblogCampaignModel](#schemamicroblogcampaignmodel)|false|none|none|
+|createdAt|string(date-time)|false|none|none|
+|createdAtLocal|string(date-time)|false|read-only|none|
+|items|[[MicroblogDetailModel](#schemamicroblogdetailmodel)]|false|none|none|
+|eventId|integer(int32)|false|none|none|
+|event|[MicroblogEventModel](#schemamicroblogeventmodel)|false|none|none|
+|id|integer(int32)|false|none|none|
+|fundraiserId|integer(int32)|false|none|none|
+|fundraiser|[MicroblogFundraiserModel](#schemamicroblogfundraisermodel)|false|none|none|
+|lastUpdatedAtLocal|string(date-time)|false|read-only|none|
+|lastUpdatedAt|string(date-time)|false|none|none|
+|organizationId|integer(int32)|false|none|none|
+|organization|[MicroblogOrganizationModel](#schemamicroblogorganizationmodel)|false|none|none|
+|status|string|false|none|none|
+|teamId|integer(int32)|false|none|none|
+|team|[MicroblogTeamModel](#schemamicroblogteammodel)|false|none|none|
+|text|string|false|read-only|none|
+|type|string|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|status|live|
+|status|underReview|
+|status|removed|
+|type|campaign|
+|type|team|
+|type|fundraiser|
+|type|event|
+
+<h2 id="tocSmicroblogcampaignmodel">MicroblogCampaignModel</h2>
+
+<a id="schemamicroblogcampaignmodel"></a>
+
+```json
+{
+  "id": 0,
+  "mainImagePath": "string",
+  "mainImageUrl": "string",
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|mainImagePath|string|false|none|none|
+|mainImageUrl|string|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSmicroblogdetailmodel">MicroblogDetailModel</h2>
+
+<a id="schemamicroblogdetailmodel"></a>
+
+```json
+{
+  "key": "text",
+  "value": [
+    "string"
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|key|string|false|none|none|
+|value|[string]|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|key|text|
+|key|video|
+|key|image|
+|key|carousel|
+
+<h2 id="tocSmicroblogeventmodel">MicroblogEventModel</h2>
+
+<a id="schemamicroblogeventmodel"></a>
+
+```json
+{
+  "id": 0,
+  "mainImagePath": "string",
+  "mainImageUrl": "string",
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|mainImagePath|string|false|none|none|
+|mainImageUrl|string|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSmicroblogfundraisermodel">MicroblogFundraiserModel</h2>
+
+<a id="schemamicroblogfundraisermodel"></a>
+
+```json
+{
+  "id": 0,
+  "mainImagePath": "string",
+  "mainImageUrl": "string",
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|mainImagePath|string|false|none|none|
+|mainImageUrl|string|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSmicroblogorganizationmodel">MicroblogOrganizationModel</h2>
+
+<a id="schemamicroblogorganizationmodel"></a>
+
+```json
+{
+  "id": 0,
+  "mainImagePath": "string",
+  "mainImageUrl": "string",
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|mainImagePath|string|false|none|none|
+|mainImageUrl|string|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSmicroblogteammodel">MicroblogTeamModel</h2>
+
+<a id="schemamicroblogteammodel"></a>
+
+```json
+{
+  "id": 0,
+  "mainImagePath": "string",
+  "mainImageUrl": "string",
+  "name": "string",
+  "url": "string",
+  "urlFull": "string",
+  "urlPath": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|integer(int32)|false|none|none|
+|mainImagePath|string|false|none|none|
+|mainImageUrl|string|false|none|none|
+|name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
+|urlPath|string|false|none|none|
+
+<h2 id="tocSmicroblogeditmodel">MicroblogEditModel</h2>
+
+<a id="schemamicroblogeditmodel"></a>
+
+```json
+{
+  "campaignId": 0,
+  "eventId": 0,
+  "fundraiserId": 0,
+  "items": [
+    {
+      "key": "text",
+      "value": [
+        "string"
+      ]
+    }
+  ],
+  "teamId": 0,
+  "type": "campaign",
+  "notify": {
+    "donors": true,
+    "fundraisers": true
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|campaignId|integer(int32)|false|none|none|
+|eventId|integer(int32)|false|none|none|
+|fundraiserId|integer(int32)|false|none|none|
+|items|[[MicroblogDetailEditModel](#schemamicroblogdetaileditmodel)]|false|none|none|
+|teamId|integer(int32)|false|none|none|
+|type|string|false|none|none|
+|notify|[MicroblogNotificationEditModel](#schemamicroblognotificationeditmodel)|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|type|campaign|
+|type|team|
+|type|fundraiser|
+|type|event|
+
+<h2 id="tocSmicroblogdetaileditmodel">MicroblogDetailEditModel</h2>
+
+<a id="schemamicroblogdetaileditmodel"></a>
+
+```json
+{
+  "key": "text",
+  "value": [
+    "string"
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|key|string|false|none|none|
+|value|[string]|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|key|text|
+|key|video|
+|key|image|
+|key|carousel|
+
+<h2 id="tocSmicroblognotificationeditmodel">MicroblogNotificationEditModel</h2>
+
+<a id="schemamicroblognotificationeditmodel"></a>
+
+```json
+{
+  "donors": true,
+  "fundraisers": true
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|donors|boolean|false|none|none|
+|fundraisers|boolean|false|none|none|
+
+<h2 id="tocSmicroblogsearchmodel">MicroblogSearchModel</h2>
+
+<a id="schemamicroblogsearchmodel"></a>
+
+```json
+{
+  "filters": [
+    {
+      "key": "string",
+      "operator": "equalTo",
+      "value": "string"
+    }
+  ],
+  "text": "string",
+  "orderBy": {
+    "key": "string",
+    "direction": "asc"
+  },
+  "page": 0,
+  "pageSize": 0,
+  "resultType": "lookup",
+  "includeDataTemplate": true
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|filters|[[ListFilter](#schemalistfilter)]|false|none|none|
+|text|string|false|none|none|
+|orderBy|[ListOrderBy](#schemalistorderby)|false|none|none|
+|page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
+|resultType|string|false|none|none|
+|includeDataTemplate|boolean|false|none|none|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|resultType|lookup|
+|resultType|basic|
+|resultType|full|
+
+<h2 id="tocSmicroblogpublicsearchmodel">MicroblogPublicSearchModel</h2>
+
+<a id="schemamicroblogpublicsearchmodel"></a>
+
+```json
+{
+  "primaryUrlPath": "string",
+  "secondaryUrlPath": "string",
+  "tertiaryUrlPath": "string",
+  "page": 0,
+  "pageSize": 0
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|primaryUrlPath|string|false|none|none|
+|secondaryUrlPath|string|false|none|none|
+|tertiaryUrlPath|string|false|none|none|
+|page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
+
 <h2 id="tocSorganizationelementmodel">OrganizationElementModel</h2>
 
 <a id="schemaorganizationelementmodel"></a>
 
 ```json
 {
+  "averageDonationAmount": 0,
   "address": {
     "street": "string",
     "city": "string",
@@ -33052,9 +38112,12 @@ ApiKeyHeader & None
     "postcode": "string",
     "country": "string"
   },
+  "campaignCount": 0,
+  "campaignLiveCount": 0,
   "currency": "string",
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
+  "donationCount": 0,
   "fundraisingPageCreatedEmail": "string",
   "id": 0,
   "legalName": "string",
@@ -33070,12 +38133,16 @@ ApiKeyHeader & None
       "platform": "stripe"
     }
   ],
+  "raisedAmount": 0,
+  "raisedAmountOnlineOnly": 0,
   "taxId": "string",
+  "teamsCount": 0,
   "template": {
     "key": "string",
     "value": {}
   },
   "timezone": "string",
+  "url": "string",
   "urlFull": "string",
   "urlPath": "string"
 }
@@ -33086,10 +38153,14 @@ ApiKeyHeader & None
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
+|averageDonationAmount|number(double)|false|none|none|
 |address|[OrganizationAddressModel](#schemaorganizationaddressmodel)|false|none|none|
+|campaignCount|integer(int64)|false|none|none|
+|campaignLiveCount|integer(int64)|false|none|none|
 |currency|string|false|none|none|
 |createdAtLocal|string(date-time)|false|read-only|none|
 |createdAt|string(date-time)|false|none|none|
+|donationCount|integer(int64)|false|none|none|
 |fundraisingPageCreatedEmail|string|false|none|none|
 |id|integer(int32)|false|none|none|
 |legalName|string|false|none|none|
@@ -33099,10 +38170,14 @@ ApiKeyHeader & None
 |newDonationEmail|string|false|none|none|
 |newInvoiceEmail|string|false|none|none|
 |paymentPlatforms|[[OrganizationPaymentPlatformModel](#schemaorganizationpaymentplatformmodel)]|false|none|none|
+|raisedAmount|number(double)|false|none|none|
+|raisedAmountOnlineOnly|number(double)|false|none|none|
 |taxId|string|false|none|none|
+|teamsCount|integer(int32)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |timezone|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSorganizationaddressmodel">OrganizationAddressModel</h2>
@@ -33240,8 +38315,8 @@ ApiKeyHeader & None
 {
   "country": "string",
   "currency": "string",
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "id": 0,
   "name": "string",
   "legalName": "string",
@@ -33252,6 +38327,7 @@ ApiKeyHeader & None
     "value": {}
   },
   "timezone": "string",
+  "url": "string",
   "urlFull": "string",
   "urlPath": "string"
 }
@@ -33273,7 +38349,8 @@ ApiKeyHeader & None
 |mainImageUrl|string|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |timezone|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSorganizationsearchmodel">OrganizationSearchModel</h2>
@@ -33380,8 +38457,8 @@ ApiKeyHeader & None
   "campaign": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -33484,8 +38561,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -33531,8 +38608,8 @@ ApiKeyHeader & None
   "organization": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -33543,6 +38620,7 @@ ApiKeyHeader & None
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -33565,8 +38643,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -33646,8 +38724,8 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
@@ -33703,7 +38781,7 @@ ApiKeyHeader & None
 |targetAmount|number(double)|false|none|none|
 |template|[DataTemplatePublicModel](#schemadatatemplatepublicmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -33756,7 +38834,7 @@ ApiKeyHeader & None
 |status|string|false|none|none|
 |targetAmount|number(double)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -33797,7 +38875,7 @@ ApiKeyHeader & None
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSpagesearchmodel">PageSearchModel</h2>
@@ -33872,10 +38950,12 @@ ApiKeyHeader & None
     "id": 0,
     "mainImagePath": "string",
     "mainImageUrl": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "donationCount": 0,
   "eventId": 0,
   "event": {
@@ -33884,6 +38964,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "fundraiserId": 0,
@@ -33893,13 +38975,15 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "isFundraiserOrTeam": true,
   "isActive": true,
   "isPublic": true,
-  "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-  "lastUpdatedAt": "2018-08-20T06:00:18Z",
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
   "name": "string",
   "newsletterOptIn": true,
   "organizationId": 0,
@@ -33908,6 +38992,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "phoneNumber": "string",
@@ -33921,12 +39007,14 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "type": "campaign",
-  "urlPath": "string",
   "url": "string",
-  "urlFull": "string"
+  "urlFull": "string",
+  "urlPath": "string"
 }
 
 ```
@@ -33964,9 +39052,9 @@ ApiKeyHeader & None
 |teamId|integer(int32)|false|none|none|
 |team|[PageTeamBasicModel](#schemapageteambasicmodel)|false|none|none|
 |type|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
-|url|string|false|read-only|none|
-|urlFull|string|false|read-only|none|
 
 #### Enumerated Values
 
@@ -34014,6 +39102,8 @@ ApiKeyHeader & None
   "id": 0,
   "mainImagePath": "string",
   "mainImageUrl": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34029,6 +39119,8 @@ ApiKeyHeader & None
 |id|integer(int32)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34050,6 +39142,8 @@ ApiKeyHeader & None
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34064,6 +39158,8 @@ ApiKeyHeader & None
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34085,6 +39181,8 @@ ApiKeyHeader & None
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34099,6 +39197,8 @@ ApiKeyHeader & None
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34119,6 +39219,8 @@ ApiKeyHeader & None
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34132,6 +39234,8 @@ ApiKeyHeader & None
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSpageteambasicmodel">PageTeamBasicModel</h2>
@@ -34145,6 +39249,8 @@ ApiKeyHeader & None
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "name": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34159,6 +39265,8 @@ ApiKeyHeader & None
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |name|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34183,6 +39291,7 @@ ApiKeyHeader & None
   "inactiveOnly": true,
   "text": "string",
   "page": 0,
+  "pageSize": 0,
   "orderKey": "string",
   "orderDirection": "asc"
 }
@@ -34201,6 +39310,7 @@ ApiKeyHeader & None
 |inactiveOnly|boolean|false|none|none|
 |text|string|false|none|none|
 |page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
 |orderKey|string|false|none|none|
 |orderDirection|string|false|none|none|
 
@@ -34222,8 +39332,8 @@ ApiKeyHeader & None
 {
   "additionalDonationsNeededForTarget": 0,
   "averageDonationAmount": 0,
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "campaignId": 0,
   "campaign": {
     "name": "string",
@@ -34231,6 +39341,8 @@ ApiKeyHeader & None
     "id": 0,
     "mainImagePath": "string",
     "mainImageUrl": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "donationCount": 0,
@@ -34240,6 +39352,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "fundraiserId": 0,
@@ -34249,6 +39363,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "name": "string",
@@ -34258,6 +39374,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "raisedAmount": 0,
@@ -34270,6 +39388,8 @@ ApiKeyHeader & None
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
+    "url": "string",
+    "urlFull": "string",
     "urlPath": "string"
   },
   "type": "campaign",
@@ -34303,8 +39423,8 @@ ApiKeyHeader & None
 |teamId|integer(int32)|false|none|none|
 |team|[PageTeamBasicModel](#schemapageteambasicmodel)|false|none|none|
 |type|string|false|none|none|
-|url|string|false|read-only|none|
-|urlFull|string|false|read-only|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34326,6 +39446,8 @@ ApiKeyHeader & None
   "id": 0,
   "mainImagePath": "string",
   "mainImageUrl": "string",
+  "url": "string",
+  "urlFull": "string",
   "urlPath": "string"
 }
 
@@ -34340,6 +39462,8 @@ ApiKeyHeader & None
 |id|integer(int32)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
+|url|string|false|none|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34367,7 +39491,7 @@ ApiKeyHeader & None
     "id": 0,
     "name": "string"
   },
-  "expiry": "2018-08-20T06:00:18Z",
+  "expiry": "2018-09-19T06:46:27Z",
   "impersonated": true,
   "impersonator": {
     "id": 0,
@@ -34594,11 +39718,13 @@ ApiKeyHeader & None
     "urlFull": "string",
     "urlPath": "string"
   },
-  "createdAtLocal": "2018-08-20T06:00:18Z",
-  "createdAt": "2018-08-20T06:00:18Z",
+  "createdAtLocal": "2018-09-19T06:46:27Z",
+  "createdAt": "2018-09-19T06:46:27Z",
   "donationCount": 0,
   "id": 0,
   "isPublic": true,
+  "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+  "lastUpdatedAt": "2018-09-19T06:46:27Z",
   "mainImagePath": "string",
   "mainImageUrl": "string",
   "manager": {
@@ -34654,6 +39780,8 @@ ApiKeyHeader & None
 |donationCount|integer(int32)|false|none|none|
 |id|integer(int32)|false|none|none|
 |isPublic|boolean|false|none|none|
+|lastUpdatedAtLocal|string(date-time)|false|read-only|none|
+|lastUpdatedAt|string(date-time)|false|none|none|
 |mainImagePath|string|false|none|none|
 |mainImageUrl|string|false|none|none|
 |manager|[TeamManagerModel](#schemateammanagermodel)|false|none|none|
@@ -34668,7 +39796,7 @@ ApiKeyHeader & None
 |targetAmount|number(double)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34751,7 +39879,7 @@ ApiKeyHeader & None
 |targetAmount|number(double)|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 #### Enumerated Values
@@ -34820,7 +39948,7 @@ ApiKeyHeader & None
 |name|string|false|none|none|
 |template|[DataTemplateElementModel](#schemadatatemplateelementmodel)|false|none|none|
 |url|string|false|none|none|
-|urlFull|string|false|read-only|none|
+|urlFull|string|false|none|none|
 |urlPath|string|false|none|none|
 
 <h2 id="tocSteameditmodel">TeamEditModel</h2>
@@ -35008,7 +40136,7 @@ ApiKeyHeader & None
     },
     "clientKey": "string",
     "description": "string",
-    "createdAt": "2018-08-20T06:00:18Z"
+    "createdAt": "2018-09-19T06:46:27Z"
   },
   "success": true,
   "error": [
@@ -35042,15 +40170,16 @@ ApiKeyHeader & None
     "campaign": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
       "url": "string",
+      "urlFull": "string",
+      "urlPath": "string",
       "template": {
         "key": "string",
         "value": {}
       }
     },
-    "donatedAtLocal": "2018-08-20T06:00:18Z",
-    "donatedAt": "2018-08-20T06:00:18Z",
+    "donatedAtLocal": "2018-09-19T06:46:27Z",
+    "donatedAt": "2018-09-19T06:46:27Z",
     "donor": {
       "address": {
         "street": "string",
@@ -35077,8 +40206,8 @@ ApiKeyHeader & None
       "feeCovered": true,
       "platform": "stripe",
       "refunded": true,
-      "refundedAt": "2018-08-20T06:00:18Z",
-      "refundedAtLocal": "2018-08-20T06:00:18Z",
+      "refundedAt": "2018-09-19T06:46:27Z",
+      "refundedAtLocal": "2018-09-19T06:46:27Z",
       "subscription": true,
       "tax": 0,
       "totalFees": 0,
@@ -35088,17 +40217,20 @@ ApiKeyHeader & None
     "fundraiser": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAt": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "message": "string",
     "organizationId": 0,
     "organization": {
       "id": 0,
       "name": "string",
+      "url": "string",
+      "urlFull": "string",
       "urlPath": "string"
     },
     "pageType": "campaign",
@@ -35107,8 +40239,8 @@ ApiKeyHeader & None
       "displayFirstName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "repliedAtLocal": "2018-08-20T06:00:18Z",
-      "repliedAt": "2018-08-20T06:00:18Z",
+      "repliedAtLocal": "2018-09-19T06:46:27Z",
+      "repliedAt": "2018-09-19T06:46:27Z",
       "reply": "string"
     },
     "status": "collectedFromCustomer",
@@ -35116,8 +40248,9 @@ ApiKeyHeader & None
     "team": {
       "id": 0,
       "name": "string",
-      "urlPath": "string",
-      "url": "string"
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     },
     "template": {
       "key": "string",
@@ -35165,7 +40298,7 @@ ApiKeyHeader & None
         },
         "clientKey": "string",
         "description": "string",
-        "createdAt": "2018-08-20T06:00:18Z"
+        "createdAt": "2018-09-19T06:46:27Z"
       }
     ]
   },
@@ -35207,7 +40340,7 @@ ApiKeyHeader & None
       },
       "clientKey": "string",
       "description": "string",
-      "createdAt": "2018-08-20T06:00:18Z"
+      "createdAt": "2018-09-19T06:46:27Z"
     }
   ]
 }
@@ -35270,27 +40403,28 @@ ApiKeyHeader & None
 ```json
 {
   "data": {
-    "id": 0,
+    "createdAt": "2018-09-19T06:46:27Z",
     "email": "string",
     "firstName": "string",
+    "id": 0,
+    "isAdmin": true,
+    "isFundraiser": true,
+    "isOrgAdmin": true,
+    "isSysAdmin": true,
+    "lastLoggedInAt": "2018-09-19T06:46:27Z",
     "lastName": "string",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
-    "lastLoggedInAt": "2018-08-20T06:00:18Z",
-    "status": "active",
-    "roles": "notDefined",
-    "isOrgAdmin": true,
-    "isSysAdmin": true,
-    "isFundraiser": true,
-    "isAdmin": true,
+    "onboardedDate": "2018-09-19T06:46:27Z",
     "organizationId": 0,
-    "source": "default",
     "organization": {
       "id": 0,
       "name": "string",
       "urlPath": "string"
-    }
+    },
+    "roles": "notDefined",
+    "source": "default",
+    "status": "active"
   },
   "success": true,
   "error": [
@@ -35308,6 +40442,38 @@ ApiKeyHeader & None
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |data|[AccountElementModel](#schemaaccountelementmodel)|false|none|none|
+|success|boolean|false|none|none|
+|error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
+
+<h2 id="tocSscalaractionresult_list_accountintegrationdetailmodel_">ScalarActionResult_List_AccountIntegrationDetailModel_</h2>
+
+<a id="schemascalaractionresult_list_accountintegrationdetailmodel_"></a>
+
+```json
+{
+  "data": [
+    {
+      "organizationId": 0,
+      "key": "elevio",
+      "value": "string"
+    }
+  ],
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|data|[[AccountIntegrationDetailModel](#schemaaccountintegrationdetailmodel)]|false|none|none|
 |success|boolean|false|none|none|
 |error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
 
@@ -35380,27 +40546,28 @@ ApiKeyHeader & None
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
         "email": "string",
         "firstName": "string",
+        "id": 0,
+        "isAdmin": true,
+        "isFundraiser": true,
+        "isOrgAdmin": true,
+        "isSysAdmin": true,
+        "lastLoggedInAt": "2018-09-19T06:46:27Z",
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "lastLoggedInAt": "2018-08-20T06:00:18Z",
-        "status": "active",
-        "roles": "notDefined",
-        "isOrgAdmin": true,
-        "isSysAdmin": true,
-        "isFundraiser": true,
-        "isAdmin": true,
+        "onboardedDate": "2018-09-19T06:46:27Z",
         "organizationId": 0,
-        "source": "default",
         "organization": {
           "id": 0,
           "name": "string",
           "urlPath": "string"
-        }
+        },
+        "roles": "notDefined",
+        "source": "default",
+        "status": "active"
       }
     ]
   },
@@ -35434,27 +40601,28 @@ ApiKeyHeader & None
   "pageSize": 0,
   "list": [
     {
-      "id": 0,
+      "createdAt": "2018-09-19T06:46:27Z",
       "email": "string",
       "firstName": "string",
+      "id": 0,
+      "isAdmin": true,
+      "isFundraiser": true,
+      "isOrgAdmin": true,
+      "isSysAdmin": true,
+      "lastLoggedInAt": "2018-09-19T06:46:27Z",
       "lastName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "createdAt": "2018-08-20T06:00:18Z",
-      "lastLoggedInAt": "2018-08-20T06:00:18Z",
-      "status": "active",
-      "roles": "notDefined",
-      "isOrgAdmin": true,
-      "isSysAdmin": true,
-      "isFundraiser": true,
-      "isAdmin": true,
+      "onboardedDate": "2018-09-19T06:46:27Z",
       "organizationId": 0,
-      "source": "default",
       "organization": {
         "id": 0,
         "name": "string",
         "urlPath": "string"
-      }
+      },
+      "roles": "notDefined",
+      "source": "default",
+      "status": "active"
     }
   ]
 }
@@ -35496,6 +40664,45 @@ ApiKeyHeader & None
 |success|boolean|false|none|none|
 |error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
 
+<h2 id="tocSscalaractionresult_accountdonorelementmodel_">ScalarActionResult_AccountDonorElementModel_</h2>
+
+<a id="schemascalaractionresult_accountdonorelementmodel_"></a>
+
+```json
+{
+  "data": {
+    "averageDonationAmount": 0,
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
+    "email": "string",
+    "firstName": "string",
+    "id": 0,
+    "lastName": "string",
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "raisedAmount": 0,
+    "roles": "notDefined",
+    "status": "active"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|data|[AccountDonorElementModel](#schemaaccountdonorelementmodel)|false|none|none|
+|success|boolean|false|none|none|
+|error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
+
 <h2 id="tocSlistactionresult_accountdonorelementmodel_">ListActionResult_AccountDonorElementModel_</h2>
 
 <a id="schemalistactionresult_accountdonorelementmodel_"></a>
@@ -35508,16 +40715,18 @@ ApiKeyHeader & None
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "averageDonationAmount": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "email": "string",
         "firstName": "string",
+        "id": 0,
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "donationCount": 0,
         "raisedAmount": 0,
-        "averageDonationAmount": 0
+        "roles": "notDefined",
+        "status": "active"
       }
     ]
   },
@@ -35551,16 +40760,18 @@ ApiKeyHeader & None
   "pageSize": 0,
   "list": [
     {
-      "id": 0,
+      "averageDonationAmount": 0,
+      "createdAt": "2018-09-19T06:46:27Z",
+      "donationCount": 0,
       "email": "string",
       "firstName": "string",
+      "id": 0,
       "lastName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "createdAt": "2018-08-20T06:00:18Z",
-      "donationCount": 0,
       "raisedAmount": 0,
-      "averageDonationAmount": 0
+      "roles": "notDefined",
+      "status": "active"
     }
   ]
 }
@@ -35576,6 +40787,47 @@ ApiKeyHeader & None
 |pageSize|integer(int32)|false|none|none|
 |list|[[AccountDonorElementModel](#schemaaccountdonorelementmodel)]|false|none|none|
 
+<h2 id="tocSscalaractionresult_accountfundraiserelementmodel_">ScalarActionResult_AccountFundraiserElementModel_</h2>
+
+<a id="schemascalaractionresult_accountfundraiserelementmodel_"></a>
+
+```json
+{
+  "data": {
+    "activePagesCount": 0,
+    "averageDonationAmount": 0,
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
+    "email": "string",
+    "firstName": "string",
+    "id": 0,
+    "lastName": "string",
+    "mainImagePath": "string",
+    "mainImageUrl": "string",
+    "raisedAmount": 0,
+    "pagesCount": 0,
+    "roles": "notDefined",
+    "status": "active"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|data|[AccountFundraiserElementModel](#schemaaccountfundraiserelementmodel)|false|none|none|
+|success|boolean|false|none|none|
+|error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
+
 <h2 id="tocSlistactionresult_accountfundraiserelementmodel_">ListActionResult_AccountFundraiserElementModel_</h2>
 
 <a id="schemalistactionresult_accountfundraiserelementmodel_"></a>
@@ -35588,18 +40840,20 @@ ApiKeyHeader & None
     "pageSize": 0,
     "list": [
       {
-        "id": 0,
+        "activePagesCount": 0,
+        "averageDonationAmount": 0,
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "email": "string",
         "firstName": "string",
+        "id": 0,
         "lastName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
-        "donationCount": 0,
         "raisedAmount": 0,
-        "averageDonationAmount": 0,
-        "activePagesCount": 0,
-        "pagesCount": 0
+        "pagesCount": 0,
+        "roles": "notDefined",
+        "status": "active"
       }
     ]
   },
@@ -35633,18 +40887,20 @@ ApiKeyHeader & None
   "pageSize": 0,
   "list": [
     {
-      "id": 0,
+      "activePagesCount": 0,
+      "averageDonationAmount": 0,
+      "createdAt": "2018-09-19T06:46:27Z",
+      "donationCount": 0,
       "email": "string",
       "firstName": "string",
+      "id": 0,
       "lastName": "string",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "createdAt": "2018-08-20T06:00:18Z",
-      "donationCount": 0,
       "raisedAmount": 0,
-      "averageDonationAmount": 0,
-      "activePagesCount": 0,
-      "pagesCount": 0
+      "pagesCount": 0,
+      "roles": "notDefined",
+      "status": "active"
     }
   ]
 }
@@ -35670,8 +40926,8 @@ ApiKeyHeader & None
     "activePagesCount": 0,
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -35706,8 +40962,8 @@ ApiKeyHeader & None
       "allowSelfSignUp": true
     },
     "id": 0,
-    "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-    "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "name": "string",
@@ -35823,8 +41079,8 @@ ApiKeyHeader & None
   "data": {
     "additionalDonationsNeededForTarget": 0,
     "averageDonationAmount": 0,
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "dataCapture": {
       "registration": {
         "phone": {
@@ -35942,8 +41198,8 @@ ApiKeyHeader & None
         "activePagesCount": 0,
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "dataCapture": {
           "registration": {
             "phone": {
@@ -35978,8 +41234,8 @@ ApiKeyHeader & None
           "allowSelfSignUp": true
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
@@ -36071,8 +41327,8 @@ ApiKeyHeader & None
       "activePagesCount": 0,
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -36107,8 +41363,8 @@ ApiKeyHeader & None
         "allowSelfSignUp": true
       },
       "id": 0,
-      "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-      "lastUpdatedAtUtc": "2018-08-20T06:00:18Z",
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "name": "string",
@@ -36229,15 +41485,16 @@ ApiKeyHeader & None
         "campaign": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
           "url": "string",
+          "urlFull": "string",
+          "urlPath": "string",
           "template": {
             "key": "string",
             "value": {}
           }
         },
-        "donatedAtLocal": "2018-08-20T06:00:18Z",
-        "donatedAt": "2018-08-20T06:00:18Z",
+        "donatedAtLocal": "2018-09-19T06:46:27Z",
+        "donatedAt": "2018-09-19T06:46:27Z",
         "donor": {
           "address": {
             "street": "string",
@@ -36264,8 +41521,8 @@ ApiKeyHeader & None
           "feeCovered": true,
           "platform": "stripe",
           "refunded": true,
-          "refundedAt": "2018-08-20T06:00:18Z",
-          "refundedAtLocal": "2018-08-20T06:00:18Z",
+          "refundedAt": "2018-09-19T06:46:27Z",
+          "refundedAtLocal": "2018-09-19T06:46:27Z",
           "subscription": true,
           "tax": 0,
           "totalFees": 0,
@@ -36275,17 +41532,20 @@ ApiKeyHeader & None
         "fundraiser": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
-          "url": "string"
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
         },
         "id": 0,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAt": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "message": "string",
         "organizationId": 0,
         "organization": {
           "id": 0,
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "pageType": "campaign",
@@ -36294,8 +41554,8 @@ ApiKeyHeader & None
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-08-20T06:00:18Z",
-          "repliedAt": "2018-08-20T06:00:18Z",
+          "repliedAtLocal": "2018-09-19T06:46:27Z",
+          "repliedAt": "2018-09-19T06:46:27Z",
           "reply": "string"
         },
         "status": "collectedFromCustomer",
@@ -36303,8 +41563,9 @@ ApiKeyHeader & None
         "team": {
           "id": 0,
           "name": "string",
-          "urlPath": "string",
-          "url": "string"
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
         },
         "template": {
           "key": "string",
@@ -36351,15 +41612,16 @@ ApiKeyHeader & None
       "campaign": {
         "id": 0,
         "name": "string",
-        "urlPath": "string",
         "url": "string",
+        "urlFull": "string",
+        "urlPath": "string",
         "template": {
           "key": "string",
           "value": {}
         }
       },
-      "donatedAtLocal": "2018-08-20T06:00:18Z",
-      "donatedAt": "2018-08-20T06:00:18Z",
+      "donatedAtLocal": "2018-09-19T06:46:27Z",
+      "donatedAt": "2018-09-19T06:46:27Z",
       "donor": {
         "address": {
           "street": "string",
@@ -36386,8 +41648,8 @@ ApiKeyHeader & None
         "feeCovered": true,
         "platform": "stripe",
         "refunded": true,
-        "refundedAt": "2018-08-20T06:00:18Z",
-        "refundedAtLocal": "2018-08-20T06:00:18Z",
+        "refundedAt": "2018-09-19T06:46:27Z",
+        "refundedAtLocal": "2018-09-19T06:46:27Z",
         "subscription": true,
         "tax": 0,
         "totalFees": 0,
@@ -36397,17 +41659,20 @@ ApiKeyHeader & None
       "fundraiser": {
         "id": 0,
         "name": "string",
-        "urlPath": "string",
-        "url": "string"
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
       },
       "id": 0,
-      "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-      "lastUpdatedAt": "2018-08-20T06:00:18Z",
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
       "message": "string",
       "organizationId": 0,
       "organization": {
         "id": 0,
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "pageType": "campaign",
@@ -36416,8 +41681,8 @@ ApiKeyHeader & None
         "displayFirstName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "repliedAtLocal": "2018-08-20T06:00:18Z",
-        "repliedAt": "2018-08-20T06:00:18Z",
+        "repliedAtLocal": "2018-09-19T06:46:27Z",
+        "repliedAt": "2018-09-19T06:46:27Z",
         "reply": "string"
       },
       "status": "collectedFromCustomer",
@@ -36425,8 +41690,9 @@ ApiKeyHeader & None
       "team": {
         "id": 0,
         "name": "string",
-        "urlPath": "string",
-        "url": "string"
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
       },
       "template": {
         "key": "string",
@@ -36463,8 +41729,8 @@ ApiKeyHeader & None
       {
         "amount": 0,
         "anonymous": true,
-        "donatedAtLocal": "2018-08-20T06:00:18Z",
-        "donatedAt": "2018-08-20T06:00:18Z",
+        "donatedAtLocal": "2018-09-19T06:46:27Z",
+        "donatedAt": "2018-09-19T06:46:27Z",
         "donorDisplayName": "string",
         "id": 0,
         "message": "string",
@@ -36473,8 +41739,8 @@ ApiKeyHeader & None
           "displayFirstName": "string",
           "mainImagePath": "string",
           "mainImageUrl": "string",
-          "repliedAtLocal": "2018-08-20T06:00:18Z",
-          "repliedAt": "2018-08-20T06:00:18Z",
+          "repliedAtLocal": "2018-09-19T06:46:27Z",
+          "repliedAt": "2018-09-19T06:46:27Z",
           "reply": "string"
         },
         "type": "online"
@@ -36513,8 +41779,8 @@ ApiKeyHeader & None
     {
       "amount": 0,
       "anonymous": true,
-      "donatedAtLocal": "2018-08-20T06:00:18Z",
-      "donatedAt": "2018-08-20T06:00:18Z",
+      "donatedAtLocal": "2018-09-19T06:46:27Z",
+      "donatedAt": "2018-09-19T06:46:27Z",
       "donorDisplayName": "string",
       "id": 0,
       "message": "string",
@@ -36523,8 +41789,8 @@ ApiKeyHeader & None
         "displayFirstName": "string",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "repliedAtLocal": "2018-08-20T06:00:18Z",
-        "repliedAt": "2018-08-20T06:00:18Z",
+        "repliedAtLocal": "2018-09-19T06:46:27Z",
+        "repliedAt": "2018-09-19T06:46:27Z",
         "reply": "string"
       },
       "type": "online"
@@ -36692,10 +41958,9 @@ ApiKeyHeader & None
     "organizationId": 0,
     "organizationFee": 0,
     "name": "string",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
-    "urlPath": "string",
     "status": "live",
     "targetAmount": 0,
     "averageDonationAmount": 0,
@@ -36750,7 +42015,10 @@ ApiKeyHeader & None
     "template": {
       "key": "string",
       "value": {}
-    }
+    },
+    "url": "string",
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -36787,10 +42055,9 @@ ApiKeyHeader & None
         "organizationId": 0,
         "organizationFee": 0,
         "name": "string",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
-        "urlPath": "string",
         "status": "live",
         "targetAmount": 0,
         "averageDonationAmount": 0,
@@ -36845,7 +42112,10 @@ ApiKeyHeader & None
         "template": {
           "key": "string",
           "value": {}
-        }
+        },
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -36883,10 +42153,9 @@ ApiKeyHeader & None
       "organizationId": 0,
       "organizationFee": 0,
       "name": "string",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
-      "urlPath": "string",
       "status": "live",
       "targetAmount": 0,
       "averageDonationAmount": 0,
@@ -36941,7 +42210,10 @@ ApiKeyHeader & None
       "template": {
         "key": "string",
         "value": {}
-      }
+      },
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
     }
   ]
 }
@@ -36994,11 +42266,13 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -37049,9 +42323,9 @@ ApiKeyHeader & None
       "key": "string",
       "value": {}
     },
-    "urlPath": "string",
     "url": "string",
-    "urlFull": "string"
+    "urlFull": "string",
+    "urlPath": "string"
   },
   "success": true,
   "error": [
@@ -37097,8 +42371,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -37202,11 +42476,13 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -37257,9 +42533,9 @@ ApiKeyHeader & None
           "key": "string",
           "value": {}
         },
-        "urlPath": "string",
         "url": "string",
-        "urlFull": "string"
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -37323,11 +42599,13 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "manager": {
@@ -37378,9 +42656,9 @@ ApiKeyHeader & None
         "key": "string",
         "value": {}
       },
-      "urlPath": "string",
       "url": "string",
-      "urlFull": "string"
+      "urlFull": "string",
+      "urlPath": "string"
     }
   ]
 }
@@ -37396,6 +42674,291 @@ ApiKeyHeader & None
 |pageSize|integer(int32)|false|none|none|
 |list|[[FundraiserElementModel](#schemafundraiserelementmodel)]|false|none|none|
 
+<h2 id="tocSscalaractionresult_microblogelementmodel_">ScalarActionResult_MicroblogElementModel_</h2>
+
+<a id="schemascalaractionresult_microblogelementmodel_"></a>
+
+```json
+{
+  "data": {
+    "campaignId": 0,
+    "campaign": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "createdAt": "2018-09-19T06:46:27Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "items": [
+      {
+        "key": "text",
+        "value": [
+          "string"
+        ]
+      }
+    ],
+    "eventId": 0,
+    "event": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "id": 0,
+    "fundraiserId": 0,
+    "fundraiser": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
+    "organizationId": 0,
+    "organization": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "status": "live",
+    "teamId": 0,
+    "team": {
+      "id": 0,
+      "mainImagePath": "string",
+      "mainImageUrl": "string",
+      "name": "string",
+      "url": "string",
+      "urlFull": "string",
+      "urlPath": "string"
+    },
+    "text": "string",
+    "type": "campaign"
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|data|[MicroblogElementModel](#schemamicroblogelementmodel)|false|none|none|
+|success|boolean|false|none|none|
+|error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
+
+<h2 id="tocSlistactionresult_microblogelementmodel_">ListActionResult_MicroblogElementModel_</h2>
+
+<a id="schemalistactionresult_microblogelementmodel_"></a>
+
+```json
+{
+  "data": {
+    "totalCount": 0,
+    "page": 0,
+    "pageSize": 0,
+    "list": [
+      {
+        "campaignId": 0,
+        "campaign": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "createdAt": "2018-09-19T06:46:27Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "items": [
+          {
+            "key": "text",
+            "value": [
+              "string"
+            ]
+          }
+        ],
+        "eventId": 0,
+        "event": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "id": 0,
+        "fundraiserId": 0,
+        "fundraiser": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
+        "organizationId": 0,
+        "organization": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "status": "live",
+        "teamId": 0,
+        "team": {
+          "id": 0,
+          "mainImagePath": "string",
+          "mainImageUrl": "string",
+          "name": "string",
+          "url": "string",
+          "urlFull": "string",
+          "urlPath": "string"
+        },
+        "text": "string",
+        "type": "campaign"
+      }
+    ]
+  },
+  "success": true,
+  "error": [
+    {
+      "error": "string",
+      "param": "string"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|data|[PagedList_MicroblogElementModel_](#schemapagedlist_microblogelementmodel_)|false|none|none|
+|success|boolean|false|none|none|
+|error|[[ErrorResult](#schemaerrorresult)]|false|none|none|
+
+<h2 id="tocSpagedlist_microblogelementmodel_">PagedList_MicroblogElementModel_</h2>
+
+<a id="schemapagedlist_microblogelementmodel_"></a>
+
+```json
+{
+  "totalCount": 0,
+  "page": 0,
+  "pageSize": 0,
+  "list": [
+    {
+      "campaignId": 0,
+      "campaign": {
+        "id": 0,
+        "mainImagePath": "string",
+        "mainImageUrl": "string",
+        "name": "string",
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
+      },
+      "createdAt": "2018-09-19T06:46:27Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "items": [
+        {
+          "key": "text",
+          "value": [
+            "string"
+          ]
+        }
+      ],
+      "eventId": 0,
+      "event": {
+        "id": 0,
+        "mainImagePath": "string",
+        "mainImageUrl": "string",
+        "name": "string",
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
+      },
+      "id": 0,
+      "fundraiserId": 0,
+      "fundraiser": {
+        "id": 0,
+        "mainImagePath": "string",
+        "mainImageUrl": "string",
+        "name": "string",
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
+      },
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
+      "organizationId": 0,
+      "organization": {
+        "id": 0,
+        "mainImagePath": "string",
+        "mainImageUrl": "string",
+        "name": "string",
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
+      },
+      "status": "live",
+      "teamId": 0,
+      "team": {
+        "id": 0,
+        "mainImagePath": "string",
+        "mainImageUrl": "string",
+        "name": "string",
+        "url": "string",
+        "urlFull": "string",
+        "urlPath": "string"
+      },
+      "text": "string",
+      "type": "campaign"
+    }
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|totalCount|integer(int32)|false|none|none|
+|page|integer(int32)|false|none|none|
+|pageSize|integer(int32)|false|none|none|
+|list|[[MicroblogElementModel](#schemamicroblogelementmodel)]|false|none|none|
+
 <h2 id="tocSscalaractionresult_organizationelementmodel_">ScalarActionResult_OrganizationElementModel_</h2>
 
 <a id="schemascalaractionresult_organizationelementmodel_"></a>
@@ -37403,6 +42966,7 @@ ApiKeyHeader & None
 ```json
 {
   "data": {
+    "averageDonationAmount": 0,
     "address": {
       "street": "string",
       "city": "string",
@@ -37410,9 +42974,12 @@ ApiKeyHeader & None
       "postcode": "string",
       "country": "string"
     },
+    "campaignCount": 0,
+    "campaignLiveCount": 0,
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
+    "donationCount": 0,
     "fundraisingPageCreatedEmail": "string",
     "id": 0,
     "legalName": "string",
@@ -37428,12 +42995,16 @@ ApiKeyHeader & None
         "platform": "stripe"
       }
     ],
+    "raisedAmount": 0,
+    "raisedAmountOnlineOnly": 0,
     "taxId": "string",
+    "teamsCount": 0,
     "template": {
       "key": "string",
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -37465,8 +43036,8 @@ ApiKeyHeader & None
   "data": {
     "country": "string",
     "currency": "string",
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "id": 0,
     "name": "string",
     "legalName": "string",
@@ -37477,6 +43048,7 @@ ApiKeyHeader & None
       "value": {}
     },
     "timezone": "string",
+    "url": "string",
     "urlFull": "string",
     "urlPath": "string"
   },
@@ -37511,6 +43083,7 @@ ApiKeyHeader & None
     "pageSize": 0,
     "list": [
       {
+        "averageDonationAmount": 0,
         "address": {
           "street": "string",
           "city": "string",
@@ -37518,9 +43091,12 @@ ApiKeyHeader & None
           "postcode": "string",
           "country": "string"
         },
+        "campaignCount": 0,
+        "campaignLiveCount": 0,
         "currency": "string",
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
+        "donationCount": 0,
         "fundraisingPageCreatedEmail": "string",
         "id": 0,
         "legalName": "string",
@@ -37536,12 +43112,16 @@ ApiKeyHeader & None
             "platform": "stripe"
           }
         ],
+        "raisedAmount": 0,
+        "raisedAmountOnlineOnly": 0,
         "taxId": "string",
+        "teamsCount": 0,
         "template": {
           "key": "string",
           "value": {}
         },
         "timezone": "string",
+        "url": "string",
         "urlFull": "string",
         "urlPath": "string"
       }
@@ -37577,6 +43157,7 @@ ApiKeyHeader & None
   "pageSize": 0,
   "list": [
     {
+      "averageDonationAmount": 0,
       "address": {
         "street": "string",
         "city": "string",
@@ -37584,9 +43165,12 @@ ApiKeyHeader & None
         "postcode": "string",
         "country": "string"
       },
+      "campaignCount": 0,
+      "campaignLiveCount": 0,
       "currency": "string",
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
+      "donationCount": 0,
       "fundraisingPageCreatedEmail": "string",
       "id": 0,
       "legalName": "string",
@@ -37602,12 +43186,16 @@ ApiKeyHeader & None
           "platform": "stripe"
         }
       ],
+      "raisedAmount": 0,
+      "raisedAmountOnlineOnly": 0,
       "taxId": "string",
+      "teamsCount": 0,
       "template": {
         "key": "string",
         "value": {}
       },
       "timezone": "string",
+      "url": "string",
       "urlFull": "string",
       "urlPath": "string"
     }
@@ -37636,8 +43224,8 @@ ApiKeyHeader & None
     "campaign": {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "dataCapture": {
         "registration": {
           "phone": {
@@ -37740,8 +43328,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -37787,8 +43375,8 @@ ApiKeyHeader & None
     "organization": {
       "country": "string",
       "currency": "string",
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "id": 0,
       "name": "string",
       "legalName": "string",
@@ -37799,6 +43387,7 @@ ApiKeyHeader & None
         "value": {}
       },
       "timezone": "string",
+      "url": "string",
       "urlFull": "string",
       "urlPath": "string"
     },
@@ -37821,8 +43410,8 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
@@ -37906,10 +43495,12 @@ ApiKeyHeader & None
           "id": 0,
           "mainImagePath": "string",
           "mainImageUrl": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "eventId": 0,
         "event": {
@@ -37918,6 +43509,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "fundraiserId": 0,
@@ -37927,13 +43520,15 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "isFundraiserOrTeam": true,
         "isActive": true,
         "isPublic": true,
-        "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-        "lastUpdatedAt": "2018-08-20T06:00:18Z",
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "name": "string",
         "newsletterOptIn": true,
         "organizationId": 0,
@@ -37942,6 +43537,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "phoneNumber": "string",
@@ -37955,12 +43552,14 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "type": "campaign",
-        "urlPath": "string",
         "url": "string",
-        "urlFull": "string"
+        "urlFull": "string",
+        "urlPath": "string"
       }
     ]
   },
@@ -38014,10 +43613,12 @@ ApiKeyHeader & None
         "id": 0,
         "mainImagePath": "string",
         "mainImageUrl": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "eventId": 0,
       "event": {
@@ -38026,6 +43627,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "fundraiserId": 0,
@@ -38035,13 +43638,15 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "isFundraiserOrTeam": true,
       "isActive": true,
       "isPublic": true,
-      "lastUpdatedAtLocal": "2018-08-20T06:00:18Z",
-      "lastUpdatedAt": "2018-08-20T06:00:18Z",
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
       "name": "string",
       "newsletterOptIn": true,
       "organizationId": 0,
@@ -38050,6 +43655,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "phoneNumber": "string",
@@ -38063,12 +43670,14 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "type": "campaign",
-      "urlPath": "string",
       "url": "string",
-      "urlFull": "string"
+      "urlFull": "string",
+      "urlPath": "string"
     }
   ]
 }
@@ -38098,8 +43707,8 @@ ApiKeyHeader & None
       {
         "additionalDonationsNeededForTarget": 0,
         "averageDonationAmount": 0,
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "campaignId": 0,
         "campaign": {
           "name": "string",
@@ -38107,6 +43716,8 @@ ApiKeyHeader & None
           "id": 0,
           "mainImagePath": "string",
           "mainImageUrl": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "donationCount": 0,
@@ -38116,6 +43727,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "fundraiserId": 0,
@@ -38125,6 +43738,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "name": "string",
@@ -38134,6 +43749,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "raisedAmount": 0,
@@ -38146,6 +43763,8 @@ ApiKeyHeader & None
           "mainImagePath": "string",
           "mainImageUrl": "string",
           "name": "string",
+          "url": "string",
+          "urlFull": "string",
           "urlPath": "string"
         },
         "type": "campaign",
@@ -38187,8 +43806,8 @@ ApiKeyHeader & None
     {
       "additionalDonationsNeededForTarget": 0,
       "averageDonationAmount": 0,
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "campaignId": 0,
       "campaign": {
         "name": "string",
@@ -38196,6 +43815,8 @@ ApiKeyHeader & None
         "id": 0,
         "mainImagePath": "string",
         "mainImageUrl": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "donationCount": 0,
@@ -38205,6 +43826,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "fundraiserId": 0,
@@ -38214,6 +43837,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "name": "string",
@@ -38223,6 +43848,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "raisedAmount": 0,
@@ -38235,6 +43862,8 @@ ApiKeyHeader & None
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "name": "string",
+        "url": "string",
+        "urlFull": "string",
         "urlPath": "string"
       },
       "type": "campaign",
@@ -38274,7 +43903,7 @@ ApiKeyHeader & None
       "id": 0,
       "name": "string"
     },
-    "expiry": "2018-08-20T06:00:18Z",
+    "expiry": "2018-09-19T06:46:27Z",
     "impersonated": true,
     "impersonator": {
       "id": 0,
@@ -38343,11 +43972,13 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
+    "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+    "lastUpdatedAt": "2018-09-19T06:46:27Z",
     "mainImagePath": "string",
     "mainImageUrl": "string",
     "manager": {
@@ -38431,8 +44062,8 @@ ApiKeyHeader & None
       "urlFull": "string",
       "urlPath": "string"
     },
-    "createdAtLocal": "2018-08-20T06:00:18Z",
-    "createdAt": "2018-08-20T06:00:18Z",
+    "createdAtLocal": "2018-09-19T06:46:27Z",
+    "createdAt": "2018-09-19T06:46:27Z",
     "donationCount": 0,
     "id": 0,
     "isPublic": true,
@@ -38525,11 +44156,13 @@ ApiKeyHeader & None
           "urlFull": "string",
           "urlPath": "string"
         },
-        "createdAtLocal": "2018-08-20T06:00:18Z",
-        "createdAt": "2018-08-20T06:00:18Z",
+        "createdAtLocal": "2018-09-19T06:46:27Z",
+        "createdAt": "2018-09-19T06:46:27Z",
         "donationCount": 0,
         "id": 0,
         "isPublic": true,
+        "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+        "lastUpdatedAt": "2018-09-19T06:46:27Z",
         "mainImagePath": "string",
         "mainImageUrl": "string",
         "manager": {
@@ -38631,11 +44264,13 @@ ApiKeyHeader & None
         "urlFull": "string",
         "urlPath": "string"
       },
-      "createdAtLocal": "2018-08-20T06:00:18Z",
-      "createdAt": "2018-08-20T06:00:18Z",
+      "createdAtLocal": "2018-09-19T06:46:27Z",
+      "createdAt": "2018-09-19T06:46:27Z",
       "donationCount": 0,
       "id": 0,
       "isPublic": true,
+      "lastUpdatedAtLocal": "2018-09-19T06:46:27Z",
+      "lastUpdatedAt": "2018-09-19T06:46:27Z",
       "mainImagePath": "string",
       "mainImageUrl": "string",
       "manager": {
